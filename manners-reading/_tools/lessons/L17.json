@@ -1,0 +1,349 @@
+{
+ "id": "L17",
+ "book": "Good Manners with Family",
+ "pageTitle": "Lesson 17 · Asking Nicely at Home",
+ "eyebrow": "Lesson 17 · B1 · Good Manners with Family · 20 câu",
+ "heading": "Asking Nicely at Home",
+ "source": "Bài đọc phỏng theo Good Manners with Family – Ann Ingalls (The Child's World, 2013), tr. 4–7.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Good Manners with Family (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "Manners Begin at Home",
+  "paras": [
+   {
+    "label": "A",
+    "text": "Home is where you feel most {comfortable|comfortable}. You are with the people who know you best: your family! They see your messy hair in the morning, they hear you singing in the shower and, sometimes, they even smell your {stinky|stinky} socks."
+   },
+   {
+    "label": "B",
+    "text": "So do you still need good manners at home? Absolutely. Your family lives in the same space and shares many rooms and things. Good manners show {respect|respect}, and they help keep everyone happy {under one roof|under one roof}."
+   },
+   {
+    "label": "C",
+    "text": "If you want something, ask for it nicely, using polite words like \"Please\" and \"May I\". Say \"Please pass the chicken\" instead of \"Give me the chicken.\" Ask politely and you will probably get what you want. Be {rude|rude}, and the chicken might {end up|end up} in your lap!"
+   },
+   {
+    "label": "D",
+    "text": "Saying \"Thank you\" matters too. If your brother helps you with your homework, thank him. It shows that you {appreciate|appreciate} your family, and he will be happy to help again. With his help, you might even get top marks in your next maths test!"
+   },
+   {
+    "label": "E",
+    "text": "In India, children show respect to older {relatives|relatives} in a special way: they {bow down|bow down} and touch the relative's feet. Customs are different around the world, but the idea behind them is the same: we should {treat|treat} our families with care."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "comfortable",
+   "word": "comfortable",
+   "ipa": "/ˈkʌmftəbl/",
+   "pos": "tính từ",
+   "vi": "thoải mái"
+  },
+  {
+   "key": "stinky",
+   "word": "stinky",
+   "ipa": "/ˈstɪŋki/",
+   "pos": "tính từ",
+   "vi": "hôi, bốc mùi"
+  },
+  {
+   "key": "respect",
+   "word": "respect",
+   "ipa": "/rɪˈspekt/",
+   "pos": "danh từ",
+   "vi": "sự tôn trọng"
+  },
+  {
+   "key": "under one roof",
+   "word": "under one roof",
+   "ipa": "/ˈʌndə wʌn ˈruːf/",
+   "pos": "cụm từ",
+   "vi": "dưới một mái nhà"
+  },
+  {
+   "key": "rude",
+   "word": "rude",
+   "ipa": "/ruːd/",
+   "pos": "tính từ",
+   "vi": "thô lỗ, bất lịch sự"
+  },
+  {
+   "key": "end up",
+   "word": "end up",
+   "ipa": "/end ʌp/",
+   "pos": "cụm động từ",
+   "vi": "rốt cuộc lại (ở đâu đó)"
+  },
+  {
+   "key": "appreciate",
+   "word": "appreciate",
+   "ipa": "/əˈpriːʃieɪt/",
+   "pos": "động từ",
+   "vi": "trân trọng"
+  },
+  {
+   "key": "relatives",
+   "word": "relative",
+   "ipa": "/ˈrelətɪv/",
+   "pos": "danh từ",
+   "vi": "họ hàng"
+  },
+  {
+   "key": "bow down",
+   "word": "bow down",
+   "ipa": "/baʊ daʊn/",
+   "pos": "cụm động từ",
+   "vi": "cúi chào"
+  },
+  {
+   "key": "treat",
+   "word": "treat",
+   "ipa": "/triːt/",
+   "pos": "động từ",
+   "vi": "đối xử"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "title": "Part 1 · Matching headings",
+   "instr": "Chọn tiêu đề phù hợp cho mỗi đoạn. Mỗi tiêu đề dùng một lần.",
+   "options": [
+    "Being yourself at home",
+    "Why manners still matter at home",
+    "The right way to ask",
+    "The power of thanks",
+    "A custom from another country"
+   ],
+   "items": [
+    {
+     "label": "Paragraph A",
+     "para": "A",
+     "answer": 0,
+     "tag": "Ý chính",
+     "why": "Đoạn A: ở nhà, gia đình thấy con người thật của bạn."
+    },
+    {
+     "label": "Paragraph B",
+     "para": "B",
+     "answer": 1,
+     "tag": "Ý chính",
+     "why": "Đoạn B: *So do you still need good manners at home? Absolutely.*"
+    },
+    {
+     "label": "Paragraph C",
+     "para": "C",
+     "answer": 2,
+     "tag": "Ý chính",
+     "why": "Đoạn C: dùng *Please*, *May I* khi muốn xin gì."
+    },
+    {
+     "label": "Paragraph D",
+     "para": "D",
+     "answer": 3,
+     "tag": "Ý chính",
+     "why": "Đoạn D: cảm ơn anh trai giúp làm bài."
+    },
+    {
+     "label": "Paragraph E",
+     "para": "E",
+     "answer": 4,
+     "tag": "Ý chính",
+     "why": "Đoạn E: phong tục ở Ấn Độ."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "In (A), why does the writer mention messy hair, singing and stinky socks?",
+     "options": [
+      "to show that your family sees you as you really are",
+      "to explain how to look tidy",
+      "to complain about brothers and sisters",
+      "to give advice on washing clothes"
+     ],
+     "why": "Những chi tiết đời thường → gia đình biết rõ bạn nhất."
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer believes good manners are only necessary outside the home.",
+     "answer": false,
+     "why": "Sai. *So do you still need good manners at home? Absolutely.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "Which request is the most polite, according to (C)?",
+     "options": [
+      "\"Please pass the chicken.\"",
+      "\"Give me the chicken.\"",
+      "\"Chicken, now!\"",
+      "\"I want the chicken.\""
+     ],
+     "why": "*Say \"Please pass the chicken\" instead of \"Give me the chicken.\"*"
+    },
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "*Be rude, and the chicken might end up in your lap!* What does the writer mean?",
+     "options": [
+      "Rude requests may not get you what you want.",
+      "Chicken is difficult to eat.",
+      "You should eat on the sofa.",
+      "Your family will give you extra food."
+     ],
+     "why": "Câu đùa: hỏi thô lỗ thì không được như ý."
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "According to (D), thanking your brother makes him more likely to help you again.",
+     "answer": true,
+     "why": "Đúng. *he will be happy to help again.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "How do children in India show respect to older relatives?",
+     "options": [
+      "They bow down and touch their feet.",
+      "They shake hands with them.",
+      "They give them flowers.",
+      "They cook dinner for them."
+     ],
+     "why": "*they bow down and touch the relative's feet.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which detail from (A) does this picture show?",
+     "options": [
+      "Your family sometimes smells your stinky socks.",
+      "Your family hears you sing in the shower.",
+      "Your family sees your messy hair.",
+      "Your family helps with your homework."
+     ],
+     "why": "Cô bé bịt mũi vì mùi tất → *smell your stinky socks*.",
+     "image": "images/fm-socks.jpg",
+     "alt": "A man relaxes in an armchair reading a newspaper with his socked feet on a stool, while a girl holds her nose because of the smell"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which polite word does the girl use?",
+     "options": [
+      "Please",
+      "Sorry",
+      "Excuse me",
+      "Thank you"
+     ],
+     "why": "*Please pass…* – đúng lời khuyên ở đoạn C.",
+     "image": "images/fm-biscuits.jpg",
+     "alt": "Two girls sit at the dinner table; one smiles and says: Please pass the biscuits."
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which paragraph gives the advice that this girl is following?",
+     "options": [
+      "Paragraph C",
+      "Paragraph A",
+      "Paragraph D",
+      "Paragraph E"
+     ],
+     "why": "Đoạn C: hỏi xin một cách lịch sự.",
+     "image": "images/fm-biscuits.jpg",
+     "alt": "Two girls sit at the dinner table; one smiles and says: Please pass the biscuits."
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "A maths problem",
+   "text": "Last week I was stuck on my maths homework. [1] He sat with me for half an hour and explained everything step by step. [2] The next day, I got nine out of ten in the test. [3]",
+   "options": [
+    "So I asked my older brother, \"Could you help me, please?\"",
+    "My brother shouted, \"Give me your pencil!\" and walked away.",
+    "When we finished, I gave him a hug and said, \"Thanks so much!\"",
+    "My brother was so pleased that he offered to help me again next week.",
+    "I decided to go to bed without finishing it."
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Cần một *He* đã được nhắc trước đó → người anh."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Giúp xong → cảm ơn."
+    },
+    {
+     "answer": 3,
+     "tag": "Liên kết",
+     "why": "Lời cảm ơn khiến anh sẵn lòng giúp tiếp (ý đoạn D)."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…keep everyone happy under one roof* (B). **Under one roof** means…",
+     "options": [
+      "in the same home",
+      "on top of the house",
+      "outside in the garden",
+      "in different cities"
+     ],
+     "why": "**Under one roof** = sống chung một nhà."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…the chicken might end up in your lap* (C). To **end up** somewhere means to…",
+     "options": [
+      "finally be there, often unexpectedly",
+      "start a journey",
+      "stand up quickly",
+      "stay at the top"
+     ],
+     "why": "**End up** = rốt cuộc lại ở đâu đó."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Home is where you feel most comfortable* (A). **Comfortable** here means…",
+     "options": [
+      "relaxed and at ease",
+      "tired and bored",
+      "nervous and shy",
+      "busy and stressed"
+     ],
+     "why": "**Comfortable** = thoải mái."
+    }
+   ]
+  }
+ ]
+}

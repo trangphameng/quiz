@@ -4,6 +4,9 @@ BOOKS = {
     'BM': ('Basic Manners', 'Basic Manners'),
     'GS': ('Good Manners at School', 'At School'),
     'GP': ('Good Manners in Public', 'In Public'),
+    'GU': ('Being a Good Guest', 'Good Guest'),
+    'FM': ('Good Manners with Family', 'With Family'),
+    'TM': ('Good Table Manners', 'Table Manners'),
 }
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'lessons')
 
@@ -40,6 +43,13 @@ def gap(text_title, text, options, answers):
             "instr": f"Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có {len(options) - len(answers)} câu thừa.",
             "textTitle": text_title, "text": text, "options": options,
             "items": [{"answer": a, "tag": "Liên kết", "why": w} for a, w in answers]}
+
+def gapmix(text_title, text, right, wrong, order):
+    """right = [(câu đúng, giải thích)] theo thứ tự [1][2][3]; wrong = 2 câu thừa;
+    order = thứ tự hiển thị (chỉ số trong right+wrong) để đáp án không nằm liền a, b, c."""
+    pool = [r[0] for r in right] + list(wrong)
+    return gap(text_title, text, [pool[i] for i in order],
+               [(order.index(k), w) for k, (_, w) in enumerate(right)])
 
 def lesson(num, book, pages, heading, title, paras, vocab, parts):
     name, short = BOOKS[book]

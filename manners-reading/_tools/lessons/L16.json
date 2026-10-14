@@ -1,0 +1,346 @@
+{
+ "id": "L16",
+ "book": "Being a Good Guest",
+ "pageTitle": "Lesson 16 · Meals, Chats and Goodbyes",
+ "eyebrow": "Lesson 16 · B1 · Being a Good Guest · 20 câu",
+ "heading": "Meals, Chats and Goodbyes",
+ "source": "Bài đọc phỏng theo Being a Good Guest – Ann Ingalls (The Child's World, 2013), tr. 16–21.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Being a Good Guest (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "A Perfect Visit",
+  "paras": [
+   {
+    "label": "A",
+    "text": "If you are lucky, your friend's family may ask you to stay for a meal. Always wait to be {offered|offered} food; never {help yourself|help yourself} from the kitchen. When the meal is over, tell your host how delicious it was, carry your plate to the kitchen and offer to help with the {washing-up|washing-up}. It is a great way of saying \"Thank you\". In Turkey, asking for a second helping is even a {compliment|compliment} to the cook!"
+   },
+   {
+    "label": "B",
+    "text": "Talk to your friend's family too. Be polite, answer their questions and remember the {magic words|magic words}: \"Please\", \"Thank you\" and \"Excuse me\"."
+   },
+   {
+    "label": "C",
+    "text": "Be friendly, but try not to {get in the way|get in the way}. Everyone needs a bit of space. If your host starts {yawning|yawning}, it is probably time to go home, not time to describe every comic in your {collection|collection}!"
+   },
+   {
+    "label": "D",
+    "text": "When it is time to leave, thank your host. Once you are home, send a {thank-you note|thank-you note} saying how much fun you had."
+   },
+   {
+    "label": "E",
+    "text": "Finally, {return the favour|return the favour}. Invite your friend to your house some time, and this time you can be the host. After all, good guests often make great hosts!"
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "offered",
+   "word": "offer",
+   "ipa": "/ˈɒfə(r)/",
+   "pos": "động từ",
+   "vi": "mời"
+  },
+  {
+   "key": "help yourself",
+   "word": "help yourself",
+   "ipa": "/help jɔːˈself/",
+   "pos": "cụm từ",
+   "vi": "tự lấy (đồ ăn)"
+  },
+  {
+   "key": "washing-up",
+   "word": "washing-up",
+   "ipa": "/ˌwɒʃɪŋ ˈʌp/",
+   "pos": "danh từ",
+   "vi": "việc rửa bát"
+  },
+  {
+   "key": "compliment",
+   "word": "compliment",
+   "ipa": "/ˈkɒmplɪmənt/",
+   "pos": "danh từ",
+   "vi": "lời khen"
+  },
+  {
+   "key": "magic words",
+   "word": "magic words",
+   "ipa": "/ˌmædʒɪk ˈwɜːdz/",
+   "pos": "danh từ",
+   "vi": "những từ 'thần kỳ' (lời lịch sự)"
+  },
+  {
+   "key": "get in the way",
+   "word": "get in the way",
+   "ipa": "/ɡet ɪn ðə ˈweɪ/",
+   "pos": "cụm từ",
+   "vi": "làm vướng, cản trở"
+  },
+  {
+   "key": "yawning",
+   "word": "yawn",
+   "ipa": "/jɔːn/",
+   "pos": "động từ",
+   "vi": "ngáp"
+  },
+  {
+   "key": "collection",
+   "word": "collection",
+   "ipa": "/kəˈlekʃn/",
+   "pos": "danh từ",
+   "vi": "bộ sưu tập"
+  },
+  {
+   "key": "thank-you note",
+   "word": "thank-you note",
+   "ipa": "/ˈθæŋk juː nəʊt/",
+   "pos": "danh từ",
+   "vi": "thiệp/thư cảm ơn"
+  },
+  {
+   "key": "return the favour",
+   "word": "return the favour",
+   "ipa": "/rɪˌtɜːn ðə ˈfeɪvə(r)/",
+   "pos": "cụm từ",
+   "vi": "đáp lại lòng tốt"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "plain": true,
+   "title": "Part 1 · Which paragraph?",
+   "pick": "Chọn đoạn",
+   "instr": "Đoạn nào (A–E) chứa thông tin dưới đây?",
+   "options": [
+    "Paragraph A",
+    "Paragraph B",
+    "Paragraph C",
+    "Paragraph D",
+    "Paragraph E"
+   ],
+   "items": [
+    {
+     "label": "A paragraph that mentions a country where asking for more food is polite",
+     "answer": 0,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn A: Thổ Nhĩ Kỳ – xin thêm là lời khen."
+    },
+    {
+     "label": "A paragraph that lists some useful polite expressions",
+     "answer": 1,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn B: *Please, Thank you, Excuse me.*"
+    },
+    {
+     "label": "A paragraph that describes a sign that a visit should end",
+     "answer": 2,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn C: chủ nhà ngáp → nên về."
+    },
+    {
+     "label": "A paragraph about something to do after you get home",
+     "answer": 3,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn D: *Once you are home, send a thank-you note.*"
+    },
+    {
+     "label": "A paragraph that suggests swapping roles with your friend",
+     "answer": 4,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn E: lần này bạn làm chủ nhà."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to (A), what should you do if you are hungry at a friend's house?",
+     "options": [
+      "wait until the family offers you food",
+      "take a snack from the kitchen",
+      "go home for lunch",
+      "order a pizza"
+     ],
+     "why": "*Always wait to be offered food; never help yourself.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer suggests offering to help with the washing-up after a meal.",
+     "answer": true,
+     "why": "Đúng. *offer to help with the washing-up.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "In Turkey, why is asking for more food a good thing?",
+     "options": [
+      "It shows the cook that the food was very good.",
+      "It means the guest is very hungry.",
+      "It is a way of saying goodbye.",
+      "It stops food from being wasted."
+     ],
+     "why": "*asking for a second helping is even a compliment to the cook.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer thinks you should show your host your whole comic collection.",
+     "answer": false,
+     "why": "Sai. *not time to describe every comic in your collection!*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "What should you write in a thank-you note?",
+     "options": [
+      "how much fun you had",
+      "what you didn't like",
+      "when you want to come back",
+      "a list of your comics"
+     ],
+     "why": "*saying how much fun you had.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Thông điệp",
+     "q": "What does the last sentence of the text suggest?",
+     "options": [
+      "Being a guest teaches you how to be a good host.",
+      "Hosts are better people than guests.",
+      "You should never invite friends home.",
+      "Good guests never visit twice."
+     ],
+     "why": "*good guests often make great hosts!*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which part of a visit does this picture show?",
+     "options": [
+      "after a meal",
+      "arriving at the front door",
+      "a sleepover at night",
+      "getting an invitation"
+     ],
+     "why": "Rửa bát → sau bữa ăn (đoạn A).",
+     "image": "images/gu-dishes.jpg",
+     "alt": "A girl stands beside a woman washing dishes in a sink full of bubbles and asks: May I help you with the dishes?"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Why does the boy in red decide to go home?",
+     "options": [
+      "His friend is yawning and looks tired.",
+      "His friend asked him to leave.",
+      "It has started to rain.",
+      "He forgot his toothpaste."
+     ],
+     "why": "Đoạn C: *If your host starts yawning, it is probably time to go home.*",
+     "image": "images/gu-yawn.jpg",
+     "alt": "Two boys sit at a table; one yawns while the other says: I should go home. I will see you tomorrow."
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which paragraph matches this picture?",
+     "options": [
+      "Paragraph D",
+      "Paragraph B",
+      "Paragraph C",
+      "Paragraph E"
+     ],
+     "why": "Viết thiệp cảm ơn → đoạn D.",
+     "image": "images/gu-note.jpg",
+     "alt": "A girl sits at a table writing a thank-you card"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "Dinner at Sam's",
+   "text": "On Friday I had dinner at my friend Sam's house. [1] After dinner, Sam's mum started clearing the table. [2] At nine o'clock, Sam began to yawn. [3]",
+   "options": [
+    "Sam's dad served us eggs and toast for breakfast.",
+    "His dad made a huge pot of spaghetti, and I told him it was the best I'd ever tasted.",
+    "I jumped up, carried my plate to the kitchen and offered to dry the dishes.",
+    "So we went to the cinema to watch a film about dinosaurs.",
+    "I realised it was time to go, so I thanked everyone and said goodbye."
+   ],
+   "items": [
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Bữa tối + lời khen món ăn."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Mẹ Sam dọn bàn → mình giúp."
+    },
+    {
+     "answer": 4,
+     "tag": "Liên kết",
+     "why": "Sam ngáp → đến lúc về."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…never help yourself from the kitchen* (A). To **help yourself** means to…",
+     "options": [
+      "take something without waiting to be offered",
+      "ask for help",
+      "do your homework alone",
+      "clean the kitchen"
+     ],
+     "why": "**Help yourself** = tự lấy."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…try not to get in the way* (C). If you **get in the way**, you…",
+     "options": [
+      "stop others from doing what they want or need to do",
+      "get lost",
+      "arrive late",
+      "find the right path"
+     ],
+     "why": "**Get in the way** = gây vướng víu."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Finally, return the favour* (E). To **return the favour** means to…",
+     "options": [
+      "do something kind for someone who was kind to you",
+      "take a present back to the shop",
+      "ask for help again",
+      "go back home"
+     ],
+     "why": "**Return the favour** = đáp lại lòng tốt."
+    }
+   ]
+  }
+ ]
+}

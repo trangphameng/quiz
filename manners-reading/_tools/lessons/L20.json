@@ -1,0 +1,339 @@
+{
+ "id": "L20",
+ "book": "Good Manners with Family",
+ "pageTitle": "Lesson 20 · Chores and a Tidy Home",
+ "eyebrow": "Lesson 20 · B1 · Good Manners with Family · 20 câu",
+ "heading": "Chores and a Tidy Home",
+ "source": "Bài đọc phỏng theo Good Manners with Family – Ann Ingalls (The Child's World, 2013), tr. 16–21.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Good Manners with Family (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "A Place for Everything",
+  "paras": [
+   {
+    "label": "A",
+    "text": "Everyone in a family has {chores|chores} to do around the house. Perhaps your dad cooks dinner on Mondays and your mum does the food shopping. Children have jobs too, and it is important to do yours without waiting to be asked."
+   },
+   {
+    "label": "B",
+    "text": "You may not {feel like|feel like} doing your chores on a Saturday morning. Do them {anyway|anyway}! It shows that you respect your parents' rules and that you care about keeping your home nice for everyone."
+   },
+   {
+    "label": "C",
+    "text": "Everything has its own place in a home. Fruit goes in the fruit bowl, dirty clothes go in the {laundry|laundry} basket and toys go in the toy box. Use things when you need them, but always put them back where they {belong|belong}. That way, Mum won't {trip over|trip over} your cricket bat, and your little sister can find the comb when she needs it."
+   },
+   {
+    "label": "D",
+    "text": "If you see a {mess|mess}, clean it up straight away. {Wipe up|wipe up} spilt juice, or pick up the paper that missed the bin. Don't leave it for someone else to do."
+   },
+   {
+    "label": "E",
+    "text": "Above all, be kind to your family. Help out where you can, respect each other's things and enjoy your dinners together. With good manners, your parents will see that you are {thankful|thankful} for everything they do, and your home will be an even happier place."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "chores",
+   "word": "chore",
+   "ipa": "/tʃɔː(r)/",
+   "pos": "danh từ",
+   "vi": "việc nhà"
+  },
+  {
+   "key": "feel like",
+   "word": "feel like",
+   "ipa": "/fiːl laɪk/",
+   "pos": "cụm động từ",
+   "vi": "muốn, thấy thích (làm gì)"
+  },
+  {
+   "key": "anyway",
+   "word": "anyway",
+   "ipa": "/ˈeniweɪ/",
+   "pos": "trạng từ",
+   "vi": "dù sao đi nữa"
+  },
+  {
+   "key": "laundry",
+   "word": "laundry",
+   "ipa": "/ˈlɔːndri/",
+   "pos": "danh từ",
+   "vi": "quần áo cần giặt"
+  },
+  {
+   "key": "belong",
+   "word": "belong",
+   "ipa": "/bɪˈlɒŋ/",
+   "pos": "động từ",
+   "vi": "thuộc về (đúng chỗ)"
+  },
+  {
+   "key": "trip over",
+   "word": "trip over",
+   "ipa": "/trɪp ˈəʊvə(r)/",
+   "pos": "cụm động từ",
+   "vi": "vấp phải"
+  },
+  {
+   "key": "mess",
+   "word": "mess",
+   "ipa": "/mes/",
+   "pos": "danh từ",
+   "vi": "đống bừa bộn"
+  },
+  {
+   "key": "wipe up",
+   "word": "wipe up",
+   "ipa": "/waɪp ʌp/",
+   "pos": "cụm động từ",
+   "vi": "lau sạch"
+  },
+  {
+   "key": "thankful",
+   "word": "thankful",
+   "ipa": "/ˈθæŋkfl/",
+   "pos": "tính từ",
+   "vi": "biết ơn"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "plain": true,
+   "title": "Part 1 · Which paragraph?",
+   "pick": "Chọn đoạn",
+   "instr": "Đoạn nào (A–E) chứa thông tin dưới đây?",
+   "options": [
+    "Paragraph A",
+    "Paragraph B",
+    "Paragraph C",
+    "Paragraph D",
+    "Paragraph E"
+   ],
+   "items": [
+    {
+     "label": "A paragraph that admits chores are not always fun",
+     "answer": 1,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn B: *You may not feel like doing your chores.*"
+    },
+    {
+     "label": "A paragraph that gives examples of jobs done by parents",
+     "answer": 0,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn A: bố nấu ăn, mẹ đi chợ."
+    },
+    {
+     "label": "A paragraph about dealing with a spill",
+     "answer": 3,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn D: *Wipe up spilt juice.*"
+    },
+    {
+     "label": "A paragraph that explains how putting things away can prevent accidents",
+     "answer": 2,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn C: mẹ không vấp phải gậy cricket."
+    },
+    {
+     "label": "A paragraph that sums up the advice and encourages kindness",
+     "answer": 4,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn E: *Above all, be kind to your family.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to (A), when should you do your chores?",
+     "options": [
+      "without waiting to be asked",
+      "only when your parents remind you",
+      "only on Mondays",
+      "after your friends have gone home"
+     ],
+     "why": "*do yours without waiting to be asked.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says you can skip your chores if you don't feel like doing them.",
+     "answer": false,
+     "why": "Sai. *Do them anyway!*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to (B), what does doing your chores show?",
+     "options": [
+      "respect for your parents' rules and care for your home",
+      "that you want more pocket money",
+      "that you are better than your brothers and sisters",
+      "that you are bored"
+     ],
+     "why": "*you respect your parents' rules and… care about keeping your home nice.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "Why should you put things back where they belong?",
+     "options": [
+      "so that nobody trips over them and others can find them",
+      "so that you can buy new ones",
+      "because it is a school rule",
+      "so that nobody else can use them"
+     ],
+     "why": "*Mum won't trip over… your little sister can find the comb.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "According to (D), you should leave paper on the floor if you didn't drop it.",
+     "answer": false,
+     "why": "Sai. *Don't leave it for someone else to do.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Ý chính",
+     "q": "What is the writer's main purpose in (E)?",
+     "options": [
+      "to bring the main ideas together and encourage kindness",
+      "to introduce a new rule about chores",
+      "to describe a family dinner",
+      "to explain how to do the laundry"
+     ],
+     "why": "Đoạn E tóm tắt và khích lệ: *Above all, be kind…*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What are the children doing?",
+     "options": [
+      "their chores",
+      "their homework",
+      "having a sleepover",
+      "the shopping"
+     ],
+     "why": "Quét nhà, lau bàn = **chores**.",
+     "image": "images/fm-chores.jpg",
+     "alt": "A boy sweeps the floor with a broom while a girl wipes a small table with a spray bottle"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which paragraph matches this picture?",
+     "options": [
+      "Paragraph D",
+      "Paragraph A",
+      "Paragraph C",
+      "Paragraph E"
+     ],
+     "why": "Đoạn D: *Wipe up spilt juice.*",
+     "image": "images/fm-spill.jpg",
+     "alt": "A girl kneels on the floor wiping up purple juice from a cup that has fallen over"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which sentence from (E) best matches this picture?",
+     "options": [
+      "Your home will be an even happier place.",
+      "Fruit goes in the fruit bowl.",
+      "Don't leave it for someone else to do.",
+      "You may not feel like doing your chores."
+     ],
+     "why": "Cái ôm hạnh phúc → *an even happier place.*",
+     "image": "images/fm-hug.jpg",
+     "alt": "A woman and a girl give each other a big, happy hug"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "Saturday morning",
+   "text": "It was Saturday morning, and my job was to tidy the living room. [1] Then I remembered how tired Mum looked after work every day. [2] When she came downstairs, she couldn't believe her eyes. [3]",
+   "options": [
+    "Mum had already done all the housework for me.",
+    "I really wanted to watch cartoons instead.",
+    "So I switched off the TV, picked up the toys and wiped the table.",
+    "My friend phoned to say the cinema was closed.",
+    "\"What a lovely surprise!\" she said, giving me a big hug."
+   ],
+   "items": [
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Không muốn làm việc nhà (*feel like*)."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Nghĩ đến mẹ → làm việc nhà."
+    },
+    {
+     "answer": 4,
+     "tag": "Liên kết",
+     "why": "Mẹ ngạc nhiên vui mừng."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*You may not feel like doing your chores* (B). If you **feel like** doing something, you…",
+     "options": [
+      "want to do it",
+      "feel ill",
+      "are good at it",
+      "have finished it"
+     ],
+     "why": "**Feel like doing sth** = muốn làm gì."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Mum won't trip over your cricket bat* (C). To **trip over** something means to…",
+     "options": [
+      "catch your foot on it and almost fall",
+      "jump over it",
+      "go on a journey",
+      "pick it up"
+     ],
+     "why": "**Trip over** = vấp phải."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…put them back where they belong* (C). **Where they belong** means…",
+     "options": [
+      "in their proper place",
+      "in someone else's room",
+      "outside",
+      "in the bin"
+     ],
+     "why": "Đúng chỗ của chúng."
+    }
+   ]
+  }
+ ]
+}

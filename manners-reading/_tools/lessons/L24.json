@@ -1,0 +1,339 @@
+{
+ "id": "L24",
+ "book": "Good Table Manners",
+ "pageTitle": "Lesson 24 · No Thanks and Thank You",
+ "eyebrow": "Lesson 24 · B1 · Good Table Manners · 20 câu",
+ "heading": "No Thanks and Thank You",
+ "source": "Bài đọc phỏng theo Good Table Manners – Ann Ingalls (The Child's World, 2013), tr. 16–21.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Good Table Manners (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "Kind Words at the Table",
+  "paras": [
+   {
+    "label": "A",
+    "text": "Not everyone likes the same food, so it's useful to know how to {refuse|refuse} politely. If a dish is new to you, try a tiny bite first; you might like it more than you expect. But if you really don't {fancy|fancy} fish eggs or frog's legs, simply say, \"No, thank you.\" Never say, \"That smells {rotten|rotten}!\" You could hurt your host's feelings."
+   },
+   {
+    "label": "B",
+    "text": "Remember that cooking dinner for guests takes a lot of {effort|effort}. Think about that before you say anything {unkind|unkind} about the food."
+   },
+   {
+    "label": "C",
+    "text": "When the meal is over, say something nice to the cook and the host, and thank them for the delicious food. If you didn't enjoy it, you can still find something kind to say, like, \"The flowers on the table are so pretty!\""
+   },
+   {
+    "label": "D",
+    "text": "Wait to be {excused|excused} before you leave the table. Until then, stay in your seat, listen to the conversation and {join in|join in} if you like. And, of course, thank your host for inviting you."
+   },
+   {
+    "label": "E",
+    "text": "Now you know which fork to use and which way to pass the pasta. Keep practising, and soon you will {impress|impress} everyone with your table manners. You might even be invited back! Before long, your manners will be {finger-licking good|finger-licking good}."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "refuse",
+   "word": "refuse",
+   "ipa": "/rɪˈfjuːz/",
+   "pos": "động từ",
+   "vi": "từ chối"
+  },
+  {
+   "key": "fancy",
+   "word": "fancy",
+   "ipa": "/ˈfænsi/",
+   "pos": "động từ",
+   "vi": "thích, muốn (ăn)"
+  },
+  {
+   "key": "rotten",
+   "word": "rotten",
+   "ipa": "/ˈrɒtn/",
+   "pos": "tính từ",
+   "vi": "thối, hỏng"
+  },
+  {
+   "key": "effort",
+   "word": "effort",
+   "ipa": "/ˈefət/",
+   "pos": "danh từ",
+   "vi": "công sức"
+  },
+  {
+   "key": "unkind",
+   "word": "unkind",
+   "ipa": "/ˌʌnˈkaɪnd/",
+   "pos": "tính từ",
+   "vi": "không tử tế"
+  },
+  {
+   "key": "excused",
+   "word": "excuse",
+   "ipa": "/ɪkˈskjuːz/",
+   "pos": "động từ",
+   "vi": "cho phép (rời đi)"
+  },
+  {
+   "key": "join in",
+   "word": "join in",
+   "ipa": "/dʒɔɪn ˈɪn/",
+   "pos": "cụm động từ",
+   "vi": "tham gia"
+  },
+  {
+   "key": "impress",
+   "word": "impress",
+   "ipa": "/ɪmˈpres/",
+   "pos": "động từ",
+   "vi": "gây ấn tượng"
+  },
+  {
+   "key": "finger-licking good",
+   "word": "finger-licking good",
+   "ipa": "/ˈfɪŋɡə lɪkɪŋ/",
+   "pos": "cụm từ",
+   "vi": "ngon đến mút tay"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "plain": true,
+   "title": "Part 1 · Which paragraph?",
+   "pick": "Chọn đoạn",
+   "instr": "Đoạn nào (A–E) chứa thông tin dưới đây?",
+   "options": [
+    "Paragraph A",
+    "Paragraph B",
+    "Paragraph C",
+    "Paragraph D",
+    "Paragraph E"
+   ],
+   "items": [
+    {
+     "label": "A paragraph that gives an example of a kind comment that isn't about the food",
+     "answer": 2,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn C: khen hoa trên bàn."
+    },
+    {
+     "label": "A paragraph that suggests tasting something before deciding",
+     "answer": 0,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn A: *try a tiny bite first.*"
+    },
+    {
+     "label": "A paragraph that encourages you to keep practising",
+     "answer": 4,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn E: *Keep practising.*"
+    },
+    {
+     "label": "A paragraph that reminds you how hard cooking can be",
+     "answer": 1,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn B: *takes a lot of effort.*"
+    },
+    {
+     "label": "A paragraph that explains when you may leave the table",
+     "answer": 3,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn D: *Wait to be excused.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "What does the writer suggest if a food is new to you?",
+     "options": [
+      "Try a tiny bite first.",
+      "Refuse it straight away.",
+      "Smell it carefully.",
+      "Ask for something else."
+     ],
+     "why": "*try a tiny bite first.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "Saying \"That smells rotten!\" is a polite way to refuse food.",
+     "answer": false,
+     "why": "Sai. *Never say… You could hurt your host's feelings.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "Why should you avoid saying unkind things about the food?",
+     "options": [
+      "The host has made a big effort to cook it.",
+      "The food might be cold.",
+      "The other guests will eat it.",
+      "It may come from a restaurant."
+     ],
+     "why": "*cooking dinner for guests takes a lot of effort.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why might a guest mention the flowers after a meal?",
+     "options": [
+      "to say something kind without lying about the food",
+      "because they want to take the flowers home",
+      "because the flowers can be eaten",
+      "to change the subject to gardening"
+     ],
+     "why": "Không thích món ăn vẫn có thể khen điều khác, thật lòng mà tế nhị."
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "According to (D), you may leave the table as soon as you finish eating.",
+     "answer": false,
+     "why": "Sai. *Wait to be excused before you leave the table.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to (E), what might happen if you have great table manners?",
+     "options": [
+      "You might be invited back.",
+      "You might have to cook next time.",
+      "You will sit at a different table.",
+      "You will win a prize."
+     ],
+     "why": "*You might even be invited back!*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "How does the boy feel about the food?",
+     "options": [
+      "He doesn't like it.",
+      "He loves it.",
+      "He is very hungry.",
+      "He wants to cook it himself."
+     ],
+     "why": "Bịt mũi, nhăn mặt → không thích.",
+     "image": "images/tm-refuse.jpg",
+     "alt": "A boy holds his nose and pulls a face at a plate of food while a woman serves something from a bowl"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What would be the most polite thing for the boy to say?",
+     "options": [
+      "\"No, thank you.\"",
+      "\"That smells rotten!\"",
+      "\"Yuck! Take it away!\"",
+      "\"I'll bring a sandwich next time.\""
+     ],
+     "why": "Đoạn A: *simply say, \"No, thank you.\"*",
+     "image": "images/tm-refuse.jpg",
+     "alt": "A boy holds his nose and pulls a face at a plate of food while a woman serves something from a bowl"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which paragraph matches this picture best?",
+     "options": [
+      "Paragraph C",
+      "Paragraph A",
+      "Paragraph D",
+      "Paragraph E"
+     ],
+     "why": "Đoạn C: *The flowers on the table are so pretty!*",
+     "image": "images/tm-flowers.jpg",
+     "alt": "A smiling girl at a table points to a vase of flowers while the host stands beside her holding a plate"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "Dinner at Lucy's",
+   "text": "Last night I had dinner at my friend Lucy's house. [1] I had never tried it before, and it looked a bit strange. [2] After dinner, I waited until Lucy's mum said we could leave the table. [3]",
+   "options": [
+    "Her dad served a spicy fish curry.",
+    "Then I ran out of the room before dessert.",
+    "Her dad had ordered the same pizza that I eat every week.",
+    "I took a small bite, and to my surprise, it was delicious!",
+    "Before I went home, I thanked them both for inviting me."
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Cần món ăn được nhắc (*it*)."
+    },
+    {
+     "answer": 3,
+     "tag": "Liên kết",
+     "why": "Thử một miếng nhỏ (đoạn A)."
+    },
+    {
+     "answer": 4,
+     "tag": "Liên kết",
+     "why": "Kết: cảm ơn chủ nhà."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…if you really don't fancy fish eggs* (A). If you don't **fancy** something, you…",
+     "options": [
+      "don't want it",
+      "can't afford it",
+      "don't recognise it",
+      "are allergic to it"
+     ],
+     "why": "**Fancy** = muốn, thích."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Wait to be excused* (D). To **be excused** is to…",
+     "options": [
+      "be given permission to leave",
+      "be told off",
+      "be invited",
+      "be served first"
+     ],
+     "why": "**Be excused** = được phép rời đi."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…your manners will be finger-licking good* (E). Why is this phrase funny here?",
+     "options": [
+      "It is usually used about tasty food, not manners.",
+      "You should lick your fingers.",
+      "The food will be sticky.",
+      "Manners are a kind of food."
+     ],
+     "why": "**Finger-licking good** thường nói về đồ ăn ngon; tác giả dùng đùa cho phép lịch sự."
+    }
+   ]
+  }
+ ]
+}

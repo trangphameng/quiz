@@ -1,0 +1,339 @@
+{
+ "id": "L18",
+ "book": "Good Manners with Family",
+ "pageTitle": "Lesson 18 · Privacy and Family Dinners",
+ "eyebrow": "Lesson 18 · B1 · Good Manners with Family · 20 câu",
+ "heading": "Privacy and Family Dinners",
+ "source": "Bài đọc phỏng theo Good Manners with Family – Ann Ingalls (The Child's World, 2013), tr. 8–11.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Good Manners with Family (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "Knock First, Then Pitch In",
+  "paras": [
+   {
+    "label": "A",
+    "text": "Your bedroom is a {private|private} place. It holds your own things, and there may be some, like a diary, that you don't want anyone else to see. Other people in your family feel the same way about their rooms, so respect their {privacy|privacy}. Don't look in their chests of drawers or {wardrobes|wardrobes}, and never take anything unless they say it's OK."
+   },
+   {
+    "label": "B",
+    "text": "If a door is closed, knock before you go in. Say who you are: \"It's Michael. May I come in?\" Then wait until the person says you can enter. If it is the bathroom, make sure it is empty before you open the door!"
+   },
+   {
+    "label": "C",
+    "text": "A family dinner is a time when everyone gets together to share a meal and talk about their day. But it is not like eating in a restaurant, where someone else does all the work. At home, you need to {pitch in|pitch in}. Offer to help with something simple, like {tearing|tearing} lettuce for a salad. Help {lay the table|lay the table}, clear it afterwards and offer to help wash the dishes."
+   },
+   {
+    "label": "D",
+    "text": "Making a meal is hard work, so always thank the cook. It doesn't matter if you didn't like the Brussels {sprouts|sprouts}. Mum or Dad did their best to make a {healthy|healthy} meal for the whole family."
+   },
+   {
+    "label": "E",
+    "text": "Table manners {vary|vary} from country to country. In Brazil, it is rude to leave food on your plate, but in Egypt, leaving a little food is considered polite."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "private",
+   "word": "private",
+   "ipa": "/ˈpraɪvət/",
+   "pos": "tính từ",
+   "vi": "riêng tư"
+  },
+  {
+   "key": "privacy",
+   "word": "privacy",
+   "ipa": "/ˈprɪvəsi/",
+   "pos": "danh từ",
+   "vi": "sự riêng tư"
+  },
+  {
+   "key": "wardrobes",
+   "word": "wardrobe",
+   "ipa": "/ˈwɔːdrəʊb/",
+   "pos": "danh từ",
+   "vi": "tủ quần áo"
+  },
+  {
+   "key": "pitch in",
+   "word": "pitch in",
+   "ipa": "/pɪtʃ ˈɪn/",
+   "pos": "cụm động từ",
+   "vi": "chung tay góp sức"
+  },
+  {
+   "key": "tearing",
+   "word": "tear",
+   "ipa": "/teə(r)/",
+   "pos": "động từ",
+   "vi": "xé"
+  },
+  {
+   "key": "lay the table",
+   "word": "lay the table",
+   "ipa": "/leɪ ðə ˈteɪbl/",
+   "pos": "cụm từ",
+   "vi": "bày bàn ăn"
+  },
+  {
+   "key": "sprouts",
+   "word": "(Brussels) sprouts",
+   "ipa": "/spraʊts/",
+   "pos": "danh từ",
+   "vi": "cải Bruxen (bắp cải tí hon)"
+  },
+  {
+   "key": "healthy",
+   "word": "healthy",
+   "ipa": "/ˈhelθi/",
+   "pos": "tính từ",
+   "vi": "tốt cho sức khoẻ"
+  },
+  {
+   "key": "vary",
+   "word": "vary",
+   "ipa": "/ˈveəri/",
+   "pos": "động từ",
+   "vi": "khác nhau"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "plain": true,
+   "title": "Part 1 · Which paragraph?",
+   "pick": "Chọn đoạn",
+   "instr": "Đoạn nào (A–E) chứa thông tin dưới đây?",
+   "options": [
+    "Paragraph A",
+    "Paragraph B",
+    "Paragraph C",
+    "Paragraph D",
+    "Paragraph E"
+   ],
+   "items": [
+    {
+     "label": "A paragraph that tells you exactly what to say outside a closed door",
+     "answer": 1,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn B: *It's Michael. May I come in?*"
+    },
+    {
+     "label": "A paragraph that mentions something you might want to keep secret",
+     "answer": 0,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn A: nhật ký (*diary*)."
+    },
+    {
+     "label": "A paragraph that compares a family meal with eating out",
+     "answer": 2,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn C: *not like eating in a restaurant.*"
+    },
+    {
+     "label": "A paragraph that gives two opposite customs",
+     "answer": 4,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn E: Brazil và Ai Cập trái ngược nhau."
+    },
+    {
+     "label": "A paragraph that mentions a vegetable some people dislike",
+     "answer": 3,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn D: *Brussels sprouts.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why does the writer mention a diary in (A)?",
+     "options": [
+      "as an example of something people want to keep private",
+      "to suggest that everyone should keep a diary",
+      "to show how to write about your family",
+      "because diaries are often lost"
+     ],
+     "why": "Nhật ký là ví dụ cho đồ riêng tư."
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "You may take things from your sister's room if she is not at home.",
+     "answer": false,
+     "why": "Sai. *never take anything unless they say it's OK.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "After knocking on a closed door, what should you do?",
+     "options": [
+      "Wait until the person says you can come in.",
+      "Open the door straight away.",
+      "Knock again more loudly.",
+      "Walk away."
+     ],
+     "why": "*wait until the person says you can enter.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to (C), how is a family dinner different from eating in a restaurant?",
+     "options": [
+      "At home, everyone should help.",
+      "At home, the food is always healthier.",
+      "In a restaurant, you must talk about your day.",
+      "In a restaurant, you clear the table yourself."
+     ],
+     "why": "*At home, you need to pitch in.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says you should only thank the cook if you liked the food.",
+     "answer": false,
+     "why": "Sai. *It doesn't matter if you didn't like the Brussels sprouts.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "In which country is leaving a little food on your plate polite?",
+     "options": [
+      "Egypt",
+      "Brazil",
+      "India",
+      "Japan"
+     ],
+     "why": "*in Egypt, leaving a little food is considered polite.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What is Michael doing right?",
+     "options": [
+      "knocking and asking before he goes in",
+      "opening the door without asking",
+      "shouting at his sister",
+      "reading her diary"
+     ],
+     "why": "Đoạn B: gõ cửa, xưng tên, xin phép.",
+     "image": "images/fm-knock.jpg",
+     "alt": "A boy knocks on a closed bedroom door and says: It's Michael. May I come in? A girl peeps out from behind the door."
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which paragraph does this picture match best?",
+     "options": [
+      "Paragraph C",
+      "Paragraph A",
+      "Paragraph B",
+      "Paragraph E"
+     ],
+     "why": "Đoạn C: *offer to help wash the dishes.*",
+     "image": "images/fm-dishes.jpg",
+     "alt": "A girl stands next to her mother at the kitchen sink and asks: May I help wash the dishes?"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which phrase from the text describes what the girl is doing?",
+     "options": [
+      "pitching in",
+      "respecting privacy",
+      "leaving food on her plate",
+      "knocking on a door"
+     ],
+     "why": "Phụ giúp việc nhà = **pitch in**.",
+     "image": "images/fm-dishes.jpg",
+     "alt": "A girl stands next to her mother at the kitchen sink and asks: May I help wash the dishes?"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "Sunday dinner",
+   "text": "Every Sunday, my grandma cooks a big dinner for the whole family. [1] This week, she made fish soup, which I don't really like. [2] After dinner, I helped my cousin clear the table. [3]",
+   "options": [
+    "We always go to a restaurant on Sundays so that nobody has to cook.",
+    "I usually help by laying the table and tearing lettuce for the salad.",
+    "Grandma had forgotten to buy any food that day.",
+    "I still ate some and told her it was kind of her to cook for us all.",
+    "Then I gave Grandma a hug and thanked her for the meal."
+   ],
+   "items": [
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Giới thiệu việc mình hay phụ giúp."
+    },
+    {
+     "answer": 3,
+     "tag": "Liên kết",
+     "why": "Không thích món ăn nhưng vẫn lịch sự (ý đoạn D)."
+    },
+    {
+     "answer": 4,
+     "tag": "Liên kết",
+     "why": "Kết: cảm ơn người nấu."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*At home, you need to pitch in* (C). To **pitch in** means to…",
+     "options": [
+      "join in and help",
+      "throw a ball",
+      "complain loudly",
+      "stay outside"
+     ],
+     "why": "**Pitch in** = cùng góp sức."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Help lay the table* (C). To **lay the table** means to…",
+     "options": [
+      "put plates, cutlery and glasses on it",
+      "lie down on the table",
+      "clean the table",
+      "buy a new table"
+     ],
+     "why": "**Lay the table** = bày bàn ăn."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Table manners vary from country to country* (E). **Vary** means…",
+     "options": [
+      "are different",
+      "stay the same",
+      "become stricter",
+      "disappear"
+     ],
+     "why": "**Vary** = khác nhau."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "id": "L14",
+ "book": "Being a Good Guest",
+ "pageTitle": "Lesson 14 · Arriving the Right Way",
+ "eyebrow": "Lesson 14 · B1 · Being a Good Guest · 20 câu",
+ "heading": "Arriving the Right Way",
+ "source": "Bài đọc phỏng theo Being a Good Guest – Ann Ingalls (The Child's World, 2013), tr. 8–11.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Being a Good Guest (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "At the Front Door",
+  "paras": [
+   {
+    "label": "A",
+    "text": "The moment you step through a friend's front door, your manners are on show. First, take off your hat, even if your hair is {sticking up|sticking up} in every direction underneath. It is a small but important sign of {respect|respect}."
+   },
+   {
+    "label": "B",
+    "text": "Next, take off your shoes and leave them neatly on the {doormat|doormat}. This is especially important on snowy or rainy days. Nobody wants {muddy|muddy} footprints or {slushy|slushy} puddles all over their clean floors."
+   },
+   {
+    "label": "C",
+    "text": "In Japan, taking off your shoes is a firm tradition. People remove them just inside the front door, and the host usually leaves a pair of {slippers|slippers} there for each guest to wear around the house."
+   },
+   {
+    "label": "D",
+    "text": "Good guests also avoid surprises. Always phone before you {drop in on|drop in on} a friend or {relative|relative}. Never just appear on someone's {doorstep|doorstep} with a suitcase! Your friend may already have other plans, and an unexpected visitor can be stressful."
+   },
+   {
+    "label": "E",
+    "text": "When you are invited to stay, tell your friend what time you will arrive and when you will be going home. Then stick to it. A good guest does not {outstay their welcome|outstay their welcome} by staying as long as they please."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "sticking up",
+   "word": "stick up",
+   "ipa": "/stɪk ʌp/",
+   "pos": "cụm động từ",
+   "vi": "dựng đứng, chĩa lên"
+  },
+  {
+   "key": "respect",
+   "word": "respect",
+   "ipa": "/rɪˈspekt/",
+   "pos": "danh từ",
+   "vi": "sự tôn trọng"
+  },
+  {
+   "key": "doormat",
+   "word": "doormat",
+   "ipa": "/ˈdɔːmæt/",
+   "pos": "danh từ",
+   "vi": "thảm chùi chân"
+  },
+  {
+   "key": "muddy",
+   "word": "muddy",
+   "ipa": "/ˈmʌdi/",
+   "pos": "tính từ",
+   "vi": "lấm bùn"
+  },
+  {
+   "key": "slushy",
+   "word": "slushy",
+   "ipa": "/ˈslʌʃi/",
+   "pos": "tính từ",
+   "vi": "lầy nhầy (tuyết tan)"
+  },
+  {
+   "key": "slippers",
+   "word": "slippers",
+   "ipa": "/ˈslɪpəz/",
+   "pos": "danh từ",
+   "vi": "dép đi trong nhà"
+  },
+  {
+   "key": "drop in on",
+   "word": "drop in on",
+   "ipa": "/drɒp ˈɪn ɒn/",
+   "pos": "cụm động từ",
+   "vi": "ghé thăm (không hẹn trước)"
+  },
+  {
+   "key": "relative",
+   "word": "relative",
+   "ipa": "/ˈrelətɪv/",
+   "pos": "danh từ",
+   "vi": "họ hàng"
+  },
+  {
+   "key": "doorstep",
+   "word": "doorstep",
+   "ipa": "/ˈdɔːstep/",
+   "pos": "danh từ",
+   "vi": "bậc cửa, trước cửa nhà"
+  },
+  {
+   "key": "outstay their welcome",
+   "word": "outstay your welcome",
+   "ipa": "/ˌaʊtˈsteɪ/",
+   "pos": "cụm từ",
+   "vi": "ở lâu quá mức chủ nhà mong muốn"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "plain": true,
+   "title": "Part 1 · Which paragraph?",
+   "pick": "Chọn đoạn",
+   "instr": "Đoạn nào (A–E) chứa thông tin dưới đây?",
+   "options": [
+    "Paragraph A",
+    "Paragraph B",
+    "Paragraph C",
+    "Paragraph D",
+    "Paragraph E"
+   ],
+   "items": [
+    {
+     "label": "A paragraph that says your hair is no excuse to break a rule",
+     "answer": 0,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn A: *even if your hair is sticking up…*"
+    },
+    {
+     "label": "A paragraph that explains why the weather makes one rule more important",
+     "answer": 1,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn B: *especially important on snowy or rainy days.*"
+    },
+    {
+     "label": "A paragraph that describes a custom in another country",
+     "answer": 2,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn C: phong tục ở Nhật Bản."
+    },
+    {
+     "label": "A paragraph that warns against arriving with a suitcase without warning",
+     "answer": 3,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn D: *Never just appear… with a suitcase!*"
+    },
+    {
+     "label": "A paragraph that advises you to say when you will leave",
+     "answer": 4,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn E: *when you will be going home.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why does the writer mention hair in (A)?",
+     "options": [
+      "to show you should take off your hat even if your hair looks messy",
+      "to suggest you should brush your hair before a visit",
+      "to explain why hats are fashionable",
+      "to say that messy hair is rude"
+     ],
+     "why": "*take off your hat, even if your hair is sticking up…*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer suggests keeping your shoes on when it is raining.",
+     "answer": false,
+     "why": "Sai. Bỏ giày ra *especially important on snowy or rainy days.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "What do hosts in Japan often leave by the front door?",
+     "options": [
+      "slippers for their guests",
+      "umbrellas",
+      "a doormat with each guest's name",
+      "a box of chocolates"
+     ],
+     "why": "*the host usually leaves a pair of slippers there for each guest.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to (D), why should you phone before visiting?",
+     "options": [
+      "Your friend may already have other plans.",
+      "Phone calls are cheaper than visits.",
+      "Your friend may want to meet you at the station.",
+      "It is the law in many countries."
+     ],
+     "why": "*Your friend may already have other plans.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "A surprise visit can cause stress for the person you are visiting.",
+     "answer": true,
+     "why": "Đúng. *an unexpected visitor can be stressful.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Ý chính",
+     "q": "What is the main message of the whole text?",
+     "options": [
+      "Think about your host's home and plans when you visit.",
+      "Always take your own slippers when you visit friends.",
+      "Visiting friends is too complicated.",
+      "Japanese homes are cleaner than other homes."
+     ],
+     "why": "Cả bài: giữ sạch nhà chủ, gọi trước, hẹn giờ về → nghĩ cho chủ nhà."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which piece of advice is the child following?",
+     "options": [
+      "taking off wet boots by the door",
+      "phoning before a visit",
+      "wearing slippers in the garden",
+      "bringing a suitcase"
+     ],
+     "why": "Đoạn B: cởi giày, để ở thảm cạnh cửa.",
+     "image": "images/gu-boots.jpg",
+     "alt": "A child in a woolly hat and scarf sits by a red front door pulling off wet boots next to a doormat, while a cat watches"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Why is this rule especially important in the picture?",
+     "options": [
+      "The weather is cold and wet.",
+      "The cat is hungry.",
+      "The door is locked.",
+      "The child is late."
+     ],
+     "why": "Mũ len, khăn, vũng nước → trời tuyết/mưa: *especially important on snowy or rainy days.*",
+     "image": "images/gu-boots.jpg",
+     "alt": "A child in a woolly hat and scarf sits by a red front door pulling off wet boots next to a doormat, while a cat watches"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What is the girl most likely doing?",
+     "options": [
+      "arranging a time to visit someone",
+      "ordering a pizza",
+      "doing her homework",
+      "complaining about her dog"
+     ],
+     "why": "Gọi điện + xem lịch → hẹn trước giờ đến (đoạn D–E).",
+     "image": "images/gu-phone.jpg",
+     "alt": "A girl talks on the phone while looking at a calendar; a dog sleeps on the floor"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "A surprise for Grandma",
+   "text": "Last winter my cousin Tom decided to visit Grandma without telling her. [1] When he knocked on the door, nobody answered. [2] Now Tom always phones before he visits. [3]",
+   "options": [
+    "He thought it would be a lovely surprise.",
+    "Grandma was so happy that she had cleaned the whole house for him.",
+    "He took off his boots and put on his slippers in the garden.",
+    "That way, Grandma has time to get ready, and she always bakes his favourite cake.",
+    "Grandma had gone to stay with her sister for the weekend."
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Giải thích vì sao Tom không báo trước."
+    },
+    {
+     "answer": 4,
+     "tag": "Liên kết",
+     "why": "Không ai mở cửa → bà đi vắng (*may already have other plans*)."
+    },
+    {
+     "answer": 3,
+     "tag": "Liên kết",
+     "why": "Lợi ích của việc gọi trước."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…even if your hair is sticking up* (A). Hair that is **sticking up** is…",
+     "options": [
+      "pointing upwards in a messy way",
+      "very long and straight",
+      "hidden under a hat",
+      "freshly washed"
+     ],
+     "why": "**Stick up** = dựng đứng lên."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Always phone before you drop in on a friend* (D). To **drop in on** someone means to…",
+     "options": [
+      "visit them, often without a fixed plan",
+      "fall over at their house",
+      "leave them a message",
+      "invite them to your home"
+     ],
+     "why": "**Drop in on** = ghé thăm."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*A good guest does not outstay their welcome* (E). To **outstay your welcome** means to…",
+     "options": [
+      "stay longer than your host wants",
+      "arrive too early",
+      "forget to say hello",
+      "leave without saying goodbye"
+     ],
+     "why": "**Out-** (vượt quá) + **stay** → ở lâu hơn chủ nhà mong muốn."
+    }
+   ]
+  }
+ ]
+}

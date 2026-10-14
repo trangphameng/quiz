@@ -1,0 +1,342 @@
+{
+ "id": "L19",
+ "book": "Good Manners with Family",
+ "pageTitle": "Lesson 19 · Borrowing and Sharing",
+ "eyebrow": "Lesson 19 · B1 · Good Manners with Family · 20 câu",
+ "heading": "Borrowing and Sharing",
+ "source": "Bài đọc phỏng theo Good Manners with Family – Ann Ingalls (The Child's World, 2013), tr. 12–15.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Good Manners with Family (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "Yours, Mine and Ours",
+  "paras": [
+   {
+    "label": "A",
+    "text": "Always ask before you {borrow|borrow} something from a family member. A simple \"May I borrow your book, please?\" is all it takes. Taking things without asking is never OK, even at home."
+   },
+   {
+    "label": "B",
+    "text": "If your sister {lends|lends} you her book, {treat|treat} it well. Don't let the pages get {ripped|ripped}, and don't spill juice on the cover. Give it back in exactly the same {condition|condition} as when she gave it to you. Then she will be happy to lend you other things in the future."
+   },
+   {
+    "label": "C",
+    "text": "When you return it, thank her: \"Thank you! I really enjoyed the book.\" These words show that you respect her things and {value|value} her kindness."
+   },
+   {
+    "label": "D",
+    "text": "In a family, everyone shares. You share your home, and you share food at the table. You should share your toys and games too. Let your little sister use your {felt-tip pens|felt-tip pens}, or show your brother how to play your new game."
+   },
+   {
+    "label": "E",
+    "text": "Sharing makes other people feel great because it shows that you want to include them. And let's be honest: most games are more fun with someone else. Sharing is not about losing something; it is about {gaining|gaining} a {playmate|playmate}."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "borrow",
+   "word": "borrow",
+   "ipa": "/ˈbɒrəʊ/",
+   "pos": "động từ",
+   "vi": "mượn (của ai)"
+  },
+  {
+   "key": "lends",
+   "word": "lend",
+   "ipa": "/lend/",
+   "pos": "động từ",
+   "vi": "cho (ai) mượn"
+  },
+  {
+   "key": "treat",
+   "word": "treat",
+   "ipa": "/triːt/",
+   "pos": "động từ",
+   "vi": "đối xử, giữ gìn"
+  },
+  {
+   "key": "ripped",
+   "word": "ripped",
+   "ipa": "/rɪpt/",
+   "pos": "tính từ",
+   "vi": "bị rách"
+  },
+  {
+   "key": "condition",
+   "word": "condition",
+   "ipa": "/kənˈdɪʃn/",
+   "pos": "danh từ",
+   "vi": "tình trạng"
+  },
+  {
+   "key": "value",
+   "word": "value",
+   "ipa": "/ˈvæljuː/",
+   "pos": "động từ",
+   "vi": "quý trọng"
+  },
+  {
+   "key": "felt-tip pens",
+   "word": "felt-tip pen",
+   "ipa": "/ˈfelt tɪp pen/",
+   "pos": "danh từ",
+   "vi": "bút dạ màu"
+  },
+  {
+   "key": "gaining",
+   "word": "gain",
+   "ipa": "/ɡeɪn/",
+   "pos": "động từ",
+   "vi": "có thêm, đạt được"
+  },
+  {
+   "key": "playmate",
+   "word": "playmate",
+   "ipa": "/ˈpleɪmeɪt/",
+   "pos": "danh từ",
+   "vi": "bạn cùng chơi"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "title": "Part 1 · Matching headings",
+   "instr": "Chọn tiêu đề phù hợp cho mỗi đoạn. Mỗi tiêu đề dùng một lần.",
+   "options": [
+    "Ask first",
+    "Look after what you borrow",
+    "Saying thanks when you give it back",
+    "Sharing everyday things",
+    "Why sharing is worth it"
+   ],
+   "items": [
+    {
+     "label": "Paragraph A",
+     "para": "A",
+     "answer": 0,
+     "tag": "Ý chính",
+     "why": "Đoạn A: hỏi trước khi mượn."
+    },
+    {
+     "label": "Paragraph B",
+     "para": "B",
+     "answer": 1,
+     "tag": "Ý chính",
+     "why": "Đoạn B: giữ gìn đồ mượn, trả nguyên vẹn."
+    },
+    {
+     "label": "Paragraph C",
+     "para": "C",
+     "answer": 2,
+     "tag": "Ý chính",
+     "why": "Đoạn C: cảm ơn khi trả."
+    },
+    {
+     "label": "Paragraph D",
+     "para": "D",
+     "answer": 3,
+     "tag": "Ý chính",
+     "why": "Đoạn D: chia sẻ nhà, đồ ăn, đồ chơi."
+    },
+    {
+     "label": "Paragraph E",
+     "para": "E",
+     "answer": 4,
+     "tag": "Ý chính",
+     "why": "Đoạn E: lý do chia sẻ đáng làm."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "What should you do before you borrow something?",
+     "options": [
+      "Ask the owner politely.",
+      "Wait until the owner goes out.",
+      "Tell your parents.",
+      "Buy a new one."
+     ],
+     "why": "*Always ask before you borrow something.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says it is fine to take things without asking at home.",
+     "answer": false,
+     "why": "Sai. *Taking things without asking is never OK, even at home.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to (B), why should you return things in good condition?",
+     "options": [
+      "so the owner will lend you things again",
+      "so you can sell them later",
+      "because your parents will check them",
+      "so you can keep them longer"
+     ],
+     "why": "*Then she will be happy to lend you other things in the future.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Ngôn ngữ",
+     "q": "How are the verbs **borrow** and **lend** used in the text?",
+     "options": [
+      "You borrow from someone; they lend to you.",
+      "They mean exactly the same thing.",
+      "You lend from someone; they borrow to you.",
+      "Borrow is for books; lend is for toys."
+     ],
+     "why": "*borrow something from a family member* / *your sister lends you her book.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "According to (E), most games are more fun when you play alone.",
+     "answer": false,
+     "why": "Sai. *most games are more fun with someone else.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Thông điệp",
+     "q": "*Sharing is not about losing something; it is about gaining a playmate.* What does this mean?",
+     "options": [
+      "When you share, you get company in return.",
+      "You will lose your toys if you share.",
+      "You should only share with friends.",
+      "Sharing is a kind of game."
+     ],
+     "why": "Chia sẻ không mất gì mà còn có thêm bạn chơi."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What is happening in this picture?",
+     "options": [
+      "A book is being handed over and someone is saying thanks.",
+      "Two children are arguing over a book.",
+      "A boy is tearing a book.",
+      "A girl is reading a diary."
+     ],
+     "why": "Trao sách + *Thank you!* (đoạn B–C).",
+     "image": "images/fm-book.jpg",
+     "alt": "A boy hands a book to a girl; a speech bubble says: Thank you!"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "If the boy is giving back a book he borrowed, what should it look like?",
+     "options": [
+      "the same as when he borrowed it",
+      "covered in stickers",
+      "missing a few pages",
+      "wet with juice"
+     ],
+     "why": "*in exactly the same condition as when she gave it to you.*",
+     "image": "images/fm-book.jpg",
+     "alt": "A boy hands a book to a girl; a speech bubble says: Thank you!"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which advice from the text are the children following?",
+     "options": [
+      "sharing their pens",
+      "knocking before going in",
+      "doing their chores",
+      "returning a book"
+     ],
+     "why": "Đoạn D: *Let your little sister use your felt-tip pens.*",
+     "image": "images/fm-markers.jpg",
+     "alt": "A girl and a boy sit at a table drawing together with felt-tip pens"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "The new game",
+   "text": "For my birthday, I got a new video game. [1] At first, I didn't want to let him touch it. [2] Now we play it together every weekend. [3]",
+   "options": [
+    "My little brother kept asking if he could have a go.",
+    "I sold it the next day because it was so boring.",
+    "My brother broke it as soon as he touched it.",
+    "But then Mum reminded me that games are more fun with two players, so I showed him how to play.",
+    "He's actually better at it than I am!"
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Cần giới thiệu *him* → em trai."
+    },
+    {
+     "answer": 3,
+     "tag": "Liên kết",
+     "why": "Chuyển biến: từ không muốn → chia sẻ."
+    },
+    {
+     "answer": 4,
+     "tag": "Liên kết",
+     "why": "Kết vui khi chơi cùng."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Don't let the pages get ripped* (B). **Ripped** means…",
+     "options": [
+      "torn",
+      "wet",
+      "neatly folded",
+      "printed"
+     ],
+     "why": "**Ripped** = bị rách."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…in exactly the same condition* (B). **Condition** here means…",
+     "options": [
+      "the state something is in",
+      "a rule you must follow",
+      "the weather",
+      "the price"
+     ],
+     "why": "**Condition** = tình trạng."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…it is about gaining a playmate* (E). A **playmate** is…",
+     "options": [
+      "someone you play with",
+      "a type of game",
+      "a toy box",
+      "a PE teacher"
+     ],
+     "why": "**Play** + **mate** (bạn) → bạn cùng chơi."
+    }
+   ]
+  }
+ ]
+}

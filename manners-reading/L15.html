@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lesson 15 · In Someone Else&#x27;s Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+:root{
+  --bg:#EDF1F6; --sheet:#FFFFFF; --ink:#1A2333; --muted:#5B667A; --line:#D5DCE7;
+  --accent:#2C4A9E; --accent-soft:#E3E9F8; --mark:#FFE27A; --mark-ink:#1A2333;
+  --good:#1D7F55; --good-soft:#E1F4EA; --bad:#B83A33; --bad-soft:#FBE6E4;
+  --f-ui:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-read:"Literata", Georgia, "Times New Roman", serif;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111722; --sheet:#1A2230; --ink:#E6EBF4; --muted:#9BA6B9; --line:#2D374A;
+  --accent:#93AAFF; --accent-soft:#232F4D; --mark:#6B5A1C; --mark-ink:#FFF3C9;
+  --good:#58C892; --good-soft:#163428; --bad:#F2837B; --bad-soft:#3A1E1D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111722; --sheet:#1A2230; --ink:#E6EBF4; --muted:#9BA6B9; --line:#2D374A;
+  --accent:#93AAFF; --accent-soft:#232F4D; --mark:#6B5A1C; --mark-ink:#FFF3C9;
+  --good:#58C892; --good-soft:#163428; --bad:#F2837B; --bad-soft:#3A1E1D; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:16px;line-height:1.55;padding:0 16px 96px}
+button,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto}
+
+.bar{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);margin:0 -16px;padding:10px 16px}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.bar a.home{color:var(--accent);text-decoration:none;font-size:14px;font-weight:600;white-space:nowrap}
+.bar-title{font-weight:600;font-size:14px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.score{font-size:13px;font-variant-numeric:tabular-nums;display:flex;gap:10px;align-items:center;white-space:nowrap}
+.meter{width:110px;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+@media (max-width:560px){.bar-title{display:none}.score{flex:1;justify-content:flex-end}.meter{width:70px}}
+
+header.hero{padding:28px 0 8px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-family:var(--f-read);font-weight:600;font-size:clamp(28px,6vw,40px);line-height:1.15;margin:6px 0 10px;text-wrap:balance}
+.lede{color:var(--muted);max-width:70ch;margin:0}
+.parts-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.parts-nav a{font-size:13px;color:var(--accent);text-decoration:none;background:var(--sheet);border:1px solid var(--line);border-radius:99px;padding:5px 12px}
+
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start;margin-top:24px}
+@media (max-width:900px){.layout{grid-template-columns:1fr}}
+.reading{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px}
+@media (max-width:900px){.reading{position:static;max-height:none;overflow:visible}}
+.reading h2{font-family:var(--f-read);font-weight:600;font-size:24px;margin:2px 0 14px;line-height:1.25}
+.para{display:grid;grid-template-columns:2em 1fr;gap:4px;margin:0 0 14px;font-family:var(--f-read);font-size:17px;line-height:1.7}
+.para .lb{font-family:var(--f-ui);font-weight:700;color:var(--accent);font-size:15px;padding-top:2px}
+.para.flash{animation:flash 1.4s}
+@keyframes flash{0%,60%{background:var(--accent-soft)}100%{background:transparent}}
+.src{font-size:12px;color:var(--muted);margin-top:8px;border-top:1px solid var(--line);padding-top:10px}
+.w{background:linear-gradient(transparent 55%,var(--mark) 55%);color:var(--mark-ink);border:0;padding:0 1px;cursor:pointer;font-family:inherit;font-size:inherit;line-height:inherit;border-radius:2px}
+.w:hover,.w.on{background:var(--mark)}
+details.vocab{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+details.vocab summary{cursor:pointer;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.vlist{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0 18px}
+.vlist li{display:grid;grid-template-columns:1fr;gap:0 8px;padding:8px 0;border-top:1px solid var(--line)}
+.vw{font-weight:600}.vw small{font-weight:400;color:var(--muted);margin-left:6px}
+.vvi{font-size:14px;grid-column:1}
+
+section.part{margin-bottom:28px;scroll-margin-top:70px}
+.part h3{font-family:var(--f-read);font-weight:600;font-size:22px;margin:0 0 4px}
+.instr{color:var(--muted);font-size:14px;margin:0 0 10px}
+.q{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin-top:10px}
+.q-top{display:flex;gap:10px;align-items:baseline}
+.qn{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent);min-width:2em}
+.qt{flex:1;min-width:0}
+.tag{display:inline-block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-right:6px;vertical-align:1px}
+.quote{font-family:var(--f-read);font-style:italic}
+.fig{margin:12px 0 0;border-radius:10px;overflow:hidden;border:1px solid var(--line);max-width:240px;background:var(--bg)}
+.who{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:10px;margin-top:16px;max-width:620px}
+@media (max-width:520px){.who{grid-template-columns:1fr}}
+.who label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--muted)}
+.who input,.who select{font:inherit;font-size:16px;color:var(--ink);background:var(--sheet);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.who input:focus,.who select:focus{border-color:var(--accent)}
+.who.need input:placeholder-shown,.who.need select:invalid{border-color:var(--bad);background:var(--bad-soft)}
+.submit{flex-basis:100%;border-top:1px solid var(--line);padding-top:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.submit .btn{font-size:16px;padding:10px 18px;font-weight:600}
+.submit .btn:disabled{opacity:.5;cursor:not-allowed}
+#sendStatus{font-size:14px;flex:1;min-width:200px}
+#sendStatus.ok{color:var(--good);font-weight:600}
+#sendStatus a{color:var(--accent);font-weight:600}
+.credit{margin-top:16px;font-size:12px;color:var(--muted);line-height:1.5}
+.fig img{display:block;width:100%;height:auto}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.opt{width:100%;text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:9px 12px;cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt .k{font-weight:700;color:var(--muted);min-width:1em}
+.opt:disabled{cursor:default}
+.ok{border-color:var(--good)!important;background:var(--good-soft)!important}
+.ok .k{color:var(--good)}
+.no{border-color:var(--bad)!important;background:var(--bad-soft)!important}
+.no .k{color:var(--bad)}
+.why{margin-top:12px;border-radius:10px;padding:10px 12px;font-size:15px;background:var(--accent-soft)}
+.why .vd{display:block;font-size:13px;font-weight:700;margin-bottom:2px}
+.why.good .vd{color:var(--good)}.why.bad .vd{color:var(--bad)}
+.goto{border:0;background:none;color:var(--accent);font-size:13px;padding:0;cursor:pointer;text-decoration:underline;margin-left:4px}
+
+.bank{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin:0}
+.bank ol{margin:0;padding-left:1.6em}
+.bank li{padding:3px 0}
+.bank li::marker{font-weight:700;color:var(--accent)}
+.sel{width:100%;margin-top:10px;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:9px 12px;cursor:pointer}
+.sel:disabled{cursor:default;opacity:1}
+.gaptext{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;font-family:var(--f-read);font-size:17px;line-height:1.75;margin-bottom:10px}
+.gaptext h4{font-family:var(--f-ui);font-size:15px;margin:0 0 6px}
+.gap{display:inline-block;min-width:2.6em;text-align:center;font-family:var(--f-ui);font-size:14px;font-weight:700;color:var(--accent);border-bottom:2px solid var(--accent);margin:0 2px;padding:0 4px}
+.gap.filled{font-family:var(--f-read);font-weight:400;font-style:italic;color:var(--good);border-color:var(--good);text-align:left}
+
+.result{margin-top:20px;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.big{font-family:var(--f-read);font-size:44px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+.big small{font-size:20px;color:var(--muted)}
+.result p{margin:0;flex:1;min-width:200px}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--sheet);border-radius:99px;padding:7px 14px;font-size:14px;cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+
+.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:25;border:0;background:var(--accent);color:var(--sheet);border-radius:99px;padding:11px 16px;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.2);cursor:pointer}
+@media (max-width:900px){.fab{display:block}}
+.drawer{position:fixed;inset:0;z-index:40;background:rgba(10,15,25,.45);display:flex;align-items:flex-end}
+.drawer[hidden]{display:none}
+.drawer .panel{background:var(--sheet);width:100%;max-height:82vh;overflow:auto;border-radius:16px 16px 0 0;padding:18px 18px 28px}
+.drawer .close{float:right}
+
+.pop{position:absolute;z-index:50;max-width:min(320px,calc(100vw - 32px));background:var(--ink);color:var(--bg);border-radius:10px;padding:10px 12px;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.pop .ipa{opacity:.75;margin-left:6px}
+.pop .row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pop button{background:transparent;border:1px solid currentColor;color:inherit;border-radius:99px;padding:2px 10px;font-size:12px;cursor:pointer}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-in">
+  <a class="home" href="index.html">← Mục lục</a>
+  <div class="bar-title" id="barTitle"></div>
+  <div class="score"><span id="scoreTxt"></span><span class="meter"><i id="meter"></i></span></div>
+</div></div>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="h1"></h1>
+    <p class="lede">Đọc bài, chạm vào <span class="w" style="cursor:default">từ tô vàng</span> để xem nghĩa, rồi làm lần lượt các phần bên dưới. Chọn đáp án là thấy ngay đúng/sai và lời giải thích bằng tiếng Việt.</p>
+    <div class="who" id="who">
+      <label>Your name / Họ và tên<input id="stuName" type="text" autocomplete="name" placeholder="Nhập họ và tên"></label>
+      <label>Class / Lớp<select id="stuClass" required><option value="" disabled selected>— Chọn lớp —</option><option>A2</option><option>B1</option><option>B2</option><option>IELTS</option><option>Khác</option></select></label>
+    </div>
+    <nav class="parts-nav" id="partsNav" aria-label="Các phần"></nav>
+  </header>
+
+  <div class="layout">
+    <aside class="reading" id="reading"></aside>
+    <main id="main"></main>
+  </div>
+</div>
+
+<button class="fab" id="fab" type="button">📖 Bài đọc</button>
+<div class="drawer" id="drawer" hidden><div class="panel" id="drawerPanel"></div></div>
+<div class="pop" id="pop" hidden></div>
+
+<script>
+const L = {"id": "L15", "book": "Being a Good Guest", "pageTitle": "Lesson 15 · In Someone Else's Home", "eyebrow": "Lesson 15 · B1 · Being a Good Guest · 20 câu", "heading": "In Someone Else's Home", "source": "Bài đọc phỏng theo Being a Good Guest – Ann Ingalls (The Child's World, 2013), tr. 12–15.", "credit": "Tranh minh hoạ: Ronnie Rooney, trong Being a Good Guest (The Child's World, 2013). Dùng cho mục đích học tập.", "reading": {"title": "Their House, Their Rules", "paras": [{"label": "A", "text": "When you visit a friend, stay with them. Don't {wander off|wander off} around the house on your own, opening doors to see what is behind them."}, {"label": "B", "text": "If you use the bathroom, do not open the cupboards or look in the drawers. It is not nice to be {nosy|nosy}. Staying for a {sleepover|sleepover} and forgot your toothpaste? Simply ask your host if you can use some of theirs, rather than searching for it."}, {"label": "C", "text": "Every family has its own {house rules|house rules}, and they may be different from the rules in your home. Perhaps shoes are not allowed upstairs, or nobody eats in the living room. If you are not sure, just ask. Following the rules shows respect for the whole family."}, {"label": "D", "text": "Always {tidy up|tidy up} after yourself. Put toys away after you play with them, and leave the bathroom {as clean as a whistle|as clean as a whistle}. Accidents happen, of course. If you break something, say how sorry you are and offer to fix it or {replace|replace} it."}, {"label": "E", "text": "At a sleepover, remember that other people want to sleep. Late at night, {whisper|whisper} and walk quietly. Don't {stomp|stomp} around like a dinosaur, or you might wake the whole house up!"}]}, "vocab": [{"key": "wander off", "word": "wander off", "ipa": "/ˈwɒndər ɒf/", "pos": "cụm động từ", "vi": "đi lang thang ra chỗ khác"}, {"key": "nosy", "word": "nosy", "ipa": "/ˈnəʊzi/", "pos": "tính từ", "vi": "tò mò, tọc mạch"}, {"key": "sleepover", "word": "sleepover", "ipa": "/ˈsliːpəʊvə(r)/", "pos": "danh từ", "vi": "ngủ lại nhà bạn"}, {"key": "house rules", "word": "house rules", "ipa": "/ˈhaʊs ruːlz/", "pos": "danh từ", "vi": "nội quy trong nhà"}, {"key": "tidy up", "word": "tidy up", "ipa": "/ˈtaɪdi ʌp/", "pos": "cụm động từ", "vi": "dọn dẹp"}, {"key": "as clean as a whistle", "word": "as clean as a whistle", "ipa": "/ˈwɪsl/", "pos": "thành ngữ", "vi": "sạch bong"}, {"key": "replace", "word": "replace", "ipa": "/rɪˈpleɪs/", "pos": "động từ", "vi": "thay thế (mua cái mới)"}, {"key": "whisper", "word": "whisper", "ipa": "/ˈwɪspə(r)/", "pos": "động từ", "vi": "nói thì thầm"}, {"key": "stomp", "word": "stomp", "ipa": "/stɒmp/", "pos": "động từ", "vi": "dậm chân thình thịch"}], "parts": [{"type": "match", "title": "Part 1 · Matching headings", "instr": "Chọn tiêu đề phù hợp cho mỗi đoạn. Mỗi tiêu đề dùng một lần.", "options": ["Quiet nights", "Every home has its own rules", "Clean-ups and accidents", "Stay close to your friend", "No snooping in the bathroom"], "items": [{"label": "Paragraph A", "para": "A", "answer": 3, "tag": "Ý chính", "why": "Đoạn A: ở cạnh bạn, không đi lang thang."}, {"label": "Paragraph B", "para": "B", "answer": 4, "tag": "Ý chính", "why": "Đoạn B: không lục tủ trong phòng tắm (*nosy*)."}, {"label": "Paragraph C", "para": "C", "answer": 1, "tag": "Ý chính", "why": "Đoạn C: mỗi nhà có **house rules** riêng."}, {"label": "Paragraph D", "para": "D", "answer": 2, "tag": "Ý chính", "why": "Đoạn D: dọn dẹp, làm vỡ đồ thì xin lỗi và đền."}, {"label": "Paragraph E", "para": "E", "answer": 0, "tag": "Ý chính", "why": "Đoạn E: ban đêm nói nhỏ, đi nhẹ."}]}, {"type": "questions", "title": "Part 2 · Reading comprehension", "instr": "Chọn đáp án đúng hoặc True / False.", "questions": [{"type": "mc", "tag": "Chi tiết", "q": "What does the writer say you should NOT do when visiting a friend?", "options": ["explore the house on your own", "play with your friend", "use the bathroom", "ask questions"], "why": "*Don't wander off around the house on your own.*"}, {"type": "tf", "tag": "Đúng / Sai", "q": "If you forget your toothpaste, you should look for some in the bathroom drawers.", "answer": false, "why": "Sai. *ask your host… rather than searching for it.*"}, {"type": "mc", "tag": "Chi tiết", "q": "According to (C), what should you do if you don't know a family's rules?", "options": ["Ask.", "Follow your own family's rules.", "Wait until someone tells you off.", "Go home early."], "why": "*If you are not sure, just ask.*"}, {"type": "mc", "tag": "Chi tiết", "q": "Which example of a house rule is given in (C)?", "options": ["Nobody eats in the living room.", "Everyone must go to bed at eight.", "Guests must bring slippers.", "Pets are not allowed indoors."], "why": "*…or nobody eats in the living room.*"}, {"type": "tf", "tag": "Đúng / Sai", "q": "The writer says you should offer to fix or replace something you break.", "answer": true, "why": "Đúng. *offer to fix it or replace it.*"}, {"type": "mc", "tag": "Suy luận", "q": "Why does the writer compare a noisy guest to a dinosaur in (E)?", "options": ["to describe heavy, noisy footsteps in a funny way", "because dinosaurs are popular at sleepovers", "to suggest guests should play dinosaur games", "because the host has a toy dinosaur"], "why": "Hình ảnh khủng long → bước chân nặng nề, ồn ào; cách nói hài hước."}]}, {"type": "questions", "title": "Part 3 · Picture tasks", "instr": "Quan sát tranh minh hoạ trong sách và trả lời.", "questions": [{"type": "mc", "tag": "Hình ảnh", "q": "What is the girl doing wrong?", "options": ["looking inside her host's bathroom cabinet", "stomping around at night", "leaving toys on the floor", "forgetting to say thank you"], "why": "Đoạn B: *do not open the cupboards or look in the drawers.*", "image": "images/gu-snoop.jpg", "alt": "A girl opens a bathroom mirror cabinet and bottles fall out all around her head"}, {"type": "mc", "tag": "Hình ảnh", "q": "Which word from the text best describes the girl's behaviour?", "options": ["nosy", "tidy", "patient", "quiet"], "why": "Lục tủ nhà người khác = **nosy**.", "image": "images/gu-snoop.jpg", "alt": "A girl opens a bathroom mirror cabinet and bottles fall out all around her head"}, {"type": "mc", "tag": "Hình ảnh", "q": "Which paragraph gives advice for the child in this picture?", "options": ["Paragraph E", "Paragraph A", "Paragraph C", "Paragraph D"], "why": "Mặc đồ ngủ, dép khủng long, đánh chũm chọe → đoạn E: *Don't stomp around like a dinosaur.*", "image": "images/gu-stomp.jpg", "alt": "A child in spotty pyjamas and big dinosaur slippers bangs two cymbals together while a dog watches"}]}, {"type": "gap", "title": "Part 4 · Gapped text", "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.", "textTitle": "My first sleepover", "text": "Last Saturday I stayed at my friend Ava's house for the first time. [1] Before dinner, Ava's dad told me that nobody was allowed to eat upstairs. [2] Later that night, we wanted to giggle and tell stories, but everyone else was asleep. [3]", "options": ["We ran up and down the stairs shouting until two o'clock in the morning.", "I was excited but also a bit nervous because I didn't know her family well.", "That was different from my house, but I followed the rule without complaining.", "Ava's dad had broken his favourite mug that morning.", "So we whispered under the blankets until we fell asleep."], "items": [{"answer": 1, "tag": "Liên kết", "why": "Lần đầu ngủ lại → vừa háo hức vừa lo."}, {"answer": 2, "tag": "Liên kết", "why": "Phản ứng với **house rule** vừa được nêu."}, {"answer": 4, "tag": "Liên kết", "why": "Mọi người đã ngủ → thì thầm."}]}, {"type": "questions", "title": "Part 5 · Words in context", "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.", "questions": [{"type": "mc", "tag": "Từ vựng", "q": "*…leave the bathroom as clean as a whistle* (D). **As clean as a whistle** means…", "options": ["completely clean", "quite dirty", "full of water", "very noisy"], "why": "Thành ngữ: sạch bong."}, {"type": "mc", "tag": "Từ vựng", "q": "*Don't wander off around the house* (A). To **wander off** is to…", "options": ["walk away from the group without a clear purpose", "fall asleep", "run a race", "help with the cooking"], "why": "**Wander off** = đi lang thang ra chỗ khác."}, {"type": "mc", "tag": "Từ vựng", "q": "*Don't stomp around like a dinosaur* (E). To **stomp** is to…", "options": ["walk with heavy, noisy steps", "walk on tiptoe", "dance gracefully", "crawl slowly"], "why": "**Stomp** = dậm chân thình thịch."}]}]};
+const KEY='mannerslesson-'+location.pathname+'-'+L.id;
+let state={};
+try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\*([^*]+)\*/g,'<span class="quote">$1</span>')
+  .replace(/\(([A-E])\)/g,'(<button type="button" class="goto" data-para="$1">$1</button>)');
+const ABC=i=>String.fromCharCode(65+i);
+function seeded(n){let x=n*9301+49297;return()=>{x=(x*9301+49297)%233280;return x/233280}}
+
+
+/* reading */
+document.title=L.pageTitle;
+document.getElementById('barTitle').textContent=L.pageTitle;
+document.getElementById('eyebrow').textContent=L.eyebrow;
+document.getElementById('h1').textContent=L.heading;
+const V={}; L.vocab.forEach(v=>V[v.key]=v);
+const wordify=s=>esc(s).replace(/\{([^|}]+)\|([^}]+)\}/g,(_,d,k)=>`<button type="button" class="w" data-k="${k}">${d}</button>`);
+function readingHTML(idp){
+  return `<div class="eyebrow">Bài đọc</div><h2>${esc(L.reading.title)}</h2>`+
+  L.reading.paras.map(p=>`<p class="para" id="${idp}${p.label}"><span class="lb">${p.label}</span><span>${wordify(p.text)}</span></p>`).join('')+
+  `<details class="vocab" open><summary>Từ mới (${L.vocab.length})</summary><ul class="vlist">${L.vocab.map(v=>`<li><div class="vw">${esc(v.word)}<small>${esc(v.ipa)} · ${esc(v.pos)}</small></div><div class="vvi">${esc(v.vi)}</div></li>`).join('')}</ul></details>`+
+  `<div class="src">${esc(L.source)}</div>`;
+}
+document.getElementById('reading').innerHTML=readingHTML('pa');
+
+/* parts */
+const main=document.getElementById('main'), nav=document.getElementById('partsNav');
+const Q={}; let n=0;
+L.parts.forEach((part,pi)=>{
+  const sid='part'+(pi+1);
+  nav.insertAdjacentHTML('beforeend',`<a href="#${sid}">${esc(part.title.split('·')[0].trim())}</a>`);
+  let h=`<section class="part" id="${sid}"><h3>${esc(part.title)}</h3><p class="instr">${esc(part.instr)}</p>`;
+  if(part.type==='questions'){
+    part.questions.forEach(q=>{
+      n++; let opts, ans;
+      if(q.type==='tf'){opts=['True','False'];ans=q.answer?0:1}
+      else{const r=seeded(n*7+L.id.length);const idx=q.options.map((_,i)=>i);for(let i=idx.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[idx[i],idx[j]]=[idx[j],idx[i]]}
+        opts=idx.map(i=>q.options[i]);ans=idx.indexOf(q.answer||0)}
+      Q[n]={kind:'btn',ans,why:q.why,label:i=>ABC(i)};
+      h+=`<div class="q" id="q${n}"><div class="q-top"><span class="qn">${n}.</span><div class="qt">${q.tag?`<span class="tag">${esc(q.tag)}</span>`:''}${fmt(q.q)}</div></div>
+        ${q.image?`<figure class="fig"><img src="${esc(q.image)}" alt="${esc(q.alt||'')}" loading="lazy"></figure>`:''}
+        <ul class="opts">${opts.map((o,oi)=>`<li><button type="button" class="opt" data-q="${n}" data-o="${oi}"><span class="k">${ABC(oi)}</span><span>${fmt(o)}</span></button></li>`).join('')}</ul>
+        <div class="why" hidden></div></div>`;
+    });
+  } else {
+    // match / gap: shared option bank + one select per item
+    const roman=['i','ii','iii','iv','v','vi','vii','viii','ix','x'];
+    const lab=part.plain?(i=>part.options[i]):(i=>part.type==='match'?roman[i]:ABC(i).toLowerCase());
+    if(part.type==='gap'){
+      let t=esc(part.text).replace(/\[(\d+)\]/g,(_,k)=>`<span class="gap" id="g${n+ +k}">${n+ +k}</span>`);
+      h+=`<div class="gaptext">${part.textTitle?`<h4>${esc(part.textTitle)}</h4>`:''}${t}</div>`;
+    }
+    if(!part.plain)h+=`<div class="bank"><ol type="${part.type==='match'?'i':'a'}">${part.options.map(o=>`<li>${esc(o)}</li>`).join('')}</ol></div>`;
+    part.items.forEach((it,ii)=>{
+      n++;
+      Q[n]={kind:'sel',ans:it.answer,why:it.why,label:lab,text:part.options[it.answer],gap:part.type==='gap',plain:!!part.plain};
+      const label=part.type==='match'?it.label:`Chỗ trống ${n}`;
+      h+=`<div class="q" id="q${n}"><div class="q-top"><span class="qn">${n}.</span><div class="qt">${it.tag?`<span class="tag">${esc(it.tag)}</span>`:''}<b>${esc(label)}</b>${it.para?` <button type="button" class="goto" data-para="${it.para}">xem đoạn</button>`:''}</div></div>
+        <select class="sel" data-q="${n}" aria-label="${esc(label)}"><option value="">— ${esc(part.pick||(part.type==='match'?'Chọn tiêu đề':'Chọn câu'))} —</option>${part.options.map((o,oi)=>`<option value="${oi}">${part.plain?esc(o):lab(oi)+'. '+esc(o)}</option>`).join('')}</select>
+        <div class="why" hidden></div></div>`;
+    });
+  }
+  main.insertAdjacentHTML('beforeend',h+'</section>');
+});
+const total=n;
+main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn" id="btnReset" type="button">Làm lại từ đầu</button></div><div class="submit"><button class="btn primary" id="btnSubmit" type="button" disabled>📨 Nộp bài cho cô</button><div id="sendStatus"></div></div></div><p class="credit">${esc(L.source)}<br>${esc(L.credit||'')}</p>`);
+
+/* answering */
+function paint(i){
+  const q=Q[i], box=document.getElementById('q'+i), pick=state[i];
+  if(pick===undefined)return;
+  const right=pick===q.ans;
+  if(q.kind==='btn'){
+    box.querySelectorAll('.opt').forEach(b=>{b.disabled=true;const o=+b.dataset.o;if(o===q.ans)b.classList.add('ok');else if(o===pick)b.classList.add('no')});
+  } else {
+    const s=box.querySelector('.sel'); s.value=pick; s.disabled=true; s.classList.add(right?'ok':'no');
+    if(q.gap){const g=document.getElementById('g'+i); if(g){g.textContent=q.text; g.classList.add('filled')}}
+  }
+  const why=box.querySelector('.why');
+  why.className='why '+(right?'good':'bad');
+  why.innerHTML=`<span class="vd">${right?'Đúng rồi!':'Chưa đúng. Đáp án: '+esc(q.label(q.ans))+(q.kind==='sel'&&!q.plain?' – '+esc(q.text||''):'')}</span>${fmt(q.why)}`;
+  if(q.kind==='sel'&&!q.text){}
+  why.hidden=false;
+}
+L.parts.forEach(p=>{if(p.type!=='questions')p.items.forEach(()=>{})});
+// fill text for match items
+(()=>{let k=0;L.parts.forEach(p=>{if(p.type==='questions'){k+=p.questions.length}else{p.items.forEach(it=>{k++;Q[k].text=p.options[it.answer]})}})})();
+
+function updateScore(){
+  let done=0,ok=0; for(const i in Q){if(state[i]!==undefined){done++;if(state[i]===Q[i].ans)ok++}}
+  document.getElementById('scoreTxt').textContent=`Đúng ${ok}/${total} · Đã làm ${done}`;
+  document.getElementById('meter').style.width=(done/total*100)+'%';
+  document.getElementById('bigScore').innerHTML=`${ok}<small>/${total}</small>`;
+  let m;
+  if(done<total)m=`Bạn đã làm ${done}/${total} câu. Làm tiếp các câu còn lại nhé.`;
+  else if(ok>=18)m='Xuất sắc! Bạn đọc hiểu rất tốt.';
+  else if(ok>=14)m='Tốt lắm! Xem lại các câu sai và đọc kỹ phần giải thích nhé.';
+  else if(ok>=10)m='Khá ổn. Ôn lại phần Từ mới rồi bấm "Làm lại từ đầu".';
+  else m='Cố lên! Đọc lại bài thật chậm, học kỹ Từ mới rồi làm lại.';
+  document.getElementById('resultMsg').textContent=m;
+  refreshSubmit(done,ok);
+}
+document.addEventListener('change',e=>{
+  const s=e.target.closest('.sel'); if(!s||s.value==='')return;
+  const i=+s.dataset.q; if(state[i]===undefined){state[i]=+s.value;save();paint(i);updateScore()}
+});
+
+/* drawer, popover, jumps */
+const drawer=document.getElementById('drawer'), panel=document.getElementById('drawerPanel');
+function openDrawer(label){
+  panel.innerHTML='<button class="btn close" type="button" id="closeDr">Đóng ✕</button>'+readingHTML('dr');
+  drawer.hidden=false; document.body.style.overflow='hidden';
+  if(label){const el=document.getElementById('dr'+label); if(el){el.scrollIntoView({block:'center'});el.classList.add('flash')}}
+}
+function closeDrawer(){drawer.hidden=true;document.body.style.overflow='';hidePop()}
+function gotoPara(label){
+  if(matchMedia('(max-width:900px)').matches){openDrawer(label);return}
+  const el=document.getElementById('pa'+label); if(!el)return;
+  const box=document.getElementById('reading'); box.scrollTo({top:el.offsetTop-box.offsetTop-20,behavior:'smooth'});
+  el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
+}
+const pop=document.getElementById('pop'); let popFor=null;
+function showPop(w){
+  if(popFor===w){hidePop();return} hidePop();
+  const v=V[w.dataset.k]; if(!v)return; popFor=w; w.classList.add('on');
+  pop.innerHTML=`<div class="row"><div><b>${esc(v.word)}</b><span class="ipa">${esc(v.ipa)}</span></div></div><div>${esc(v.pos)} · ${esc(v.vi)}</div>`;
+  pop.hidden=false;
+  const r=w.getBoundingClientRect(), pw=pop.offsetWidth;
+  const fixed=!drawer.hidden; pop.style.position=fixed?'fixed':'absolute';
+  const sx=fixed?0:scrollX, sy=fixed?0:scrollY;
+  let x=r.left+sx; x=Math.max(16,Math.min(x,sx+document.documentElement.clientWidth-pw-16));
+  pop.style.left=x+'px'; pop.style.top=(r.bottom+sy+6)+'px';
+}
+function hidePop(){pop.hidden=true;if(popFor)popFor.classList.remove('on');popFor=null}
+document.addEventListener('click',e=>{
+  const o=e.target.closest('.opt');
+  if(o&&!o.disabled){const i=+o.dataset.q;if(state[i]===undefined){state[i]=+o.dataset.o;save();paint(i);updateScore()}return}
+  const w=e.target.closest('.w[data-k]'); if(w){showPop(w);return}
+  const g=e.target.closest('.goto'); if(g){gotoPara(g.dataset.para);return}
+  if(e.target.id==='fab'){openDrawer();return}
+  if(e.target.id==='closeDr'||e.target===drawer){closeDrawer();return}
+  if(!e.target.closest('#pop'))hidePop();
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){hidePop();if(!drawer.hidden)closeDrawer()}});
+window.addEventListener('resize',hidePop);
+document.getElementById('reading').addEventListener('scroll',hidePop);
+document.getElementById('btnReset').onclick=()=>{
+  state={};save();sent=false;saveSent();setStatus('');
+  document.querySelectorAll('.opt').forEach(b=>{b.disabled=false;b.classList.remove('ok','no')});
+  document.querySelectorAll('.sel').forEach(s=>{s.disabled=false;s.value='';s.classList.remove('ok','no')});
+  document.querySelectorAll('.gap').forEach(g=>{g.textContent=g.id.slice(1);g.classList.remove('filled')});
+  document.querySelectorAll('.why').forEach(w=>w.hidden=true);
+  updateScore();scrollTo({top:0});
+};
+document.getElementById('btnWrong').onclick=()=>{
+  const ids=Object.keys(Q).map(Number);
+  const t=ids.find(i=>state[i]!==undefined&&state[i]!==Q[i].ans)||ids.find(i=>state[i]===undefined);
+  if(t)document.getElementById('q'+t).scrollIntoView({block:'center'});
+};
+
+/* student info + submit to teacher's Google Form */
+const RESULTS={formUrl:"https://docs.google.com/forms/d/e/1FAIpQLSeOg0kZytzgKzyBIxFD-THAoS44sTOEvDr4VqO1LnX-6kmfYQ/",
+  fields:{name:"entry.1398331139",cls:"entry.770361974",lesson:"entry.449687323",score:"entry.426447052",details:"entry.1388890653"}};
+const SKEY='manners-student', SENTKEY=KEY+'-sent';
+const nameEl=document.getElementById('stuName'), clsEl=document.getElementById('stuClass');
+try{const s=JSON.parse(localStorage.getItem(SKEY)||'{}');if(s.name)nameEl.value=s.name;if(s.cls)clsEl.value=s.cls}catch(e){}
+let sent=false; try{sent=localStorage.getItem(SENTKEY)==='1'}catch(e){}
+const saveSent=()=>{try{sent?localStorage.setItem(SENTKEY,'1'):localStorage.removeItem(SENTKEY)}catch(e){}};
+const student=()=>({name:nameEl.value.trim().replace(/\s+/g,' '),cls:clsEl.value});
+function saveStudent(){try{localStorage.setItem(SKEY,JSON.stringify(student()))}catch(e){};updateScore()}
+nameEl.addEventListener('input',saveStudent); clsEl.addEventListener('change',e=>{e.stopPropagation();saveStudent()});
+const statusEl=document.getElementById('sendStatus'), btnSubmit=document.getElementById('btnSubmit');
+function setStatus(html,ok){statusEl.innerHTML=html;statusEl.className=ok?'ok':''}
+function refreshSubmit(done,ok){
+  const s=student();
+  if(sent){btnSubmit.disabled=true;btnSubmit.textContent='✅ Đã nộp';if(!statusEl.innerHTML)setStatus('Em đã nộp bài này. Muốn làm và nộp lại, bấm "Làm lại từ đầu".',true);return}
+  btnSubmit.textContent='📨 Nộp bài cho cô';
+  btnSubmit.disabled=done<total;
+  if(statusEl.className==='ok')return;
+  if(done<total)setStatus(`Làm đủ ${total} câu để nộp bài (còn ${total-done} câu).`);
+  else if(!s.name||!s.cls)setStatus('Nhập <b>họ tên</b> và chọn <b>lớp</b> ở đầu trang rồi bấm Nộp bài.');
+  else setStatus(`Sẵn sàng nộp: <b>${esc(s.name)}</b> · lớp ${esc(s.cls)} · ${ok}/${total} câu đúng.`);
+}
+function formParams(){
+  const f=RESULTS.fields,p=new URLSearchParams(),s=student();
+  let ok=0; const det=[];
+  for(const i in Q){const g=state[i]===Q[i].ans; if(g)ok++; det.push(i+(g?'✓':'✗'))}
+  p.append(f.name,s.name); p.append(f.cls,s.cls);
+  p.append(f.lesson,`Reading ${L.id} · ${L.heading}`);
+  p.append(f.score,`${ok}/${total} (${Math.round(ok/total*100)}%)`);
+  p.append(f.details,det.join(' '));
+  return p;
+}
+btnSubmit.onclick=()=>{
+  const s=student();
+  if(!s.name||!s.cls){document.getElementById('who').classList.add('need');scrollTo({top:0,behavior:'smooth'});(s.name?clsEl:nameEl).focus({preventScroll:true});setStatus('Em chưa nhập họ tên hoặc chưa chọn lớp ở đầu trang.');return}
+  const params=formParams(); btnSubmit.disabled=true; setStatus('⏳ Đang gửi kết quả cho cô…');
+  fetch(RESULTS.formUrl+'formResponse',{method:'POST',mode:'no-cors',body:params})
+    .then(()=>{sent=true;saveSent();setStatus('✅ Đã gửi kết quả cho cô. Em không cần làm gì thêm.',true);btnSubmit.textContent='✅ Đã nộp'})
+    .catch(()=>{btnSubmit.disabled=false;setStatus(`Chưa gửi được tự động. Bấm <a href="${RESULTS.formUrl}viewform?usp=pp_url&${params.toString().replace(/&/g,'&amp;')}" target="_blank" rel="noopener">📨 mở Google Form</a> rồi bấm <b>Gửi / Submit</b> để nộp bài.`)});
+};
+for(const i in Q)paint(+i);
+updateScore();
+</script>
+</body>
+</html>

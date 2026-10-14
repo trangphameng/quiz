@@ -1,0 +1,342 @@
+{
+ "id": "L15",
+ "book": "Being a Good Guest",
+ "pageTitle": "Lesson 15 · In Someone Else's Home",
+ "eyebrow": "Lesson 15 · B1 · Being a Good Guest · 20 câu",
+ "heading": "In Someone Else's Home",
+ "source": "Bài đọc phỏng theo Being a Good Guest – Ann Ingalls (The Child's World, 2013), tr. 12–15.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Being a Good Guest (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "Their House, Their Rules",
+  "paras": [
+   {
+    "label": "A",
+    "text": "When you visit a friend, stay with them. Don't {wander off|wander off} around the house on your own, opening doors to see what is behind them."
+   },
+   {
+    "label": "B",
+    "text": "If you use the bathroom, do not open the cupboards or look in the drawers. It is not nice to be {nosy|nosy}. Staying for a {sleepover|sleepover} and forgot your toothpaste? Simply ask your host if you can use some of theirs, rather than searching for it."
+   },
+   {
+    "label": "C",
+    "text": "Every family has its own {house rules|house rules}, and they may be different from the rules in your home. Perhaps shoes are not allowed upstairs, or nobody eats in the living room. If you are not sure, just ask. Following the rules shows respect for the whole family."
+   },
+   {
+    "label": "D",
+    "text": "Always {tidy up|tidy up} after yourself. Put toys away after you play with them, and leave the bathroom {as clean as a whistle|as clean as a whistle}. Accidents happen, of course. If you break something, say how sorry you are and offer to fix it or {replace|replace} it."
+   },
+   {
+    "label": "E",
+    "text": "At a sleepover, remember that other people want to sleep. Late at night, {whisper|whisper} and walk quietly. Don't {stomp|stomp} around like a dinosaur, or you might wake the whole house up!"
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "wander off",
+   "word": "wander off",
+   "ipa": "/ˈwɒndər ɒf/",
+   "pos": "cụm động từ",
+   "vi": "đi lang thang ra chỗ khác"
+  },
+  {
+   "key": "nosy",
+   "word": "nosy",
+   "ipa": "/ˈnəʊzi/",
+   "pos": "tính từ",
+   "vi": "tò mò, tọc mạch"
+  },
+  {
+   "key": "sleepover",
+   "word": "sleepover",
+   "ipa": "/ˈsliːpəʊvə(r)/",
+   "pos": "danh từ",
+   "vi": "ngủ lại nhà bạn"
+  },
+  {
+   "key": "house rules",
+   "word": "house rules",
+   "ipa": "/ˈhaʊs ruːlz/",
+   "pos": "danh từ",
+   "vi": "nội quy trong nhà"
+  },
+  {
+   "key": "tidy up",
+   "word": "tidy up",
+   "ipa": "/ˈtaɪdi ʌp/",
+   "pos": "cụm động từ",
+   "vi": "dọn dẹp"
+  },
+  {
+   "key": "as clean as a whistle",
+   "word": "as clean as a whistle",
+   "ipa": "/ˈwɪsl/",
+   "pos": "thành ngữ",
+   "vi": "sạch bong"
+  },
+  {
+   "key": "replace",
+   "word": "replace",
+   "ipa": "/rɪˈpleɪs/",
+   "pos": "động từ",
+   "vi": "thay thế (mua cái mới)"
+  },
+  {
+   "key": "whisper",
+   "word": "whisper",
+   "ipa": "/ˈwɪspə(r)/",
+   "pos": "động từ",
+   "vi": "nói thì thầm"
+  },
+  {
+   "key": "stomp",
+   "word": "stomp",
+   "ipa": "/stɒmp/",
+   "pos": "động từ",
+   "vi": "dậm chân thình thịch"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "title": "Part 1 · Matching headings",
+   "instr": "Chọn tiêu đề phù hợp cho mỗi đoạn. Mỗi tiêu đề dùng một lần.",
+   "options": [
+    "Stay close to your friend",
+    "No snooping in the bathroom",
+    "Every home has its own rules",
+    "Clean-ups and accidents",
+    "Quiet nights"
+   ],
+   "items": [
+    {
+     "label": "Paragraph A",
+     "para": "A",
+     "answer": 0,
+     "tag": "Ý chính",
+     "why": "Đoạn A: ở cạnh bạn, không đi lang thang."
+    },
+    {
+     "label": "Paragraph B",
+     "para": "B",
+     "answer": 1,
+     "tag": "Ý chính",
+     "why": "Đoạn B: không lục tủ trong phòng tắm (*nosy*)."
+    },
+    {
+     "label": "Paragraph C",
+     "para": "C",
+     "answer": 2,
+     "tag": "Ý chính",
+     "why": "Đoạn C: mỗi nhà có **house rules** riêng."
+    },
+    {
+     "label": "Paragraph D",
+     "para": "D",
+     "answer": 3,
+     "tag": "Ý chính",
+     "why": "Đoạn D: dọn dẹp, làm vỡ đồ thì xin lỗi và đền."
+    },
+    {
+     "label": "Paragraph E",
+     "para": "E",
+     "answer": 4,
+     "tag": "Ý chính",
+     "why": "Đoạn E: ban đêm nói nhỏ, đi nhẹ."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "What does the writer say you should NOT do when visiting a friend?",
+     "options": [
+      "explore the house on your own",
+      "play with your friend",
+      "use the bathroom",
+      "ask questions"
+     ],
+     "why": "*Don't wander off around the house on your own.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "If you forget your toothpaste, you should look for some in the bathroom drawers.",
+     "answer": false,
+     "why": "Sai. *ask your host… rather than searching for it.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to (C), what should you do if you don't know a family's rules?",
+     "options": [
+      "Ask.",
+      "Follow your own family's rules.",
+      "Wait until someone tells you off.",
+      "Go home early."
+     ],
+     "why": "*If you are not sure, just ask.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "Which example of a house rule is given in (C)?",
+     "options": [
+      "Nobody eats in the living room.",
+      "Everyone must go to bed at eight.",
+      "Guests must bring slippers.",
+      "Pets are not allowed indoors."
+     ],
+     "why": "*…or nobody eats in the living room.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says you should offer to fix or replace something you break.",
+     "answer": true,
+     "why": "Đúng. *offer to fix it or replace it.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why does the writer compare a noisy guest to a dinosaur in (E)?",
+     "options": [
+      "to describe heavy, noisy footsteps in a funny way",
+      "because dinosaurs are popular at sleepovers",
+      "to suggest guests should play dinosaur games",
+      "because the host has a toy dinosaur"
+     ],
+     "why": "Hình ảnh khủng long → bước chân nặng nề, ồn ào; cách nói hài hước."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What is the girl doing wrong?",
+     "options": [
+      "looking inside her host's bathroom cabinet",
+      "stomping around at night",
+      "leaving toys on the floor",
+      "forgetting to say thank you"
+     ],
+     "why": "Đoạn B: *do not open the cupboards or look in the drawers.*",
+     "image": "images/gu-snoop.jpg",
+     "alt": "A girl opens a bathroom mirror cabinet and bottles fall out all around her head"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which word from the text best describes the girl's behaviour?",
+     "options": [
+      "nosy",
+      "tidy",
+      "patient",
+      "quiet"
+     ],
+     "why": "Lục tủ nhà người khác = **nosy**.",
+     "image": "images/gu-snoop.jpg",
+     "alt": "A girl opens a bathroom mirror cabinet and bottles fall out all around her head"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which paragraph gives advice for the child in this picture?",
+     "options": [
+      "Paragraph E",
+      "Paragraph A",
+      "Paragraph C",
+      "Paragraph D"
+     ],
+     "why": "Mặc đồ ngủ, dép khủng long, đánh chũm chọe → đoạn E: *Don't stomp around like a dinosaur.*",
+     "image": "images/gu-stomp.jpg",
+     "alt": "A child in spotty pyjamas and big dinosaur slippers bangs two cymbals together while a dog watches"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "My first sleepover",
+   "text": "Last Saturday I stayed at my friend Ava's house for the first time. [1] Before dinner, Ava's dad told me that nobody was allowed to eat upstairs. [2] Later that night, we wanted to giggle and tell stories, but everyone else was asleep. [3]",
+   "options": [
+    "We ran up and down the stairs shouting until two o'clock in the morning.",
+    "I was excited but also a bit nervous because I didn't know her family well.",
+    "That was different from my house, but I followed the rule without complaining.",
+    "Ava's dad had broken his favourite mug that morning.",
+    "So we whispered under the blankets until we fell asleep."
+   ],
+   "items": [
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Lần đầu ngủ lại → vừa háo hức vừa lo."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Phản ứng với **house rule** vừa được nêu."
+    },
+    {
+     "answer": 4,
+     "tag": "Liên kết",
+     "why": "Mọi người đã ngủ → thì thầm."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…leave the bathroom as clean as a whistle* (D). **As clean as a whistle** means…",
+     "options": [
+      "completely clean",
+      "quite dirty",
+      "full of water",
+      "very noisy"
+     ],
+     "why": "Thành ngữ: sạch bong."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Don't wander off around the house* (A). To **wander off** is to…",
+     "options": [
+      "walk away from the group without a clear purpose",
+      "fall asleep",
+      "run a race",
+      "help with the cooking"
+     ],
+     "why": "**Wander off** = đi lang thang ra chỗ khác."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Don't stomp around like a dinosaur* (E). To **stomp** is to…",
+     "options": [
+      "walk with heavy, noisy steps",
+      "walk on tiptoe",
+      "dance gracefully",
+      "crawl slowly"
+     ],
+     "why": "**Stomp** = dậm chân thình thịch."
+    }
+   ]
+  }
+ ]
+}

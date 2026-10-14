@@ -1,0 +1,349 @@
+{
+ "id": "L13",
+ "book": "Being a Good Guest",
+ "pageTitle": "Lesson 13 · Getting Ready to Be a Guest",
+ "eyebrow": "Lesson 13 · B1 · Being a Good Guest · 20 câu",
+ "heading": "Getting Ready to Be a Guest",
+ "source": "Bài đọc phỏng theo Being a Good Guest – Ann Ingalls (The Child's World, 2013), tr. 4–7.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Being a Good Guest (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "You're Invited!",
+  "paras": [
+   {
+    "label": "A",
+    "text": "Imagine finding an {invitation|invitation} in your letterbox: you have been invited to a party! What should you do first? Read the day and time carefully and check your calendar. If you are free, {reply|reply} as soon as you can so that your friend knows you will be there. Never just turn up without answering."
+   },
+   {
+    "label": "B",
+    "text": "Being a guest means going to someone's party or simply visiting their home. It sounds like fun, and it usually is. But are you going to be a good guest? Good manners are the key. They show your {host|host}, the person who invited you, that you are really pleased to be there."
+   },
+   {
+    "label": "C",
+    "text": "Before a party, ask if you can bring something. Perhaps your friend needs a ball for a game, or maybe you could bring a pizza to {pass around|pass around}. Many guests also bring a small present to say thank you; flowers or chocolates make perfect {host gifts|host gifts}."
+   },
+   {
+    "label": "D",
+    "text": "Being on time matters too. If you arrive late, you may {hold everyone up|hold everyone up} and {spoil|spoil} the fun for the other guests. If possible, ask whether you can come a little early to help {set up|set up}."
+   },
+   {
+    "label": "E",
+    "text": "There are plenty of jobs for early helpers. You could {fan|fan} out the napkins on the table, put out the funny party hats or make tiny sandwiches. Your host will {appreciate|appreciate} your help, and the party will be ready in no time."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "invitation",
+   "word": "invitation",
+   "ipa": "/ˌɪnvɪˈteɪʃn/",
+   "pos": "danh từ",
+   "vi": "lời mời, thiệp mời"
+  },
+  {
+   "key": "reply",
+   "word": "reply",
+   "ipa": "/rɪˈplaɪ/",
+   "pos": "động từ",
+   "vi": "trả lời, hồi đáp"
+  },
+  {
+   "key": "host",
+   "word": "host",
+   "ipa": "/həʊst/",
+   "pos": "danh từ",
+   "vi": "chủ nhà, người mời"
+  },
+  {
+   "key": "pass around",
+   "word": "pass around",
+   "ipa": "/pɑːs əˈraʊnd/",
+   "pos": "cụm động từ",
+   "vi": "chuyền tay mời mọi người"
+  },
+  {
+   "key": "host gifts",
+   "word": "host gift",
+   "ipa": "/ˈhəʊst ɡɪft/",
+   "pos": "danh từ",
+   "vi": "quà tặng chủ nhà"
+  },
+  {
+   "key": "hold everyone up",
+   "word": "hold sb up",
+   "ipa": "/həʊld ʌp/",
+   "pos": "cụm động từ",
+   "vi": "làm ai bị chậm trễ"
+  },
+  {
+   "key": "spoil",
+   "word": "spoil",
+   "ipa": "/spɔɪl/",
+   "pos": "động từ",
+   "vi": "làm hỏng, làm mất vui"
+  },
+  {
+   "key": "set up",
+   "word": "set up",
+   "ipa": "/set ʌp/",
+   "pos": "cụm động từ",
+   "vi": "chuẩn bị, sắp xếp"
+  },
+  {
+   "key": "fan",
+   "word": "fan (out)",
+   "ipa": "/fæn/",
+   "pos": "động từ",
+   "vi": "xếp xoè hình quạt"
+  },
+  {
+   "key": "appreciate",
+   "word": "appreciate",
+   "ipa": "/əˈpriːʃieɪt/",
+   "pos": "động từ",
+   "vi": "trân trọng, cảm kích"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "title": "Part 1 · Matching headings",
+   "instr": "Chọn tiêu đề phù hợp cho mỗi đoạn. Mỗi tiêu đề dùng một lần.",
+   "options": [
+    "Answering an invitation",
+    "What a good guest is",
+    "Things you could bring",
+    "Don't be late",
+    "Jobs for early arrivals"
+   ],
+   "items": [
+    {
+     "label": "Paragraph A",
+     "para": "A",
+     "answer": 0,
+     "tag": "Ý chính",
+     "why": "Đoạn A: đọc thiệp mời, xem lịch và **reply**."
+    },
+    {
+     "label": "Paragraph B",
+     "para": "B",
+     "answer": 1,
+     "tag": "Ý chính",
+     "why": "Đoạn B giải thích thế nào là khách và vì sao cần phép lịch sự."
+    },
+    {
+     "label": "Paragraph C",
+     "para": "C",
+     "answer": 2,
+     "tag": "Ý chính",
+     "why": "Đoạn C: mang bóng, pizza, hoa hoặc sô-cô-la."
+    },
+    {
+     "label": "Paragraph D",
+     "para": "D",
+     "answer": 3,
+     "tag": "Ý chính",
+     "why": "Đoạn D: đến muộn sẽ *hold everyone up*."
+    },
+    {
+     "label": "Paragraph E",
+     "para": "E",
+     "answer": 4,
+     "tag": "Ý chính",
+     "why": "Đoạn E liệt kê việc có thể làm khi đến sớm."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "What should you do first when you receive an invitation?",
+     "options": [
+      "Check the day, the time and your calendar.",
+      "Buy a present for the host.",
+      "Phone all your other friends.",
+      "Start making sandwiches."
+     ],
+     "why": "*Read the day and time carefully and check your calendar.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says it is fine to go to a party without replying to the invitation.",
+     "answer": false,
+     "why": "Sai. *Never just turn up without answering.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to (B), what do good manners show your host?",
+     "options": [
+      "that you are happy to be their guest",
+      "that you are richer than the other guests",
+      "that you want to leave early",
+      "that you are a good cook"
+     ],
+     "why": "*…that you are really pleased to be there.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "Which of these does the writer mention as a good present for a host?",
+     "options": [
+      "chocolates",
+      "a football",
+      "a pizza",
+      "a party hat"
+     ],
+     "why": "*flowers or chocolates make perfect host gifts.* Pizza và bóng là đồ mang đến cho bữa tiệc, không phải quà."
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "According to (D), arriving late can affect the other guests.",
+     "answer": true,
+     "why": "Đúng. *you may hold everyone up and spoil the fun for the other guests.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why might a host be glad if a guest arrives a little early?",
+     "options": [
+      "The guest can help get things ready.",
+      "The guest can eat more food.",
+      "The host can go out for a while.",
+      "The party can finish sooner."
+     ],
+     "why": "*ask whether you can come a little early to help set up.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which paragraph does this picture match best?",
+     "options": [
+      "Paragraph A",
+      "Paragraph C",
+      "Paragraph D",
+      "Paragraph E"
+     ],
+     "why": "Cậu bé vừa lấy thư mời ở hộp thư → đoạn A.",
+     "image": "images/gu-invite.jpg",
+     "alt": "A smiling boy runs away from a letterbox holding a letter, while a small dog jumps beside him"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "According to the text, what should the boy do next?",
+     "options": [
+      "Check the date and reply to the invitation.",
+      "Throw the letter away.",
+      "Go straight to the party without telling anyone.",
+      "Buy a new party hat."
+     ],
+     "why": "Đoạn A: xem ngày giờ rồi **reply**.",
+     "image": "images/gu-invite.jpg",
+     "alt": "A smiling boy runs away from a letterbox holding a letter, while a small dog jumps beside him"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What are the children in this picture doing?",
+     "options": [
+      "helping to set up before a party",
+      "tidying up after a party",
+      "playing a ball game",
+      "replying to an invitation"
+     ],
+     "why": "Bày mũ giấy, bỏng ngô lên bàn → giúp chuẩn bị (đoạn E).",
+     "image": "images/gu-popcorn.jpg",
+     "alt": "A boy and a girl prepare a party table with paper hats; the girl holds a bowl of popcorn and says: I will put out the popcorn."
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "Leo's birthday party",
+   "text": "Last month my friend Leo invited me to his birthday party. [1] On the day, I arrived half an hour early. [2] When the other guests came, everything was ready. [3]",
+   "options": [
+    "Leo was cross because I had arrived so late.",
+    "I replied the same evening to say I would come.",
+    "Leo's mum gave me a job: putting the party hats on the table.",
+    "Nobody was there because the party had already finished.",
+    "Leo's mum said I was the most helpful guest she had ever had."
+   ],
+   "items": [
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Nhận lời mời → trả lời ngay (đúng như đoạn A)."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Đến sớm → được giao việc chuẩn bị."
+    },
+    {
+     "answer": 4,
+     "tag": "Liên kết",
+     "why": "Mọi thứ sẵn sàng → mẹ Leo khen. Đây là câu kết hợp lý."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…you may hold everyone up* (D). To **hold someone up** means to…",
+     "options": [
+      "make them late",
+      "lift them into the air",
+      "help them stand",
+      "phone them"
+     ],
+     "why": "**Hold sb up** = làm ai chậm trễ."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…a pizza to pass around* (C). If you **pass** food **around**, you…",
+     "options": [
+      "offer it to each person in turn",
+      "throw it away",
+      "eat it all yourself",
+      "keep it for later"
+     ],
+     "why": "**Pass around** = chuyền cho từng người."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Your host will appreciate your help* (E). **Appreciate** means…",
+     "options": [
+      "be thankful for",
+      "not notice",
+      "refuse",
+      "pay for"
+     ],
+     "why": "**Appreciate** = trân trọng, biết ơn."
+    }
+   ]
+  }
+ ]
+}
