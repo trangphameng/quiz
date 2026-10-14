@@ -78,6 +78,18 @@ section.part{margin-bottom:28px;scroll-margin-top:70px}
 .tag{display:inline-block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-right:6px;vertical-align:1px}
 .quote{font-family:var(--f-read);font-style:italic}
 .fig{margin:12px 0 0;border-radius:10px;overflow:hidden;border:1px solid var(--line);max-width:240px;background:var(--bg)}
+.who{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:10px;margin-top:16px;max-width:620px}
+@media (max-width:520px){.who{grid-template-columns:1fr}}
+.who label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--muted)}
+.who input,.who select{font:inherit;font-size:16px;color:var(--ink);background:var(--sheet);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.who input:focus,.who select:focus{border-color:var(--accent)}
+.who.need input:placeholder-shown,.who.need select:invalid{border-color:var(--bad);background:var(--bad-soft)}
+.submit{flex-basis:100%;border-top:1px solid var(--line);padding-top:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.submit .btn{font-size:16px;padding:10px 18px;font-weight:600}
+.submit .btn:disabled{opacity:.5;cursor:not-allowed}
+#sendStatus{font-size:14px;flex:1;min-width:200px}
+#sendStatus.ok{color:var(--good);font-weight:600}
+#sendStatus a{color:var(--accent);font-weight:600}
 .credit{margin-top:16px;font-size:12px;color:var(--muted);line-height:1.5}
 .fig img{display:block;width:100%;height:auto}
 .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px;margin:12px 0 0;padding:0;list-style:none}
@@ -140,6 +152,10 @@ section.part{margin-bottom:28px;scroll-margin-top:70px}
     <div class="eyebrow" id="eyebrow"></div>
     <h1 id="h1"></h1>
     <p class="lede">Đọc bài, chạm vào <span class="w" style="cursor:default">từ tô vàng</span> để xem nghĩa, rồi làm lần lượt các phần bên dưới. Chọn đáp án là thấy ngay đúng/sai và lời giải thích bằng tiếng Việt.</p>
+    <div class="who" id="who">
+      <label>Your name / Họ và tên<input id="stuName" type="text" autocomplete="name" placeholder="Nhập họ và tên"></label>
+      <label>Class / Lớp<select id="stuClass" required><option value="" disabled selected>— Chọn lớp —</option><option>A2</option><option>B1</option><option>B2</option><option>IELTS</option><option>Khác</option></select></label>
+    </div>
     <nav class="parts-nav" id="partsNav" aria-label="Các phần"></nav>
   </header>
 
@@ -227,7 +243,7 @@ L.parts.forEach((part,pi)=>{
   main.insertAdjacentHTML('beforeend',h+'</section>');
 });
 const total=n;
-main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn primary" id="btnReset" type="button">Làm lại từ đầu</button></div></div><p class="credit">${esc(L.source)}<br>${esc(L.credit||'')}</p>`);
+main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn" id="btnReset" type="button">Làm lại từ đầu</button></div><div class="submit"><button class="btn primary" id="btnSubmit" type="button" disabled>📨 Nộp bài cho cô</button><div id="sendStatus"></div></div></div><p class="credit">${esc(L.source)}<br>${esc(L.credit||'')}</p>`);
 
 /* answering */
 function paint(i){
@@ -262,6 +278,7 @@ function updateScore(){
   else if(ok>=10)m='Khá ổn. Ôn lại phần Từ mới rồi bấm "Làm lại từ đầu".';
   else m='Cố lên! Đọc lại bài thật chậm, học kỹ Từ mới rồi làm lại.';
   document.getElementById('resultMsg').textContent=m;
+  refreshSubmit(done,ok);
 }
 document.addEventListener('change',e=>{
   const s=e.target.closest('.sel'); if(!s||s.value==='')return;
@@ -309,7 +326,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){hidePop();if(!drawe
 window.addEventListener('resize',hidePop);
 document.getElementById('reading').addEventListener('scroll',hidePop);
 document.getElementById('btnReset').onclick=()=>{
-  state={};save();
+  state={};save();sent=false;saveSent();setStatus('');
   document.querySelectorAll('.opt').forEach(b=>{b.disabled=false;b.classList.remove('ok','no')});
   document.querySelectorAll('.sel').forEach(s=>{s.disabled=false;s.value='';s.classList.remove('ok','no')});
   document.querySelectorAll('.gap').forEach(g=>{g.textContent=g.id.slice(1);g.classList.remove('filled')});
@@ -320,6 +337,48 @@ document.getElementById('btnWrong').onclick=()=>{
   const ids=Object.keys(Q).map(Number);
   const t=ids.find(i=>state[i]!==undefined&&state[i]!==Q[i].ans)||ids.find(i=>state[i]===undefined);
   if(t)document.getElementById('q'+t).scrollIntoView({block:'center'});
+};
+
+/* student info + submit to teacher's Google Form */
+const RESULTS={formUrl:"https://docs.google.com/forms/d/e/1FAIpQLSeOg0kZytzgKzyBIxFD-THAoS44sTOEvDr4VqO1LnX-6kmfYQ/",
+  fields:{name:"entry.1398331139",cls:"entry.770361974",lesson:"entry.449687323",score:"entry.426447052",details:"entry.1388890653"}};
+const SKEY='manners-student', SENTKEY=KEY+'-sent';
+const nameEl=document.getElementById('stuName'), clsEl=document.getElementById('stuClass');
+try{const s=JSON.parse(localStorage.getItem(SKEY)||'{}');if(s.name)nameEl.value=s.name;if(s.cls)clsEl.value=s.cls}catch(e){}
+let sent=false; try{sent=localStorage.getItem(SENTKEY)==='1'}catch(e){}
+const saveSent=()=>{try{sent?localStorage.setItem(SENTKEY,'1'):localStorage.removeItem(SENTKEY)}catch(e){}};
+const student=()=>({name:nameEl.value.trim().replace(/\s+/g,' '),cls:clsEl.value});
+function saveStudent(){try{localStorage.setItem(SKEY,JSON.stringify(student()))}catch(e){};updateScore()}
+nameEl.addEventListener('input',saveStudent); clsEl.addEventListener('change',e=>{e.stopPropagation();saveStudent()});
+const statusEl=document.getElementById('sendStatus'), btnSubmit=document.getElementById('btnSubmit');
+function setStatus(html,ok){statusEl.innerHTML=html;statusEl.className=ok?'ok':''}
+function refreshSubmit(done,ok){
+  const s=student();
+  if(sent){btnSubmit.disabled=true;btnSubmit.textContent='✅ Đã nộp';if(!statusEl.innerHTML)setStatus('Em đã nộp bài này. Muốn làm và nộp lại, bấm "Làm lại từ đầu".',true);return}
+  btnSubmit.textContent='📨 Nộp bài cho cô';
+  btnSubmit.disabled=done<total;
+  if(statusEl.className==='ok')return;
+  if(done<total)setStatus(`Làm đủ ${total} câu để nộp bài (còn ${total-done} câu).`);
+  else if(!s.name||!s.cls)setStatus('Nhập <b>họ tên</b> và chọn <b>lớp</b> ở đầu trang rồi bấm Nộp bài.');
+  else setStatus(`Sẵn sàng nộp: <b>${esc(s.name)}</b> · lớp ${esc(s.cls)} · ${ok}/${total} câu đúng.`);
+}
+function formParams(){
+  const f=RESULTS.fields,p=new URLSearchParams(),s=student();
+  let ok=0; const det=[];
+  for(const i in Q){const g=state[i]===Q[i].ans; if(g)ok++; det.push(i+(g?'✓':'✗'))}
+  p.append(f.name,s.name); p.append(f.cls,s.cls);
+  p.append(f.lesson,`Reading ${L.id} · ${L.heading}`);
+  p.append(f.score,`${ok}/${total} (${Math.round(ok/total*100)}%)`);
+  p.append(f.details,det.join(' '));
+  return p;
+}
+btnSubmit.onclick=()=>{
+  const s=student();
+  if(!s.name||!s.cls){document.getElementById('who').classList.add('need');scrollTo({top:0,behavior:'smooth'});(s.name?clsEl:nameEl).focus({preventScroll:true});setStatus('Em chưa nhập họ tên hoặc chưa chọn lớp ở đầu trang.');return}
+  const params=formParams(); btnSubmit.disabled=true; setStatus('⏳ Đang gửi kết quả cho cô…');
+  fetch(RESULTS.formUrl+'formResponse',{method:'POST',mode:'no-cors',body:params})
+    .then(()=>{sent=true;saveSent();setStatus('✅ Đã gửi kết quả cho cô. Em không cần làm gì thêm.',true);btnSubmit.textContent='✅ Đã nộp'})
+    .catch(()=>{btnSubmit.disabled=false;setStatus(`Chưa gửi được tự động. Bấm <a href="${RESULTS.formUrl}viewform?usp=pp_url&${params.toString().replace(/&/g,'&amp;')}" target="_blank" rel="noopener">📨 mở Google Form</a> rồi bấm <b>Gửi / Submit</b> để nộp bài.`)});
 };
 for(const i in Q)paint(+i);
 updateScore();
