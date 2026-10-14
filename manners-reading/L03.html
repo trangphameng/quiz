@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lesson 03 · Kind Words, Open Doors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+:root{
+  --bg:#EDF1F6; --sheet:#FFFFFF; --ink:#1A2333; --muted:#5B667A; --line:#D5DCE7;
+  --accent:#2C4A9E; --accent-soft:#E3E9F8; --mark:#FFE27A; --mark-ink:#1A2333;
+  --good:#1D7F55; --good-soft:#E1F4EA; --bad:#B83A33; --bad-soft:#FBE6E4;
+  --f-ui:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-read:"Literata", Georgia, "Times New Roman", serif;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111722; --sheet:#1A2230; --ink:#E6EBF4; --muted:#9BA6B9; --line:#2D374A;
+  --accent:#93AAFF; --accent-soft:#232F4D; --mark:#6B5A1C; --mark-ink:#FFF3C9;
+  --good:#58C892; --good-soft:#163428; --bad:#F2837B; --bad-soft:#3A1E1D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111722; --sheet:#1A2230; --ink:#E6EBF4; --muted:#9BA6B9; --line:#2D374A;
+  --accent:#93AAFF; --accent-soft:#232F4D; --mark:#6B5A1C; --mark-ink:#FFF3C9;
+  --good:#58C892; --good-soft:#163428; --bad:#F2837B; --bad-soft:#3A1E1D; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:16px;line-height:1.55;padding:0 16px 96px}
+button,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto}
+
+.bar{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);margin:0 -16px;padding:10px 16px}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.bar a.home{color:var(--accent);text-decoration:none;font-size:14px;font-weight:600;white-space:nowrap}
+.bar-title{font-weight:600;font-size:14px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.score{font-size:13px;font-variant-numeric:tabular-nums;display:flex;gap:10px;align-items:center;white-space:nowrap}
+.meter{width:110px;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+@media (max-width:560px){.bar-title{display:none}.score{flex:1;justify-content:flex-end}.meter{width:70px}}
+
+header.hero{padding:28px 0 8px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-family:var(--f-read);font-weight:600;font-size:clamp(28px,6vw,40px);line-height:1.15;margin:6px 0 10px;text-wrap:balance}
+.lede{color:var(--muted);max-width:70ch;margin:0}
+.parts-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.parts-nav a{font-size:13px;color:var(--accent);text-decoration:none;background:var(--sheet);border:1px solid var(--line);border-radius:99px;padding:5px 12px}
+
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start;margin-top:24px}
+@media (max-width:900px){.layout{grid-template-columns:1fr}}
+.reading{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px}
+@media (max-width:900px){.reading{position:static;max-height:none;overflow:visible}}
+.reading h2{font-family:var(--f-read);font-weight:600;font-size:24px;margin:2px 0 14px;line-height:1.25}
+.para{display:grid;grid-template-columns:2em 1fr;gap:4px;margin:0 0 14px;font-family:var(--f-read);font-size:17px;line-height:1.7}
+.para .lb{font-family:var(--f-ui);font-weight:700;color:var(--accent);font-size:15px;padding-top:2px}
+.para.flash{animation:flash 1.4s}
+@keyframes flash{0%,60%{background:var(--accent-soft)}100%{background:transparent}}
+.src{font-size:12px;color:var(--muted);margin-top:8px;border-top:1px solid var(--line);padding-top:10px}
+.w{background:linear-gradient(transparent 55%,var(--mark) 55%);color:var(--mark-ink);border:0;padding:0 1px;cursor:pointer;font-family:inherit;font-size:inherit;line-height:inherit;border-radius:2px}
+.w:hover,.w.on{background:var(--mark)}
+details.vocab{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+details.vocab summary{cursor:pointer;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.vlist{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0 18px}
+.vlist li{display:grid;grid-template-columns:1fr auto;gap:0 8px;padding:8px 0;border-top:1px solid var(--line)}
+.vw{font-weight:600}.vw small{font-weight:400;color:var(--muted);margin-left:6px}
+.vvi{font-size:14px;grid-column:1}
+.say{grid-row:1/3;grid-column:2;border:0;background:var(--accent-soft);color:var(--accent);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;cursor:pointer}
+.say svg{width:14px;height:14px}
+
+section.part{margin-bottom:28px;scroll-margin-top:70px}
+.part h3{font-family:var(--f-read);font-weight:600;font-size:22px;margin:0 0 4px}
+.instr{color:var(--muted);font-size:14px;margin:0 0 10px}
+.q{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin-top:10px}
+.q-top{display:flex;gap:10px;align-items:baseline}
+.qn{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent);min-width:2em}
+.qt{flex:1;min-width:0}
+.tag{display:inline-block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-right:6px;vertical-align:1px}
+.quote{font-family:var(--f-read);font-style:italic}
+.fig{margin:12px 0 0;border-radius:10px;overflow:hidden;border:1px solid var(--line);max-width:240px;background:var(--bg)}
+.credit{margin-top:16px;font-size:12px;color:var(--muted);line-height:1.5}
+.fig img{display:block;width:100%;height:auto}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.opt{width:100%;text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:9px 12px;cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt .k{font-weight:700;color:var(--muted);min-width:1em}
+.opt:disabled{cursor:default}
+.ok{border-color:var(--good)!important;background:var(--good-soft)!important}
+.ok .k{color:var(--good)}
+.no{border-color:var(--bad)!important;background:var(--bad-soft)!important}
+.no .k{color:var(--bad)}
+.why{margin-top:12px;border-radius:10px;padding:10px 12px;font-size:15px;background:var(--accent-soft)}
+.why .vd{display:block;font-size:13px;font-weight:700;margin-bottom:2px}
+.why.good .vd{color:var(--good)}.why.bad .vd{color:var(--bad)}
+.goto{border:0;background:none;color:var(--accent);font-size:13px;padding:0;cursor:pointer;text-decoration:underline;margin-left:4px}
+
+.bank{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin:0}
+.bank ol{margin:0;padding-left:1.6em}
+.bank li{padding:3px 0}
+.bank li::marker{font-weight:700;color:var(--accent)}
+.sel{width:100%;margin-top:10px;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:9px 12px;cursor:pointer}
+.sel:disabled{cursor:default;opacity:1}
+.gaptext{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;font-family:var(--f-read);font-size:17px;line-height:1.75;margin-bottom:10px}
+.gaptext h4{font-family:var(--f-ui);font-size:15px;margin:0 0 6px}
+.gap{display:inline-block;min-width:2.6em;text-align:center;font-family:var(--f-ui);font-size:14px;font-weight:700;color:var(--accent);border-bottom:2px solid var(--accent);margin:0 2px;padding:0 4px}
+.gap.filled{font-family:var(--f-read);font-weight:400;font-style:italic;color:var(--good);border-color:var(--good);text-align:left}
+
+.result{margin-top:20px;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.big{font-family:var(--f-read);font-size:44px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+.big small{font-size:20px;color:var(--muted)}
+.result p{margin:0;flex:1;min-width:200px}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--sheet);border-radius:99px;padding:7px 14px;font-size:14px;cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+
+.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:25;border:0;background:var(--accent);color:var(--sheet);border-radius:99px;padding:11px 16px;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.2);cursor:pointer}
+@media (max-width:900px){.fab{display:block}}
+.drawer{position:fixed;inset:0;z-index:40;background:rgba(10,15,25,.45);display:flex;align-items:flex-end}
+.drawer[hidden]{display:none}
+.drawer .panel{background:var(--sheet);width:100%;max-height:82vh;overflow:auto;border-radius:16px 16px 0 0;padding:18px 18px 28px}
+.drawer .close{float:right}
+
+.pop{position:absolute;z-index:50;max-width:min(320px,calc(100vw - 32px));background:var(--ink);color:var(--bg);border-radius:10px;padding:10px 12px;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.pop .ipa{opacity:.75;margin-left:6px}
+.pop .row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pop button{background:transparent;border:1px solid currentColor;color:inherit;border-radius:99px;padding:2px 10px;font-size:12px;cursor:pointer}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-in">
+  <a class="home" href="index.html">← Mục lục</a>
+  <div class="bar-title" id="barTitle"></div>
+  <div class="score"><span id="scoreTxt"></span><span class="meter"><i id="meter"></i></span></div>
+</div></div>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="h1"></h1>
+    <p class="lede">Đọc bài, chạm vào <span class="w" style="cursor:default">từ tô vàng</span> để xem nghĩa, rồi làm lần lượt các phần bên dưới. Chọn đáp án là thấy ngay đúng/sai và lời giải thích bằng tiếng Việt.</p>
+    <nav class="parts-nav" id="partsNav" aria-label="Các phần"></nav>
+  </header>
+
+  <div class="layout">
+    <aside class="reading" id="reading"></aside>
+    <main id="main"></main>
+  </div>
+</div>
+
+<button class="fab" id="fab" type="button">📖 Bài đọc</button>
+<div class="drawer" id="drawer" hidden><div class="panel" id="drawerPanel"></div></div>
+<div class="pop" id="pop" hidden></div>
+
+<script>
+const L = {"id": "L03", "book": "Basic Manners", "pageTitle": "Lesson 03 · Kind Words, Open Doors", "eyebrow": "Lesson 03 · B1 · Basic Manners · 20 câu", "heading": "Kind Words, Open Doors", "source": "Bài đọc phỏng theo Basic Manners – Ann Ingalls (The Child's World, 2013), tr. 14–17.", "credit": "Tranh minh hoạ: Ronnie Rooney, trong Basic Manners (The Child's World, 2013). Dùng cho mục đích học tập.", "reading": {"title": "Small Words, Big Difference", "paras": [{"label": "A", "text": "When someone says \"Good job!\", the polite reply is simply \"Thank you.\" Accepting a {compliment|compliment} in this way shows that you are a {gracious|gracious} person, someone who is kind and pleasant to be around. In the same way, avoid {putting other people down|putting other people down} or pointing out their mistakes in front of others."}, {"label": "B", "text": "Words are powerful. If something you said makes another person cry, don't pretend it didn't happen. Say \"I'm sorry\" and mean it. When someone thanks you, answer \"You're welcome.\" Once is enough: you don't want to {sound like a broken record|sound like a broken record}! In many parts of South America, people greet each other with a kiss on the cheek, sometimes on both cheeks, so politeness can look different around the world."}, {"label": "C", "text": "Manners also matter when you are moving through busy places. Before getting into a {lift|lift}, let the people inside get out first. On an {escalator|escalator}, wait for others to step on before you do. Pushing or {shoving|shoving} your way through never makes the journey faster for anyone."}, {"label": "D", "text": "Doors are a good test of your manners. If someone is coming out as you are going in, let them go first. Hold the door open for older people and for parents with young children, who often {have their hands full|have their hands full} with bags, {pushchairs|pushchairs} and toys. If you go through a door first, don't let it {slam|slam} in the face of the person behind you; hold it until they can take it."}, {"label": "E", "text": "And when someone holds a door for you, don't just rush past. A quick \"Thank you!\" lets them know that their kindness was noticed."}]}, "vocab": [{"key": "compliment", "word": "compliment", "ipa": "/ˈkɒmplɪmənt/", "pos": "danh từ", "vi": "lời khen"}, {"key": "gracious", "word": "gracious", "ipa": "/ˈɡreɪʃəs/", "pos": "tính từ", "vi": "tử tế, nhã nhặn"}, {"key": "putting other people down", "word": "put sb down", "ipa": "/pʊt daʊn/", "pos": "cụm động từ", "vi": "chê bai, hạ thấp ai"}, {"key": "sound like a broken record", "word": "sound like a broken record", "ipa": "/ˌbrəʊkən ˈrekɔːd/", "pos": "cụm từ", "vi": "nói đi nói lại như đĩa hỏng"}, {"key": "lift", "word": "lift", "ipa": "/lɪft/", "pos": "danh từ", "vi": "thang máy (Anh-Mỹ: elevator)"}, {"key": "escalator", "word": "escalator", "ipa": "/ˈeskəleɪtə(r)/", "pos": "danh từ", "vi": "thang cuốn"}, {"key": "shoving", "word": "shove", "ipa": "/ʃʌv/", "pos": "động từ", "vi": "xô đẩy"}, {"key": "have their hands full", "word": "have your hands full", "ipa": "/hændz fʊl/", "pos": "cụm từ", "vi": "tay bận đầy đồ; rất bận"}, {"key": "pushchairs", "word": "pushchair", "ipa": "/ˈpʊʃtʃeə(r)/", "pos": "danh từ", "vi": "xe đẩy em bé"}, {"key": "slam", "word": "slam", "ipa": "/slæm/", "pos": "động từ", "vi": "đóng sầm"}], "parts": [{"type": "match", "title": "Part 1 · Matching headings", "instr": "Chọn tiêu đề phù hợp nhất cho mỗi đoạn. Có 2 tiêu đề thừa.", "options": ["Accepting praise politely", "Saying sorry and thanks the right way", "Getting in and out of crowded places", "Helping people through doorways", "Showing that you noticed a kindness", "How to give a good compliment", "Why lifts are dangerous"], "items": [{"label": "Paragraph A", "para": "A", "answer": 0, "tag": "Ý chính", "why": "Đoạn A: đáp lại *Good job!* bằng *Thank you* = nhận lời khen lịch sự."}, {"label": "Paragraph B", "para": "B", "answer": 1, "tag": "Ý chính", "why": "Đoạn B nói cách nói *I'm sorry* và *You're welcome*."}, {"label": "Paragraph C", "para": "C", "answer": 2, "tag": "Ý chính", "why": "Đoạn C: thang máy, thang cuốn, nơi đông người."}, {"label": "Paragraph D", "para": "D", "answer": 3, "tag": "Ý chính", "why": "Đoạn D: giữ cửa cho người già, cha mẹ có con nhỏ."}, {"label": "Paragraph E", "para": "E", "answer": 4, "tag": "Ý chính", "why": "Đoạn E: nói *Thank you* để người kia biết mình *noticed* lòng tốt."}]}, {"type": "questions", "title": "Part 2 · Reading comprehension", "instr": "Chọn đáp án đúng hoặc True / False.", "questions": [{"type": "mc", "tag": "Chi tiết", "q": "According to paragraph A, what should you avoid doing?", "options": ["pointing out other people's mistakes in front of others", "saying \"Thank you\" too quickly", "accepting compliments", "being kind and pleasant"], "why": "*avoid putting other people down or pointing out their mistakes in front of others.*"}, {"type": "tf", "tag": "Đúng / Sai", "q": "The writer says you should repeat \"You're welcome\" several times to be extra polite.", "answer": false, "why": "Sai. *Once is enough.*"}, {"type": "mc", "tag": "Suy luận", "q": "Why does the writer mention South America?", "options": ["to show that polite greetings differ around the world", "to explain how to say sorry", "to say that kissing is rude", "to describe a holiday"], "why": "*politeness can look different around the world.*"}, {"type": "mc", "tag": "Chi tiết", "q": "What should you do before getting into a lift?", "options": ["Let the people inside get out first.", "Push the button many times.", "Walk in as fast as you can.", "Hold the door for everyone outside."], "why": "Đoạn C: *let the people inside get out first.*"}, {"type": "tf", "tag": "Đúng / Sai", "q": "Parents with young children often find it hard to open doors.", "answer": true, "why": "Đúng. Họ *have their hands full* với túi, xe đẩy, đồ chơi."}, {"type": "mc", "tag": "Thông điệp", "q": "What is the writer's opinion about pushing in busy places?", "options": ["It doesn't help anyone get there faster.", "It is fine if you are in a hurry.", "It is only rude on escalators.", "It is the best way to get a good place."], "why": "*Pushing or shoving… never makes the journey faster for anyone.*"}]}, {"type": "questions", "title": "Part 3 · Picture tasks", "instr": "Quan sát tranh minh hoạ trong sách và trả lời.", "questions": [{"type": "mc", "tag": "Hình ảnh", "q": "What does the girl's reply show about her?", "options": ["She is gracious.", "She is bragging.", "She is sulking.", "She is putting him down."], "why": "Đáp lại lời khen bằng *Thank you* thể hiện người **gracious** (đoạn A).", "image": "images/bm-goodjob.jpg", "alt": "A boy says Good job! to a girl decorating a cake; she says Thank you!"}, {"type": "mc", "tag": "Hình ảnh", "q": "Which advice from paragraph D is the boy following?", "options": ["holding the door for a parent whose hands are full", "letting the door slam behind him", "waiting for people to get out of a lift", "going through the door first"], "why": "Người mẹ bế em bé và đẩy xe – đúng kiểu *have their hands full*.", "image": "images/bm-door.jpg", "alt": "A boy holds a door open for a mother with a pushchair and a baby"}, {"type": "mc", "tag": "Hình ảnh", "q": "Why is the mother's \"Thank you!\" important, according to paragraph E?", "options": ["It shows that she noticed his kindness.", "It tells him to close the door.", "It means he must help her again.", "It is the only English she knows."], "why": "*A quick \"Thank you!\" lets them know that their kindness was noticed.*", "image": "images/bm-door.jpg", "alt": "A boy holds a door open for a mother with a pushchair and a baby"}]}, {"type": "gap", "title": "Part 4 · Gapped text", "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.", "textTitle": "A small surprise", "text": "At the shopping centre yesterday, I was walking behind an old man with a walking stick. [1] I hurried forward and held it open for him. [2] Then he did something that surprised me. [3]", "options": ["When he reached the heavy glass door, he struggled to push it.", "He smiled and said, \"Thank you, young man. You've made my day.\"", "He held the next door open for a mother with a pushchair.", "I let the door slam behind me and ran inside.", "I was too busy looking at my phone to notice him."], "items": [{"answer": 0, "tag": "Liên kết", "why": "Câu sau *held **it** open*: **it** = cánh cửa nặng ở câu này."}, {"answer": 1, "tag": "Liên kết", "why": "Phản ứng tự nhiên khi được giúp: cảm ơn."}, {"answer": 2, "tag": "Liên kết", "why": "Điều bất ngờ: ông lại giữ cửa giúp người khác."}]}, {"type": "questions", "title": "Part 5 · Words in context", "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.", "questions": [{"type": "mc", "tag": "Từ vựng", "q": "*…you don't want to sound like a broken record!* (B). What does this mean?", "options": ["keep saying the same thing again and again", "speak too quietly", "sing badly", "forget what to say"], "why": "Đĩa hỏng cứ lặp một đoạn → nói đi nói lại."}, {"type": "mc", "tag": "Từ vựng", "q": "*…parents… have their hands full* (D). Here, **have your hands full** means…", "options": ["be carrying a lot of things", "be very rich", "have dirty hands", "be clapping"], "why": "Ở đây là nghĩa đen: tay bận đầy đồ (túi, xe đẩy, đồ chơi)."}, {"type": "mc", "tag": "Từ vựng", "q": "*…avoid putting other people down* (A). To **put someone down** is to…", "options": ["make them feel stupid or less important", "help them sit down", "write their name on a list", "carry them carefully"], "why": "**Put sb down** = chê bai, làm người khác thấy kém cỏi."}]}]};
+const ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+const KEY='mannerslesson-'+location.pathname+'-'+L.id;
+let state={};
+try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\*([^*]+)\*/g,'<span class="quote">$1</span>')
+  .replace(/\(([A-E])\)/g,'(<button type="button" class="goto" data-para="$1">$1</button>)');
+const ABC=i=>String.fromCharCode(65+i);
+function seeded(n){let x=n*9301+49297;return()=>{x=(x*9301+49297)%233280;return x/233280}}
+
+/* speech */
+let voice=null;
+function pickVoice(){try{const vs=speechSynthesis.getVoices();voice=vs.find(v=>/en[-_](US|GB)/i.test(v.lang)&&/Google|Samantha|Aria|Jenny|Natural/i.test(v.name))||vs.find(v=>/^en/i.test(v.lang))||null}catch(e){}}
+try{pickVoice();speechSynthesis.onvoiceschanged=pickVoice}catch(e){}
+function speak(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)/g,''));u.lang='en-US';u.rate=.85;if(voice)u.voice=voice;speechSynthesis.speak(u)}catch(e){}}
+
+/* reading */
+document.title=L.pageTitle;
+document.getElementById('barTitle').textContent=L.pageTitle;
+document.getElementById('eyebrow').textContent=L.eyebrow;
+document.getElementById('h1').textContent=L.heading;
+const V={}; L.vocab.forEach(v=>V[v.key]=v);
+const wordify=s=>esc(s).replace(/\{([^|}]+)\|([^}]+)\}/g,(_,d,k)=>`<button type="button" class="w" data-k="${k}">${d}</button>`);
+function readingHTML(idp){
+  return `<div class="eyebrow">Bài đọc</div><h2>${esc(L.reading.title)}</h2>`+
+  L.reading.paras.map(p=>`<p class="para" id="${idp}${p.label}"><span class="lb">${p.label}</span><span>${wordify(p.text)}</span></p>`).join('')+
+  `<details class="vocab" open><summary>Từ mới (${L.vocab.length})</summary><ul class="vlist">${L.vocab.map(v=>`<li><div class="vw">${esc(v.word)}<small>${esc(v.ipa)} · ${esc(v.pos)}</small></div><button class="say" type="button" aria-label="Nghe ${esc(v.word)}" data-say="${esc(v.word)}">${ICON}</button><div class="vvi">${esc(v.vi)}</div></li>`).join('')}</ul></details>`+
+  `<div class="src">${esc(L.source)}</div>`;
+}
+document.getElementById('reading').innerHTML=readingHTML('pa');
+
+/* parts */
+const main=document.getElementById('main'), nav=document.getElementById('partsNav');
+const Q={}; let n=0;
+L.parts.forEach((part,pi)=>{
+  const sid='part'+(pi+1);
+  nav.insertAdjacentHTML('beforeend',`<a href="#${sid}">${esc(part.title.split('·')[0].trim())}</a>`);
+  let h=`<section class="part" id="${sid}"><h3>${esc(part.title)}</h3><p class="instr">${esc(part.instr)}</p>`;
+  if(part.type==='questions'){
+    part.questions.forEach(q=>{
+      n++; let opts, ans;
+      if(q.type==='tf'){opts=['True','False'];ans=q.answer?0:1}
+      else{const r=seeded(n*7+L.id.length);const idx=q.options.map((_,i)=>i);for(let i=idx.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[idx[i],idx[j]]=[idx[j],idx[i]]}
+        opts=idx.map(i=>q.options[i]);ans=idx.indexOf(q.answer||0)}
+      Q[n]={kind:'btn',ans,why:q.why,label:i=>ABC(i)};
+      h+=`<div class="q" id="q${n}"><div class="q-top"><span class="qn">${n}.</span><div class="qt">${q.tag?`<span class="tag">${esc(q.tag)}</span>`:''}${fmt(q.q)}</div></div>
+        ${q.image?`<figure class="fig"><img src="${esc(q.image)}" alt="${esc(q.alt||'')}" loading="lazy"></figure>`:''}
+        <ul class="opts">${opts.map((o,oi)=>`<li><button type="button" class="opt" data-q="${n}" data-o="${oi}"><span class="k">${ABC(oi)}</span><span>${fmt(o)}</span></button></li>`).join('')}</ul>
+        <div class="why" hidden></div></div>`;
+    });
+  } else {
+    // match / gap: shared option bank + one select per item
+    const roman=['i','ii','iii','iv','v','vi','vii','viii','ix','x'];
+    const lab=part.plain?(i=>part.options[i]):(i=>part.type==='match'?roman[i]:ABC(i).toLowerCase());
+    if(part.type==='gap'){
+      let t=esc(part.text).replace(/\[(\d+)\]/g,(_,k)=>`<span class="gap" id="g${n+ +k}">${n+ +k}</span>`);
+      h+=`<div class="gaptext">${part.textTitle?`<h4>${esc(part.textTitle)}</h4>`:''}${t}</div>`;
+    }
+    if(!part.plain)h+=`<div class="bank"><ol type="${part.type==='match'?'i':'a'}">${part.options.map(o=>`<li>${esc(o)}</li>`).join('')}</ol></div>`;
+    part.items.forEach((it,ii)=>{
+      n++;
+      Q[n]={kind:'sel',ans:it.answer,why:it.why,label:lab,text:part.options[it.answer],gap:part.type==='gap',plain:!!part.plain};
+      const label=part.type==='match'?it.label:`Chỗ trống ${n}`;
+      h+=`<div class="q" id="q${n}"><div class="q-top"><span class="qn">${n}.</span><div class="qt">${it.tag?`<span class="tag">${esc(it.tag)}</span>`:''}<b>${esc(label)}</b>${it.para?` <button type="button" class="goto" data-para="${it.para}">xem đoạn</button>`:''}</div></div>
+        <select class="sel" data-q="${n}" aria-label="${esc(label)}"><option value="">— ${esc(part.pick||(part.type==='match'?'Chọn tiêu đề':'Chọn câu'))} —</option>${part.options.map((o,oi)=>`<option value="${oi}">${part.plain?esc(o):lab(oi)+'. '+esc(o)}</option>`).join('')}</select>
+        <div class="why" hidden></div></div>`;
+    });
+  }
+  main.insertAdjacentHTML('beforeend',h+'</section>');
+});
+const total=n;
+main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn primary" id="btnReset" type="button">Làm lại từ đầu</button></div></div><p class="credit">${esc(L.source)}<br>${esc(L.credit||'')}</p>`);
+
+/* answering */
+function paint(i){
+  const q=Q[i], box=document.getElementById('q'+i), pick=state[i];
+  if(pick===undefined)return;
+  const right=pick===q.ans;
+  if(q.kind==='btn'){
+    box.querySelectorAll('.opt').forEach(b=>{b.disabled=true;const o=+b.dataset.o;if(o===q.ans)b.classList.add('ok');else if(o===pick)b.classList.add('no')});
+  } else {
+    const s=box.querySelector('.sel'); s.value=pick; s.disabled=true; s.classList.add(right?'ok':'no');
+    if(q.gap){const g=document.getElementById('g'+i); if(g){g.textContent=q.text; g.classList.add('filled')}}
+  }
+  const why=box.querySelector('.why');
+  why.className='why '+(right?'good':'bad');
+  why.innerHTML=`<span class="vd">${right?'Đúng rồi!':'Chưa đúng. Đáp án: '+esc(q.label(q.ans))+(q.kind==='sel'&&!q.plain?' – '+esc(q.text||''):'')}</span>${fmt(q.why)}`;
+  if(q.kind==='sel'&&!q.text){}
+  why.hidden=false;
+}
+L.parts.forEach(p=>{if(p.type!=='questions')p.items.forEach(()=>{})});
+// fill text for match items
+(()=>{let k=0;L.parts.forEach(p=>{if(p.type==='questions'){k+=p.questions.length}else{p.items.forEach(it=>{k++;Q[k].text=p.options[it.answer]})}})})();
+
+function updateScore(){
+  let done=0,ok=0; for(const i in Q){if(state[i]!==undefined){done++;if(state[i]===Q[i].ans)ok++}}
+  document.getElementById('scoreTxt').textContent=`Đúng ${ok}/${total} · Đã làm ${done}`;
+  document.getElementById('meter').style.width=(done/total*100)+'%';
+  document.getElementById('bigScore').innerHTML=`${ok}<small>/${total}</small>`;
+  let m;
+  if(done<total)m=`Bạn đã làm ${done}/${total} câu. Làm tiếp các câu còn lại nhé.`;
+  else if(ok>=18)m='Xuất sắc! Bạn đọc hiểu rất tốt.';
+  else if(ok>=14)m='Tốt lắm! Xem lại các câu sai và đọc kỹ phần giải thích nhé.';
+  else if(ok>=10)m='Khá ổn. Ôn lại phần Từ mới rồi bấm "Làm lại từ đầu".';
+  else m='Cố lên! Đọc lại bài thật chậm, học kỹ Từ mới rồi làm lại.';
+  document.getElementById('resultMsg').textContent=m;
+}
+document.addEventListener('change',e=>{
+  const s=e.target.closest('.sel'); if(!s||s.value==='')return;
+  const i=+s.dataset.q; if(state[i]===undefined){state[i]=+s.value;save();paint(i);updateScore()}
+});
+
+/* drawer, popover, jumps */
+const drawer=document.getElementById('drawer'), panel=document.getElementById('drawerPanel');
+function openDrawer(label){
+  panel.innerHTML='<button class="btn close" type="button" id="closeDr">Đóng ✕</button>'+readingHTML('dr');
+  drawer.hidden=false; document.body.style.overflow='hidden';
+  if(label){const el=document.getElementById('dr'+label); if(el){el.scrollIntoView({block:'center'});el.classList.add('flash')}}
+}
+function closeDrawer(){drawer.hidden=true;document.body.style.overflow='';hidePop()}
+function gotoPara(label){
+  if(matchMedia('(max-width:900px)').matches){openDrawer(label);return}
+  const el=document.getElementById('pa'+label); if(!el)return;
+  const box=document.getElementById('reading'); box.scrollTo({top:el.offsetTop-box.offsetTop-20,behavior:'smooth'});
+  el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
+}
+const pop=document.getElementById('pop'); let popFor=null;
+function showPop(w){
+  if(popFor===w){hidePop();return} hidePop();
+  const v=V[w.dataset.k]; if(!v)return; popFor=w; w.classList.add('on');
+  pop.innerHTML=`<div class="row"><div><b>${esc(v.word)}</b><span class="ipa">${esc(v.ipa)}</span></div><button type="button" data-say="${esc(v.word)}">Nghe</button></div><div>${esc(v.pos)} · ${esc(v.vi)}</div>`;
+  pop.hidden=false;
+  const r=w.getBoundingClientRect(), pw=pop.offsetWidth;
+  const fixed=!drawer.hidden; pop.style.position=fixed?'fixed':'absolute';
+  const sx=fixed?0:scrollX, sy=fixed?0:scrollY;
+  let x=r.left+sx; x=Math.max(16,Math.min(x,sx+document.documentElement.clientWidth-pw-16));
+  pop.style.left=x+'px'; pop.style.top=(r.bottom+sy+6)+'px';
+}
+function hidePop(){pop.hidden=true;if(popFor)popFor.classList.remove('on');popFor=null}
+document.addEventListener('click',e=>{
+  const o=e.target.closest('.opt');
+  if(o&&!o.disabled){const i=+o.dataset.q;if(state[i]===undefined){state[i]=+o.dataset.o;save();paint(i);updateScore()}return}
+  const s=e.target.closest('[data-say]'); if(s){speak(s.dataset.say);return}
+  const w=e.target.closest('.w[data-k]'); if(w){showPop(w);return}
+  const g=e.target.closest('.goto'); if(g){gotoPara(g.dataset.para);return}
+  if(e.target.id==='fab'){openDrawer();return}
+  if(e.target.id==='closeDr'||e.target===drawer){closeDrawer();return}
+  if(!e.target.closest('#pop'))hidePop();
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){hidePop();if(!drawer.hidden)closeDrawer()}});
+window.addEventListener('resize',hidePop);
+document.getElementById('reading').addEventListener('scroll',hidePop);
+document.getElementById('btnReset').onclick=()=>{
+  state={};save();
+  document.querySelectorAll('.opt').forEach(b=>{b.disabled=false;b.classList.remove('ok','no')});
+  document.querySelectorAll('.sel').forEach(s=>{s.disabled=false;s.value='';s.classList.remove('ok','no')});
+  document.querySelectorAll('.gap').forEach(g=>{g.textContent=g.id.slice(1);g.classList.remove('filled')});
+  document.querySelectorAll('.why').forEach(w=>w.hidden=true);
+  updateScore();scrollTo({top:0});
+};
+document.getElementById('btnWrong').onclick=()=>{
+  const ids=Object.keys(Q).map(Number);
+  const t=ids.find(i=>state[i]!==undefined&&state[i]!==Q[i].ans)||ids.find(i=>state[i]===undefined);
+  if(t)document.getElementById('q'+t).scrollIntoView({block:'center'});
+};
+for(const i in Q)paint(+i);
+updateScore();
+</script>
+</body>
+</html>
