@@ -1,0 +1,351 @@
+{
+ "id": "L03",
+ "book": "Basic Manners",
+ "pageTitle": "Lesson 03 · Kind Words, Open Doors",
+ "eyebrow": "Lesson 03 · B1 · Basic Manners · 20 câu",
+ "heading": "Kind Words, Open Doors",
+ "source": "Bài đọc phỏng theo Basic Manners – Ann Ingalls (The Child's World, 2013), tr. 14–17.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Basic Manners (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "Small Words, Big Difference",
+  "paras": [
+   {
+    "label": "A",
+    "text": "When someone says \"Good job!\", the polite reply is simply \"Thank you.\" Accepting a {compliment|compliment} in this way shows that you are a {gracious|gracious} person, someone who is kind and pleasant to be around. In the same way, avoid {putting other people down|putting other people down} or pointing out their mistakes in front of others."
+   },
+   {
+    "label": "B",
+    "text": "Words are powerful. If something you said makes another person cry, don't pretend it didn't happen. Say \"I'm sorry\" and mean it. When someone thanks you, answer \"You're welcome.\" Once is enough: you don't want to {sound like a broken record|sound like a broken record}! In many parts of South America, people greet each other with a kiss on the cheek, sometimes on both cheeks, so politeness can look different around the world."
+   },
+   {
+    "label": "C",
+    "text": "Manners also matter when you are moving through busy places. Before getting into a {lift|lift}, let the people inside get out first. On an {escalator|escalator}, wait for others to step on before you do. Pushing or {shoving|shoving} your way through never makes the journey faster for anyone."
+   },
+   {
+    "label": "D",
+    "text": "Doors are a good test of your manners. If someone is coming out as you are going in, let them go first. Hold the door open for older people and for parents with young children, who often {have their hands full|have their hands full} with bags, {pushchairs|pushchairs} and toys. If you go through a door first, don't let it {slam|slam} in the face of the person behind you; hold it until they can take it."
+   },
+   {
+    "label": "E",
+    "text": "And when someone holds a door for you, don't just rush past. A quick \"Thank you!\" lets them know that their kindness was noticed."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "compliment",
+   "word": "compliment",
+   "ipa": "/ˈkɒmplɪmənt/",
+   "pos": "danh từ",
+   "vi": "lời khen"
+  },
+  {
+   "key": "gracious",
+   "word": "gracious",
+   "ipa": "/ˈɡreɪʃəs/",
+   "pos": "tính từ",
+   "vi": "tử tế, nhã nhặn"
+  },
+  {
+   "key": "putting other people down",
+   "word": "put sb down",
+   "ipa": "/pʊt daʊn/",
+   "pos": "cụm động từ",
+   "vi": "chê bai, hạ thấp ai"
+  },
+  {
+   "key": "sound like a broken record",
+   "word": "sound like a broken record",
+   "ipa": "/ˌbrəʊkən ˈrekɔːd/",
+   "pos": "cụm từ",
+   "vi": "nói đi nói lại như đĩa hỏng"
+  },
+  {
+   "key": "lift",
+   "word": "lift",
+   "ipa": "/lɪft/",
+   "pos": "danh từ",
+   "vi": "thang máy (Anh-Mỹ: elevator)"
+  },
+  {
+   "key": "escalator",
+   "word": "escalator",
+   "ipa": "/ˈeskəleɪtə(r)/",
+   "pos": "danh từ",
+   "vi": "thang cuốn"
+  },
+  {
+   "key": "shoving",
+   "word": "shove",
+   "ipa": "/ʃʌv/",
+   "pos": "động từ",
+   "vi": "xô đẩy"
+  },
+  {
+   "key": "have their hands full",
+   "word": "have your hands full",
+   "ipa": "/hændz fʊl/",
+   "pos": "cụm từ",
+   "vi": "tay bận đầy đồ; rất bận"
+  },
+  {
+   "key": "pushchairs",
+   "word": "pushchair",
+   "ipa": "/ˈpʊʃtʃeə(r)/",
+   "pos": "danh từ",
+   "vi": "xe đẩy em bé"
+  },
+  {
+   "key": "slam",
+   "word": "slam",
+   "ipa": "/slæm/",
+   "pos": "động từ",
+   "vi": "đóng sầm"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "title": "Part 1 · Matching headings",
+   "instr": "Chọn tiêu đề phù hợp nhất cho mỗi đoạn. Có 2 tiêu đề thừa.",
+   "options": [
+    "Accepting praise politely",
+    "Saying sorry and thanks the right way",
+    "Getting in and out of crowded places",
+    "Helping people through doorways",
+    "Showing that you noticed a kindness",
+    "How to give a good compliment",
+    "Why lifts are dangerous"
+   ],
+   "items": [
+    {
+     "label": "Paragraph A",
+     "para": "A",
+     "answer": 0,
+     "tag": "Ý chính",
+     "why": "Đoạn A: đáp lại *Good job!* bằng *Thank you* = nhận lời khen lịch sự."
+    },
+    {
+     "label": "Paragraph B",
+     "para": "B",
+     "answer": 1,
+     "tag": "Ý chính",
+     "why": "Đoạn B nói cách nói *I'm sorry* và *You're welcome*."
+    },
+    {
+     "label": "Paragraph C",
+     "para": "C",
+     "answer": 2,
+     "tag": "Ý chính",
+     "why": "Đoạn C: thang máy, thang cuốn, nơi đông người."
+    },
+    {
+     "label": "Paragraph D",
+     "para": "D",
+     "answer": 3,
+     "tag": "Ý chính",
+     "why": "Đoạn D: giữ cửa cho người già, cha mẹ có con nhỏ."
+    },
+    {
+     "label": "Paragraph E",
+     "para": "E",
+     "answer": 4,
+     "tag": "Ý chính",
+     "why": "Đoạn E: nói *Thank you* để người kia biết mình *noticed* lòng tốt."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to paragraph A, what should you avoid doing?",
+     "options": [
+      "pointing out other people's mistakes in front of others",
+      "saying \"Thank you\" too quickly",
+      "accepting compliments",
+      "being kind and pleasant"
+     ],
+     "why": "*avoid putting other people down or pointing out their mistakes in front of others.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says you should repeat \"You're welcome\" several times to be extra polite.",
+     "answer": false,
+     "why": "Sai. *Once is enough.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why does the writer mention South America?",
+     "options": [
+      "to show that polite greetings differ around the world",
+      "to explain how to say sorry",
+      "to say that kissing is rude",
+      "to describe a holiday"
+     ],
+     "why": "*politeness can look different around the world.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "What should you do before getting into a lift?",
+     "options": [
+      "Let the people inside get out first.",
+      "Push the button many times.",
+      "Walk in as fast as you can.",
+      "Hold the door for everyone outside."
+     ],
+     "why": "Đoạn C: *let the people inside get out first.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "Parents with young children often find it hard to open doors.",
+     "answer": true,
+     "why": "Đúng. Họ *have their hands full* với túi, xe đẩy, đồ chơi."
+    },
+    {
+     "type": "mc",
+     "tag": "Thông điệp",
+     "q": "What is the writer's opinion about pushing in busy places?",
+     "options": [
+      "It doesn't help anyone get there faster.",
+      "It is fine if you are in a hurry.",
+      "It is only rude on escalators.",
+      "It is the best way to get a good place."
+     ],
+     "why": "*Pushing or shoving… never makes the journey faster for anyone.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What does the girl's reply show about her?",
+     "options": [
+      "She is gracious.",
+      "She is bragging.",
+      "She is sulking.",
+      "She is putting him down."
+     ],
+     "why": "Đáp lại lời khen bằng *Thank you* thể hiện người **gracious** (đoạn A).",
+     "image": "images/bm-goodjob.jpg",
+     "alt": "A boy says Good job! to a girl decorating a cake; she says Thank you!"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which advice from paragraph D is the boy following?",
+     "options": [
+      "holding the door for a parent whose hands are full",
+      "letting the door slam behind him",
+      "waiting for people to get out of a lift",
+      "going through the door first"
+     ],
+     "why": "Người mẹ bế em bé và đẩy xe – đúng kiểu *have their hands full*.",
+     "image": "images/bm-door.jpg",
+     "alt": "A boy holds a door open for a mother with a pushchair and a baby"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Why is the mother's \"Thank you!\" important, according to paragraph E?",
+     "options": [
+      "It shows that she noticed his kindness.",
+      "It tells him to close the door.",
+      "It means he must help her again.",
+      "It is the only English she knows."
+     ],
+     "why": "*A quick \"Thank you!\" lets them know that their kindness was noticed.*",
+     "image": "images/bm-door.jpg",
+     "alt": "A boy holds a door open for a mother with a pushchair and a baby"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "A small surprise",
+   "text": "At the shopping centre yesterday, I was walking behind an old man with a walking stick. [1] I hurried forward and held it open for him. [2] Then he did something that surprised me. [3]",
+   "options": [
+    "When he reached the heavy glass door, he struggled to push it.",
+    "He smiled and said, \"Thank you, young man. You've made my day.\"",
+    "He held the next door open for a mother with a pushchair.",
+    "I let the door slam behind me and ran inside.",
+    "I was too busy looking at my phone to notice him."
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Câu sau *held **it** open*: **it** = cánh cửa nặng ở câu này."
+    },
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Phản ứng tự nhiên khi được giúp: cảm ơn."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Điều bất ngờ: ông lại giữ cửa giúp người khác."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…you don't want to sound like a broken record!* (B). What does this mean?",
+     "options": [
+      "keep saying the same thing again and again",
+      "speak too quietly",
+      "sing badly",
+      "forget what to say"
+     ],
+     "why": "Đĩa hỏng cứ lặp một đoạn → nói đi nói lại."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…parents… have their hands full* (D). Here, **have your hands full** means…",
+     "options": [
+      "be carrying a lot of things",
+      "be very rich",
+      "have dirty hands",
+      "be clapping"
+     ],
+     "why": "Ở đây là nghĩa đen: tay bận đầy đồ (túi, xe đẩy, đồ chơi)."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…avoid putting other people down* (A). To **put someone down** is to…",
+     "options": [
+      "make them feel stupid or less important",
+      "help them sit down",
+      "write their name on a list",
+      "carry them carefully"
+     ],
+     "why": "**Put sb down** = chê bai, làm người khác thấy kém cỏi."
+    }
+   ]
+  }
+ ]
+}

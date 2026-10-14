@@ -1,0 +1,365 @@
+{
+ "id": "L01",
+ "pageTitle": "Lesson 01 · First Impressions",
+ "eyebrow": "Lesson 01 · B1 · Basic Manners · 20 câu",
+ "heading": "First Impressions",
+ "source": "Bài đọc phỏng theo Basic Manners – Ann Ingalls (The Child's World, 2013), tr. 4–9.",
+ "reading": {
+  "title": "Manners: Your Ticket to Friendship",
+  "paras": [
+   {
+    "label": "A",
+    "text": "Have you ever wondered why some people seem to make friends easily, while others {struggle|struggle}? Often, the answer is surprisingly simple: good manners. Manners are not a set of boring rules invented by adults. They are small actions that show other people you {respect|respect} them. If you pay attention to how people treat each other, and think about how you would like to be treated, you will soon understand what good manners look like. Of course, you will sometimes see people {act like a goon|goon}, but that doesn't mean you have to copy them."
+   },
+   {
+    "label": "B",
+    "text": "When a {guest|guest} arrives at your home, the first few seconds matter. A friendly \"Hello\" and a warm smile tell your visitor that you are glad they came. Shaking hands is {a nice touch|touch}, but be careful: a handshake should be {firm|firm}, not so strong that you {rattle their brains|rattle}! However, greetings are not the same everywhere. In China, for example, smiling at someone you don't know well can be seen as {rude|rude}, so what feels friendly in one country may feel strange in another."
+   },
+   {
+    "label": "C",
+    "text": "A good conversation is like a game of tennis: each person gets a turn. While someone is speaking, stay quiet and really listen instead of planning what you will say next. If you have a question, wait until the speaker has finished. Shouting \"My turn!\" or \"Me, me, me!\" might get {attention|attention}, but it won't make people want to listen to you."
+   },
+   {
+    "label": "D",
+    "text": "The same idea applies when you are standing in a {queue|queue}, whether it is at the school canteen or for a ride at a theme park. There is usually enough room for everyone, so there is no need to push. Someone who behaves like a {bulldozer|bulldozer}, knocking others out of the way to get to the front, may arrive first, but they will probably end up with fewer friends."
+   },
+   {
+    "label": "E",
+    "text": "The good news is that manners are a skill, and like any skill, they get easier with practice. If you start now, polite behaviour will become a {habit|habit} that stays with you for the rest of your life."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "struggle",
+   "word": "struggle",
+   "ipa": "/ˈstrʌɡl/",
+   "pos": "động từ",
+   "vi": "vật lộn, gặp khó khăn"
+  },
+  {
+   "key": "respect",
+   "word": "respect",
+   "ipa": "/rɪˈspekt/",
+   "pos": "động từ",
+   "vi": "tôn trọng"
+  },
+  {
+   "key": "goon",
+   "word": "act like a goon",
+   "ipa": "/ɡuːn/",
+   "pos": "cụm từ",
+   "vi": "cư xử ngớ ngẩn, thô lỗ"
+  },
+  {
+   "key": "guest",
+   "word": "guest",
+   "ipa": "/ɡest/",
+   "pos": "danh từ",
+   "vi": "khách"
+  },
+  {
+   "key": "touch",
+   "word": "a nice touch",
+   "ipa": "/tʌtʃ/",
+   "pos": "cụm từ",
+   "vi": "một điểm cộng nhỏ, chi tiết tinh tế"
+  },
+  {
+   "key": "firm",
+   "word": "firm",
+   "ipa": "/fɜːm/",
+   "pos": "tính từ",
+   "vi": "chắc chắn, vững"
+  },
+  {
+   "key": "rattle",
+   "word": "rattle (sb's brains)",
+   "ipa": "/ˈrætl/",
+   "pos": "động từ",
+   "vi": "lắc mạnh (nói đùa: lắc đến “long não”)"
+  },
+  {
+   "key": "rude",
+   "word": "rude",
+   "ipa": "/ruːd/",
+   "pos": "tính từ",
+   "vi": "bất lịch sự, thô lỗ"
+  },
+  {
+   "key": "attention",
+   "word": "attention",
+   "ipa": "/əˈtenʃn/",
+   "pos": "danh từ",
+   "vi": "sự chú ý"
+  },
+  {
+   "key": "queue",
+   "word": "queue",
+   "ipa": "/kjuː/",
+   "pos": "danh từ",
+   "vi": "hàng (người xếp hàng)"
+  },
+  {
+   "key": "bulldozer",
+   "word": "bulldozer",
+   "ipa": "/ˈbʊldəʊzə(r)/",
+   "pos": "danh từ",
+   "vi": "xe ủi đất (ở đây: người chen lấn, xô đẩy)"
+  },
+  {
+   "key": "habit",
+   "word": "habit",
+   "ipa": "/ˈhæbɪt/",
+   "pos": "danh từ",
+   "vi": "thói quen"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "title": "Part 1 · Matching headings",
+   "instr": "Chọn tiêu đề phù hợp nhất cho mỗi đoạn A–E. Có 2 tiêu đề thừa.",
+   "options": [
+    "Why being polite helps you",
+    "Making visitors feel welcome",
+    "Listening is part of talking",
+    "Getting in line without pushing",
+    "Practice makes it permanent",
+    "How to reach the front first",
+    "Strange food in other countries"
+   ],
+   "items": [
+    {
+     "label": "Paragraph A",
+     "answer": 0,
+     "tag": "Ý chính",
+     "why": "Đoạn A giải thích vì sao phép lịch sự quan trọng: giúp ta kết bạn và cho người khác thấy ta *respect them*.",
+     "para": "A"
+    },
+    {
+     "label": "Paragraph B",
+     "answer": 1,
+     "tag": "Ý chính",
+     "why": "Đoạn B nói cách chào khách: *A friendly \"Hello\" and a warm smile tell your visitor that you are glad they came* = làm khách thấy được chào đón.",
+     "para": "B"
+    },
+    {
+     "label": "Paragraph C",
+     "answer": 2,
+     "tag": "Ý chính",
+     "why": "Đoạn C khuyên *stay quiet and really listen* khi người khác nói: lắng nghe cũng là một phần của cuộc trò chuyện.",
+     "para": "C"
+    },
+    {
+     "label": "Paragraph D",
+     "answer": 3,
+     "tag": "Ý chính",
+     "why": "Đoạn D nói về xếp hàng: *there is no need to push*. Tiêu đề \"How to reach the front first\" là bẫy: bài khuyên điều ngược lại.",
+     "para": "D"
+    },
+    {
+     "label": "Paragraph E",
+     "answer": 4,
+     "tag": "Ý chính",
+     "why": "Đoạn E: *they get easier with practice* và sẽ thành *a habit… for the rest of your life* = luyện tập thì sẽ thành thói quen lâu dài.",
+     "para": "E"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False theo bài đọc.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to paragraph A, how can you learn what good manners look like?",
+     "options": [
+      "by watching others and thinking about how you want to be treated",
+      "by memorising a list of rules from adults",
+      "by copying everything your classmates do",
+      "by reading books about famous people"
+     ],
+     "why": "Đoạn A: *If you pay attention to how people treat each other, and think about how you would like to be treated…* Bài còn nói manners **không phải** là luật lệ nhàm chán do người lớn đặt ra."
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer thinks manners are boring rules that adults invented for children.",
+     "answer": false,
+     "why": "Sai. Đoạn A nói rõ: *Manners are not a set of boring rules invented by adults.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why does the writer mention China in paragraph B?",
+     "options": [
+      "to show that polite behaviour can be different in different cultures",
+      "to say that people in China never smile",
+      "to explain why handshakes should be firm",
+      "to suggest that smiling is always rude"
+     ],
+     "why": "Câu sau giải thích ý đó: *what feels friendly in one country may feel strange in another*. Các lựa chọn khác nói quá (never, always) hoặc không liên quan."
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "In paragraph C, why is a good conversation compared to **a game of tennis**?",
+     "options": [
+      "Each person takes a turn.",
+      "One person always wins.",
+      "It needs a lot of energy.",
+      "People must speak very fast."
+     ],
+     "why": "Ngay sau phép so sánh: *each person gets a turn* – giống như đánh bóng qua lại, mỗi người đến lượt mình."
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "According to paragraph D, a person who pushes may get to the front first but may lose friends.",
+     "answer": true,
+     "why": "Đúng. *…may arrive first, but they will probably end up with fewer friends.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Thông điệp",
+     "q": "What is the writer's main purpose in this text?",
+     "options": [
+      "to persuade young readers that good manners help them get on with others",
+      "to compare greetings in different countries",
+      "to tell a story about a rude child",
+      "to explain how to win games at school"
+     ],
+     "why": "Cả bài (A–E) đều thuyết phục bạn đọc nhỏ tuổi rằng phép lịch sự giúp kết bạn và được quý mến. Văn hoá Trung Quốc chỉ là một ví dụ nhỏ trong đoạn B."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "image": "images/L01-hello.jpg",
+     "alt": "A girl shaking a boy's hand very hard while saying Hello",
+     "q": "Look at the boy's face and the lines around him. Which piece of advice from paragraph B has the girl forgotten?",
+     "options": [
+      "A handshake should not be too strong.",
+      "You should always say \"Hello\".",
+      "You should smile at your guest.",
+      "Shaking hands is impolite."
+     ],
+     "why": "Các nét rung và gương mặt hoảng hốt của cậu bé cho thấy cô bé bắt tay quá mạnh, như kiểu *rattle their brains*. Cô bé vẫn nói Hello và vẫn cười, nên hai phương án về lời chào và nụ cười không đúng."
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "image": "images/L01-meme.jpg",
+     "alt": "A girl pushing two children aside and shouting Me, me, me",
+     "q": "Which word from the text best describes the girl in the middle?",
+     "options": [
+      "a bulldozer",
+      "a guest",
+      "a good listener",
+      "a tennis player"
+     ],
+     "why": "Cô bé đẩy hai bạn sang hai bên và hét *Me, me, me!*, đúng kiểu *behaves like a bulldozer, knocking others out of the way* ở đoạn D."
+    },
+    {
+     "type": "mc",
+     "tag": "Vận dụng",
+     "image": "images/L01-wave.jpg",
+     "alt": "A girl walking towards two friends on a bench, all waving and smiling",
+     "q": "The girl is meeting her friends. Why would the writer say this is a good greeting?",
+     "options": [
+      "Her smile and wave show she is glad to see them.",
+      "She is running to get there before anyone else.",
+      "She is waiting quietly for her turn to speak.",
+      "She is shaking hands firmly with everyone."
+     ],
+     "why": "Đoạn B: *a warm smile tell[s] your visitor that you are glad they came.* Trong tranh cô bé cười và vẫy tay, các bạn cũng vui vẻ đáp lại."
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn mới dưới đây và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "Two ways to answer",
+   "text": "Last week, our teacher asked the class a question about the school trip. Minh knew the answer, so he immediately shouted it out. [1] Lan, on the other hand, waited until the teacher had finished speaking. [2] When it was her turn, everyone listened carefully to what she said. [3]",
+   "options": [
+    "Unfortunately, nobody heard him because three other students were shouting too.",
+    "Then she raised her hand quietly and waited to be chosen.",
+    "It showed that patience often gets you more attention than noise.",
+    "She pushed past the others to get to the front of the room.",
+    "Everyone thanked him for answering so quickly."
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Câu trước nói Minh hét câu trả lời; câu (a) nói kết quả: không ai nghe thấy vì nhiều bạn cùng hét. Câu \"Everyone thanked him…\" mâu thuẫn với ý của bài (đoạn C)."
+    },
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Lan *waited until the teacher had finished speaking*, rồi *Then she raised her hand quietly* – từ **Then** nối tiếp hành động. Câu \"pushed past the others\" trái với cách cư xử của Lan."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Câu cuối rút ra bài học từ hai cách cư xử: kiên nhẫn được chú ý hơn ồn ào – đúng thông điệp của đoạn C trong bài đọc."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của cụm từ dựa vào ngữ cảnh trong bài.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*You will sometimes see people act like a goon* (A). What does **act like a goon** mean?",
+     "options": [
+      "behave in a silly or rude way",
+      "behave in a brave way",
+      "act in a school play",
+      "copy good behaviour"
+     ],
+     "why": "Câu sau: *that doesn't mean you have to copy them* – tức đây là cách cư xử xấu, không nên bắt chước. **Goon** = người cư xử ngớ ngẩn, thô lỗ."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Shaking hands is a nice touch* (B). What is **a nice touch**?",
+     "options": [
+      "a small extra thing that makes something better",
+      "a very important rule you must follow",
+      "a way of touching someone gently",
+      "something that makes people feel nervous"
+     ],
+     "why": "Bắt tay không bắt buộc (câu trước đã đủ: Hello + nụ cười) nhưng là **điểm cộng nhỏ** làm lời chào tốt hơn."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…not so strong that you rattle their brains!* (B). Why does the writer use this phrase?",
+     "options": [
+      "to make a funny exaggeration about a very hard handshake",
+      "to warn that handshakes can cause serious injuries",
+      "to explain how the brain works",
+      "to show that the guest is angry"
+     ],
+     "why": "Đây là cách nói phóng đại hài hước (dấu ! cũng gợi ý giọng đùa): bắt tay mạnh quá như làm \"lắc não\" người ta, chứ không phải gây chấn thương thật."
+    }
+   ]
+  }
+ ],
+ "book": "Basic Manners",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Basic Manners (The Child's World, 2013). Dùng cho mục đích học tập."
+}

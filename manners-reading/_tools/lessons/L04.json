@@ -1,0 +1,339 @@
+{
+ "id": "L04",
+ "book": "Basic Manners",
+ "pageTitle": "Lesson 04 · At a Friend's Table",
+ "eyebrow": "Lesson 04 · B1 · Basic Manners · 20 câu",
+ "heading": "At a Friend's Table",
+ "source": "Bài đọc phỏng theo Basic Manners – Ann Ingalls (The Child's World, 2013), tr. 18–21.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Basic Manners (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "How to Be a Great Guest",
+  "paras": [
+   {
+    "label": "A",
+    "text": "Every family has its own way of doing things, and their habits may be quite different from what you {are used to|are used to}. This is natural, because people come from different countries and {cultures|cultures}. Your family might always eat spaghetti on Sundays, while your friend's family might prefer fried rice, pickled beetroot or strudel."
+   },
+   {
+    "label": "B",
+    "text": "So what should you do if you are {invited|invited} to dinner and the food on the table is completely new to you? The answer is simple: give it a try. You might {discover|discover} a new favourite. Even dishes that sound strange, like fried frog legs or pickled pig's feet, could turn out to be delicious! {Pulling a face|pulling a face} or asking for something else would be unkind to the people who cooked for you."
+   },
+   {
+    "label": "C",
+    "text": "{Customs|customs} vary around the world. In Japan, for instance, children often {bow|bow} when they arrive at someone's house for dinner. Noticing and respecting these differences is part of being a good guest."
+   },
+   {
+    "label": "D",
+    "text": "One final piece of advice: don't be a {slob|slob}. Clean up after yourself. If you have been finger painting at school, wash your hands instead of wearing the paint home. And after eating at a friend's house, offer to carry your dishes to the sink."
+   },
+   {
+    "label": "E",
+    "text": "Good manners make everyone feel comfortable. They help us make friends and even {solve|solve} problems. Keep practising them, and you may become the best-liked kid in town."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "are used to",
+   "word": "be used to",
+   "ipa": "/bi ˈjuːst tə/",
+   "pos": "cụm từ",
+   "vi": "quen với"
+  },
+  {
+   "key": "cultures",
+   "word": "culture",
+   "ipa": "/ˈkʌltʃə(r)/",
+   "pos": "danh từ",
+   "vi": "văn hoá"
+  },
+  {
+   "key": "invited",
+   "word": "invite",
+   "ipa": "/ɪnˈvaɪt/",
+   "pos": "động từ",
+   "vi": "mời"
+  },
+  {
+   "key": "discover",
+   "word": "discover",
+   "ipa": "/dɪˈskʌvə(r)/",
+   "pos": "động từ",
+   "vi": "khám phá, phát hiện"
+  },
+  {
+   "key": "pulling a face",
+   "word": "pull a face",
+   "ipa": "/pʊl ə feɪs/",
+   "pos": "cụm từ",
+   "vi": "nhăn mặt"
+  },
+  {
+   "key": "customs",
+   "word": "custom",
+   "ipa": "/ˈkʌstəm/",
+   "pos": "danh từ",
+   "vi": "phong tục"
+  },
+  {
+   "key": "bow",
+   "word": "bow",
+   "ipa": "/baʊ/",
+   "pos": "động từ",
+   "vi": "cúi chào"
+  },
+  {
+   "key": "slob",
+   "word": "slob",
+   "ipa": "/slɒb/",
+   "pos": "danh từ",
+   "vi": "người bừa bộn, luộm thuộm"
+  },
+  {
+   "key": "solve",
+   "word": "solve",
+   "ipa": "/sɒlv/",
+   "pos": "động từ",
+   "vi": "giải quyết"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "plain": true,
+   "title": "Part 1 · Which paragraph?",
+   "pick": "Chọn đoạn",
+   "instr": "Đoạn nào (A–E) chứa thông tin dưới đây?",
+   "options": [
+    "Paragraph A",
+    "Paragraph B",
+    "Paragraph C",
+    "Paragraph D",
+    "Paragraph E"
+   ],
+   "items": [
+    {
+     "label": "A paragraph that says each family's habits can be different",
+     "answer": 0,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn A: *Every family has its own way of doing things.*"
+    },
+    {
+     "label": "A paragraph that explains what to do if you don't recognise the food",
+     "answer": 1,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn B: *give it a try*."
+    },
+    {
+     "label": "A paragraph that gives an example of a greeting custom in another country",
+     "answer": 2,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn C: trẻ em Nhật cúi chào."
+    },
+    {
+     "label": "A paragraph that describes habits of a tidy person",
+     "answer": 3,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn D: rửa tay, mang bát đĩa ra bồn rửa."
+    },
+    {
+     "label": "A paragraph that mentions manners helping to solve problems",
+     "answer": 4,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn E: *help us make friends and even solve problems.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to paragraph A, why do families have different habits?",
+     "options": [
+      "People come from different countries and cultures.",
+      "Some families don't like spaghetti.",
+      "Children choose the food at home.",
+      "Shops sell different food every day."
+     ],
+     "why": "*…because people come from different countries and cultures.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer suggests asking for a different meal if you don't like the look of the food.",
+     "answer": false,
+     "why": "Sai. Đoạn B: hỏi món khác là *unkind*."
+    },
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why does the writer mention frog legs and pig's feet?",
+     "options": [
+      "as examples of food that sounds strange but may taste good",
+      "to show what Japanese children eat",
+      "because they are the writer's favourite dishes",
+      "to warn readers not to eat them"
+     ],
+     "why": "*…dishes that sound strange… could turn out to be delicious!*"
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "In paragraph C, bowing in Japan is an example of…",
+     "options": [
+      "a custom",
+      "a slob",
+      "a favourite dish",
+      "a problem"
+     ],
+     "why": "*Customs vary around the world. In Japan, for instance…*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says good manners can help people get on with each other.",
+     "answer": true,
+     "why": "Đúng. Đoạn E: *help us make friends and even solve problems.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Thông điệp",
+     "q": "What is the main purpose of the text?",
+     "options": [
+      "to give advice on being a polite guest and respecting differences",
+      "to teach readers how to cook new dishes",
+      "to compare food in Japan and South America",
+      "to explain how to finger paint"
+     ],
+     "why": "Cả bài là lời khuyên khi làm khách và tôn trọng sự khác biệt."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "The girls are trying food at a friend's house. Which advice are they following?",
+     "options": [
+      "Give new food a try.",
+      "Ask for a different dish.",
+      "Clean up after yourself.",
+      "Bow when you arrive."
+     ],
+     "why": "Họ đang nếm thử món ăn – đúng lời khuyên *give it a try* (đoạn B).",
+     "image": "images/bm-dinner.jpg",
+     "alt": "Two girls at a table, each holding a meatball on a fork"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What is the boy doing?",
+     "options": [
+      "carrying his dishes to the sink after the meal",
+      "asking for more food",
+      "washing his hands after painting",
+      "bowing to his friend's mother"
+     ],
+     "why": "Đúng lời khuyên cuối đoạn D.",
+     "image": "images/bm-dishes.jpg",
+     "alt": "A boy carrying his plate to a woman standing by the kitchen sink"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which word from the text is the OPPOSITE of how the boy is behaving?",
+     "options": [
+      "a slob",
+      "a guest",
+      "polite",
+      "comfortable"
+     ],
+     "why": "**Slob** = người bừa bộn, không dọn dẹp – ngược với cậu bé.",
+     "image": "images/bm-dishes.jpg",
+     "alt": "A boy carrying his plate to a woman standing by the kitchen sink"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "Dinner at Mai's house",
+   "text": "When I stayed with my friend Mai's family, they served a fish soup I had never tasted before. [1] I took a small spoonful and, to my surprise, I loved it. [2] After dinner, I helped carry the bowls to the kitchen. [3]",
+   "options": [
+    "At first, I was a little worried because it smelled very strong.",
+    "Mai's grandmother laughed and gave me a second bowl.",
+    "Her mum said I was one of the most polite guests they'd ever had.",
+    "I told them that my mum's soup was much better.",
+    "Then I ordered a pizza on my phone."
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Lo lắng ban đầu → câu sau *to my surprise, I loved it* tạo đối lập."
+    },
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Thích món ăn → bà cho thêm bát nữa."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Giúp dọn bát → mẹ Mai khen là khách lịch sự."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Pulling a face… would be unkind* (B). **Pull a face** means…",
+     "options": [
+      "make an expression that shows you don't like something",
+      "pull someone's cheek",
+      "draw a picture of a face",
+      "smile politely"
+     ],
+     "why": "**Pull a face** = nhăn mặt tỏ ý không thích."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…different from what you are used to* (A). **Be used to something** means…",
+     "options": [
+      "be familiar with it",
+      "not like it at all",
+      "use it every day at school",
+      "be afraid of it"
+     ],
+     "why": "**Be used to** = quen với."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…don't be a slob. Clean up after yourself.* (D). A **slob** is a person who…",
+     "options": [
+      "is lazy and untidy",
+      "cooks very well",
+      "is always on time",
+      "is very shy"
+     ],
+     "why": "Câu sau *Clean up after yourself* giúp đoán nghĩa: người bừa bộn."
+    }
+   ]
+  }
+ ]
+}

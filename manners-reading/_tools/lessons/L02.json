@@ -1,0 +1,359 @@
+{
+ "id": "L02",
+ "book": "Basic Manners",
+ "pageTitle": "Lesson 02 · Honest Words, Fair Play",
+ "eyebrow": "Lesson 02 · B1 · Basic Manners · 20 câu",
+ "heading": "Honest Words, Fair Play",
+ "source": "Bài đọc phỏng theo Basic Manners – Ann Ingalls (The Child's World, 2013), tr. 10–13.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Basic Manners (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "Truth, Kindness and Fair Play",
+  "paras": [
+   {
+    "label": "A",
+    "text": "People {trust|trust} friends who tell the truth. Imagine you ate the last piece of pie that your mum was saving for your dad. It might be {tempting|tempting} to blame the dog, but {owning up|owning up} is always the better choice. The same is true if you made a silly face at your baby sister and made her cry. Admitting what you did shows that you are honest, and {honesty|honesty} builds trust."
+   },
+   {
+    "label": "B",
+    "text": "However, being honest does not mean saying every thought that comes into your head. Some comments can hurt people's feelings, especially comments about how someone looks or smells. Nobody wants to be called \"stinky feet\", even if their feet really do smell! In situations like this, the kindest thing is to keep your thoughts to yourself."
+   },
+   {
+    "label": "C",
+    "text": "Games are another place where manners matter. Whether you win or lose, you should behave politely when the game is over. Winners should not {brag|brag} or {show off|show off}, and losers should not {sulk|sulk} or get angry. Throwing the cards across the room will not change the result; it will only make others unwilling to play with you next time."
+   },
+   {
+    "label": "D",
+    "text": "{A good sport|a good sport} accepts that not everyone can win at the same time. Shaking hands or saying \"Good game!\" to the other players can be hard, especially after a close match, but it shows {maturity|maturity} and respect."
+   },
+   {
+    "label": "E",
+    "text": "Sadly, even famous players and coaches sometimes lose their temper. You may see your sports hero {throw a fit|throw a fit} or start a fight on TV. Remember that being talented is not the same as being a good {role model|role model}."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "trust",
+   "word": "trust",
+   "ipa": "/trʌst/",
+   "pos": "động từ",
+   "vi": "tin tưởng"
+  },
+  {
+   "key": "tempting",
+   "word": "tempting",
+   "ipa": "/ˈtemptɪŋ/",
+   "pos": "tính từ",
+   "vi": "hấp dẫn, dễ khiến mình muốn làm"
+  },
+  {
+   "key": "owning up",
+   "word": "own up",
+   "ipa": "/əʊn ʌp/",
+   "pos": "cụm động từ",
+   "vi": "thú nhận, nhận lỗi"
+  },
+  {
+   "key": "honesty",
+   "word": "honesty",
+   "ipa": "/ˈɒnəsti/",
+   "pos": "danh từ",
+   "vi": "sự trung thực"
+  },
+  {
+   "key": "brag",
+   "word": "brag",
+   "ipa": "/bræɡ/",
+   "pos": "động từ",
+   "vi": "khoe khoang"
+  },
+  {
+   "key": "show off",
+   "word": "show off",
+   "ipa": "/ʃəʊ ɒf/",
+   "pos": "cụm động từ",
+   "vi": "khoe mẽ, thể hiện"
+  },
+  {
+   "key": "sulk",
+   "word": "sulk",
+   "ipa": "/sʌlk/",
+   "pos": "động từ",
+   "vi": "hờn dỗi"
+  },
+  {
+   "key": "a good sport",
+   "word": "a good sport",
+   "ipa": "/ɡʊd spɔːt/",
+   "pos": "cụm từ",
+   "vi": "người chơi đẹp, biết thắng thua"
+  },
+  {
+   "key": "maturity",
+   "word": "maturity",
+   "ipa": "/məˈtʃʊərəti/",
+   "pos": "danh từ",
+   "vi": "sự trưởng thành"
+  },
+  {
+   "key": "throw a fit",
+   "word": "throw a fit",
+   "ipa": "/θrəʊ ə fɪt/",
+   "pos": "cụm từ",
+   "vi": "nổi cơn tam bành"
+  },
+  {
+   "key": "role model",
+   "word": "role model",
+   "ipa": "/ˈrəʊl ˌmɒdl/",
+   "pos": "danh từ",
+   "vi": "tấm gương"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "plain": true,
+   "title": "Part 1 · Which paragraph?",
+   "pick": "Chọn đoạn",
+   "instr": "Đoạn nào (A–E) chứa thông tin dưới đây?",
+   "options": [
+    "Paragraph A",
+    "Paragraph B",
+    "Paragraph C",
+    "Paragraph D",
+    "Paragraph E"
+   ],
+   "items": [
+    {
+     "label": "A paragraph that explains how admitting a mistake builds trust",
+     "answer": 0,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn A: *Admitting what you did… honesty builds trust.*"
+    },
+    {
+     "label": "A paragraph that gives an example of a comment that can hurt",
+     "answer": 1,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn B nhắc ví dụ gọi người khác là *\"stinky feet\"*."
+    },
+    {
+     "label": "A paragraph that suggests something to say at the end of a match",
+     "answer": 3,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn D: nói *\"Good game!\"* với đối thủ."
+    },
+    {
+     "label": "A paragraph that says some well-known people do not behave well",
+     "answer": 4,
+     "tag": "Tìm thông tin",
+     "why": "Đoạn E: *even famous players and coaches sometimes lose their temper.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "What does the writer suggest you should do if you ate the pie?",
+     "options": [
+      "Admit that you ate it.",
+      "Blame the dog.",
+      "Buy another pie quietly.",
+      "Say nothing and hope nobody notices."
+     ],
+     "why": "Đoạn A: *owning up is always the better choice* (nhận lỗi là tốt nhất)."
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer believes you should always say exactly what you think.",
+     "answer": false,
+     "why": "Sai. Đoạn B: trung thực **không có nghĩa** là nói mọi suy nghĩ ra miệng."
+    },
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why shouldn't you call someone \"stinky feet\", even if it is true?",
+     "options": [
+      "It may hurt their feelings.",
+      "It is not a funny joke.",
+      "It is against school rules.",
+      "They might call you a name too."
+     ],
+     "why": "Đoạn B: lời nhận xét về ngoại hình, mùi cơ thể *can hurt people's feelings*."
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to paragraph C, what may happen if you throw the cards across the room?",
+     "options": [
+      "Other people may not want to play with you again.",
+      "You may win the next game.",
+      "The result of the game will change.",
+      "The teacher will give you more cards."
+     ],
+     "why": "*…it will only make others unwilling to play with you next time.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says that saying \"Good game!\" after a close match is always easy.",
+     "answer": false,
+     "why": "Sai. Đoạn D: *can be hard, especially after a close match*."
+    },
+    {
+     "type": "mc",
+     "tag": "Ý chính",
+     "q": "What is the main point of paragraph E?",
+     "options": [
+      "Being a famous player doesn't make someone a good example.",
+      "You should never watch sport on TV.",
+      "Coaches are usually better role models than players.",
+      "Talented people never lose their temper."
+     ],
+     "why": "*being talented is not the same as being a good role model.*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "The girl may be telling the truth. So what is wrong with what she says?",
+     "options": [
+      "It is honest but unkind.",
+      "It is a lie.",
+      "It is too quiet.",
+      "It is a compliment."
+     ],
+     "why": "Có thể đúng sự thật, nhưng lời nói đó làm người khác tổn thương (đoạn B).",
+     "image": "images/bm-stinky.jpg",
+     "alt": "A girl holding her nose and saying Hey, stinky feet!"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "According to the text, what would have been the kindest thing for the girl to do?",
+     "options": [
+      "Keep her thoughts to herself.",
+      "Say it more loudly.",
+      "Tell everyone else first.",
+      "Take a photo of his boots."
+     ],
+     "why": "Đoạn B: *the kindest thing is to keep your thoughts to yourself.*",
+     "image": "images/bm-stinky.jpg",
+     "alt": "A girl holding her nose and saying Hey, stinky feet!"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which phrase from the text best describes these two players?",
+     "options": [
+      "good sports",
+      "role models who throw a fit",
+      "players who brag",
+      "losers who sulk"
+     ],
+     "why": "Hai đội đập tay và nói *Good game!*, đúng tinh thần **a good sport** (đoạn D).",
+     "image": "images/bm-goodgame.jpg",
+     "alt": "Two football players from different teams giving a high five and saying Good game!"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "After the final",
+   "text": "Last Saturday, our team lost the final by one goal. [1] Our captain, Huy, walked over to the other team and shook their hands. [2] Later, the coach told us she was prouder of us that day than when we won. [3]",
+   "options": [
+    "Some of us wanted to kick the ball away and go straight home.",
+    "\"Good game,\" he said, even though he looked disappointed.",
+    "She said that losing well is a skill, just like scoring goals.",
+    "He told the winners that they had only been lucky.",
+    "Then we all threw our water bottles at the referee."
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Sau khi thua, cảm xúc tự nhiên là muốn bỏ về; câu sau *Our captain…* đối lập với cảm xúc đó."
+    },
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Huy bắt tay và nói *Good game* – đúng với hành động trước đó."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Giải thích lý do huấn luyện viên tự hào: thua đẹp cũng là một kỹ năng."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…owning up is always the better choice* (A). What does **own up** mean?",
+     "options": [
+      "admit that you did something wrong",
+      "eat everything on your plate",
+      "get up early",
+      "blame someone else"
+     ],
+     "why": "**Own up** = thú nhận lỗi."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…losers should not sulk or get angry* (C). If you **sulk**, you…",
+     "options": [
+      "stay quiet and unhappy because you didn't get what you wanted",
+      "laugh loudly at other people",
+      "practise harder for next time",
+      "congratulate the winner"
+     ],
+     "why": "**Sulk** = hờn dỗi, im lặng tỏ ra không vui."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Winners should not brag* (C). Which word is closest in meaning to **brag**?",
+     "options": [
+      "boast",
+      "apologise",
+      "whisper",
+      "cheat"
+     ],
+     "why": "**Brag** = **boast** = khoe khoang."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…your sports hero throw a fit* (E). What does **throw a fit** mean?",
+     "options": [
+      "suddenly become very angry and upset",
+      "throw a ball very far",
+      "get fit by training",
+      "fall over during a game"
+     ],
+     "why": "**Throw a fit** = nổi cơn tam bành, không phải ném gì."
+    }
+   ]
+  }
+ ]
+}

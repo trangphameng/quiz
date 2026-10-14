@@ -1,0 +1,351 @@
+{
+ "id": "L09",
+ "book": "Good Manners in Public",
+ "pageTitle": "Lesson 09 · Sharing Public Space",
+ "eyebrow": "Lesson 09 · B1 · Good Manners in Public · 20 câu",
+ "heading": "Sharing Public Space",
+ "source": "Bài đọc phỏng theo Good Manners in Public – Ann Ingalls (The Child's World, 2013), tr. 4–7.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Good Manners in Public (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "Spaces We Share",
+  "paras": [
+   {
+    "label": "A",
+    "text": "The moment you step out of your front door, you enter {public space|public space}. A public space is any place you share with other people: parks, shops, libraries, cinemas and restaurants are all examples. In fact, most of the places we visit every day are public."
+   },
+   {
+    "label": "B",
+    "text": "Unfortunately, not everyone {behaves|behaves} politely in public. Have you ever been to the cinema and sat near people who talked loudly, used {bad language|bad language} or chatted on their phones during the film? How did it make you feel? Those people were not respecting your space."
+   },
+   {
+    "label": "C",
+    "text": "You can do better. Keep your music and your voice down, and choose your words carefully. Throwing bad words around is like throwing rubbish around: after a while, everything starts to {stink|stink}."
+   },
+   {
+    "label": "D",
+    "text": "Walking in busy places has its own rules. On a {crowded|crowded} {pavement|pavement} or in a school corridor, keep to one side and pass people carefully. Don't {be a hog|be a hog} by taking up all the space, and think about the people {stuck|stuck} behind you. If someone wants to get past, step to the side."
+   },
+   {
+    "label": "E",
+    "text": "Last but not least, never {spit|spit} on the street: nobody wants to be splashed! In Australia, spitting is considered so rude that it is actually {against the law|against the law} in public places."
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "public space",
+   "word": "public space",
+   "ipa": "/ˌpʌblɪk ˈspeɪs/",
+   "pos": "danh từ",
+   "vi": "không gian công cộng"
+  },
+  {
+   "key": "behaves",
+   "word": "behave",
+   "ipa": "/bɪˈheɪv/",
+   "pos": "động từ",
+   "vi": "cư xử"
+  },
+  {
+   "key": "bad language",
+   "word": "bad language",
+   "ipa": "/bæd ˈlæŋɡwɪdʒ/",
+   "pos": "danh từ",
+   "vi": "lời nói tục"
+  },
+  {
+   "key": "stink",
+   "word": "stink",
+   "ipa": "/stɪŋk/",
+   "pos": "động từ",
+   "vi": "bốc mùi hôi"
+  },
+  {
+   "key": "crowded",
+   "word": "crowded",
+   "ipa": "/ˈkraʊdɪd/",
+   "pos": "tính từ",
+   "vi": "đông đúc"
+  },
+  {
+   "key": "pavement",
+   "word": "pavement",
+   "ipa": "/ˈpeɪvmənt/",
+   "pos": "danh từ",
+   "vi": "vỉa hè"
+  },
+  {
+   "key": "be a hog",
+   "word": "be a hog",
+   "ipa": "/hɒɡ/",
+   "pos": "cụm từ",
+   "vi": "chiếm hết chỗ, ích kỷ"
+  },
+  {
+   "key": "stuck",
+   "word": "stuck",
+   "ipa": "/stʌk/",
+   "pos": "tính từ",
+   "vi": "bị kẹt"
+  },
+  {
+   "key": "spit",
+   "word": "spit",
+   "ipa": "/spɪt/",
+   "pos": "động từ",
+   "vi": "khạc nhổ"
+  },
+  {
+   "key": "against the law",
+   "word": "against the law",
+   "ipa": "/əˈɡenst ðə lɔː/",
+   "pos": "cụm từ",
+   "vi": "trái pháp luật"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "title": "Part 1 · Matching headings",
+   "instr": "Chọn tiêu đề phù hợp nhất cho mỗi đoạn. Có 2 tiêu đề thừa.",
+   "options": [
+    "What counts as a public space",
+    "When others forget their manners",
+    "Watch your volume and your words",
+    "Moving through crowds",
+    "A habit that is even illegal somewhere",
+    "The best seats at the cinema",
+    "How to drive safely"
+   ],
+   "items": [
+    {
+     "label": "Paragraph A",
+     "para": "A",
+     "answer": 0,
+     "tag": "Ý chính",
+     "why": "Đoạn A định nghĩa không gian công cộng."
+    },
+    {
+     "label": "Paragraph B",
+     "para": "B",
+     "answer": 1,
+     "tag": "Ý chính",
+     "why": "Đoạn B: người nói to, chửi bậy ở rạp phim."
+    },
+    {
+     "label": "Paragraph C",
+     "para": "C",
+     "answer": 2,
+     "tag": "Ý chính",
+     "why": "Đoạn C: vặn nhỏ nhạc, giọng nói, chọn lời."
+    },
+    {
+     "label": "Paragraph D",
+     "para": "D",
+     "answer": 3,
+     "tag": "Ý chính",
+     "why": "Đoạn D: đi trên vỉa hè, hành lang đông người."
+    },
+    {
+     "label": "Paragraph E",
+     "para": "E",
+     "answer": 4,
+     "tag": "Ý chính",
+     "why": "Đoạn E: khạc nhổ bị cấm ở Úc."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "Which of these is NOT given as an example of a public space?",
+     "options": [
+      "your bedroom",
+      "a library",
+      "a park",
+      "a restaurant"
+     ],
+     "why": "Phòng ngủ là không gian riêng, không được nêu."
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says that everyone behaves well in public.",
+     "answer": false,
+     "why": "Sai. *not everyone behaves politely in public.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "In paragraph C, why are bad words compared to rubbish?",
+     "options": [
+      "Both make a place unpleasant after a while.",
+      "Both should be recycled.",
+      "Both are found in cinemas.",
+      "Both are easy to pick up."
+     ],
+     "why": "*after a while, everything starts to stink.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "What should you do if someone behind you wants to get past?",
+     "options": [
+      "Step to the side.",
+      "Walk faster.",
+      "Stop in the middle.",
+      "Ask them to wait."
+     ],
+     "why": "*If someone wants to get past, step to the side.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "In Australia, spitting in public can break the law.",
+     "answer": true,
+     "why": "Đúng. *it is actually against the law in public places.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Suy luận",
+     "q": "Why does the writer ask questions in paragraph B?",
+     "options": [
+      "to make readers think about how rude behaviour feels",
+      "to test readers' memory",
+      "to find out where readers live",
+      "to recommend a good film"
+     ],
+     "why": "Câu hỏi giúp người đọc tự cảm nhận việc bị làm phiền."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Which paragraph describes the kind of behaviour in this picture?",
+     "options": [
+      "Paragraph B",
+      "Paragraph A",
+      "Paragraph D",
+      "Paragraph E"
+     ],
+     "why": "Đoạn B kể về người nói chuyện ồn ào trong rạp.",
+     "image": "images/pu-movie.jpg",
+     "alt": "Children in cinema seats; a girl with glasses waves and chats while a boy with popcorn looks unhappy"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "How does the boy with the popcorn probably feel?",
+     "options": [
+      "annoyed",
+      "excited",
+      "proud",
+      "sleepy"
+     ],
+     "why": "Cậu bé nhăn mặt vì bị làm phiền khi xem phim.",
+     "image": "images/pu-movie.jpg",
+     "alt": "Children in cinema seats; a girl with glasses waves and chats while a boy with popcorn looks unhappy"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What is the most useful advice from paragraph D for these children?",
+     "options": [
+      "Leave space for others and step aside to let people pass.",
+      "Walk in the middle and take up all the space.",
+      "Spit on the ground when nobody is looking.",
+      "Turn your music up."
+     ],
+     "why": "Đoạn D: *Don't be a hog… step to the side.*",
+     "image": "images/pu-sidewalk.jpg",
+     "alt": "Several children walking in different directions on a busy path"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "A walk with Grandad",
+   "text": "My grandfather walks slowly because he has a bad knee. [1] Last weekend, we were walking along a busy street when a group of teenagers came up behind us. [2] One of them even smiled and said, \"Have a nice day!\" [3]",
+   "options": [
+    "Sometimes the people behind him get impatient.",
+    "Instead of pushing past, they waited until we moved to the side.",
+    "It reminded me that a little patience makes public spaces nicer for everyone.",
+    "They shouted bad words and spat on the ground.",
+    "My grandfather ran faster than all of them."
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Đi chậm → người phía sau hay sốt ruột (chuẩn bị cho tình huống sau)."
+    },
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "Nhóm thanh niên lịch sự chờ, phù hợp với lời chúc *Have a nice day* tiếp theo."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Kết: bài học về kiên nhẫn nơi công cộng."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*Don't be a hog by taking up all the space* (D). If you are **a hog**, you…",
+     "options": [
+      "selfishly take more than your share",
+      "walk very slowly",
+      "help other people",
+      "are very tidy"
+     ],
+     "why": "**Hog** (con lợn) → người tham, chiếm hết chỗ."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…everything starts to stink* (C). Here, **stink** means…",
+     "options": [
+      "become very unpleasant",
+      "look clean",
+      "grow quickly",
+      "become quiet"
+     ],
+     "why": "Nghĩa bóng: mọi thứ trở nên khó chịu."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…it is actually against the law* (E). Something **against the law** is…",
+     "options": [
+      "not allowed by law",
+      "a type of sport",
+      "very polite",
+      "only for adults"
+     ],
+     "why": "**Against the law** = phạm luật."
+    }
+   ]
+  }
+ ]
+}

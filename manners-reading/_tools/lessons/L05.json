@@ -1,0 +1,358 @@
+{
+ "id": "L05",
+ "book": "Good Manners at School",
+ "pageTitle": "Lesson 05 · Ready to Learn",
+ "eyebrow": "Lesson 05 · B1 · Good Manners at School · 20 câu",
+ "heading": "Ready to Learn",
+ "source": "Bài đọc phỏng theo Good Manners at School – Ann Ingalls (The Child's World, 2013), tr. 4–7.",
+ "credit": "Tranh minh hoạ: Ronnie Rooney, trong Good Manners at School (The Child's World, 2013). Dùng cho mục đích học tập.",
+ "reading": {
+  "title": "Why Manners Matter in Class",
+  "paras": [
+   {
+    "label": "A",
+    "text": "Imagine a classroom where nobody raised their hand. Every time the teacher asked a question, thirty students would shout their answers {at once|at once}. It would be far too noisy to think! Raising your hand and waiting until the teacher calls your name may seem like a small thing, but it shows {respect|respect} for your teacher and your classmates."
+   },
+   {
+    "label": "B",
+    "text": "You spend a large part of each day at school, {surrounded by|surrounded by} many other students. When everyone uses good manners, it becomes easier for all of you to learn and have fun together."
+   },
+   {
+    "label": "C",
+    "text": "Good manners start before the lesson even begins: arrive on time. When a student comes in late, the whole class is {interrupted|interrupted}. The door opens, chairs scrape, the teacher may stop to talk to the {latecomer|latecomer}, and the others lose their {concentration|concentration}. If you are ever late, a simple \"I'm sorry I'm late\" {goes a long way|goes a long way}."
+   },
+   {
+    "label": "D",
+    "text": "Polite words are just as important in class as anywhere else. Use \"please\" and \"thank you\", and if you need a pencil, ask to {borrow|borrow} one instead of {grabbing|grabbing} it from someone's desk. Interestingly, in China students actually take lessons in manners at school, learning things like table manners and how to stand in line."
+   },
+   {
+    "label": "E",
+    "text": "Finally, be {patient|patient}. When the teacher explains a project, listen to all the {directions|directions} before you start. If you rush in too early, you might end up with a big mess!"
+   }
+  ]
+ },
+ "vocab": [
+  {
+   "key": "at once",
+   "word": "at once",
+   "ipa": "/ət wʌns/",
+   "pos": "cụm từ",
+   "vi": "cùng một lúc"
+  },
+  {
+   "key": "respect",
+   "word": "respect",
+   "ipa": "/rɪˈspekt/",
+   "pos": "danh từ",
+   "vi": "sự tôn trọng"
+  },
+  {
+   "key": "surrounded by",
+   "word": "surrounded by",
+   "ipa": "/səˈraʊndɪd baɪ/",
+   "pos": "cụm từ",
+   "vi": "được bao quanh bởi"
+  },
+  {
+   "key": "interrupted",
+   "word": "interrupt",
+   "ipa": "/ˌɪntəˈrʌpt/",
+   "pos": "động từ",
+   "vi": "làm gián đoạn"
+  },
+  {
+   "key": "latecomer",
+   "word": "latecomer",
+   "ipa": "/ˈleɪtkʌmə(r)/",
+   "pos": "danh từ",
+   "vi": "người đến muộn"
+  },
+  {
+   "key": "concentration",
+   "word": "concentration",
+   "ipa": "/ˌkɒnsnˈtreɪʃn/",
+   "pos": "danh từ",
+   "vi": "sự tập trung"
+  },
+  {
+   "key": "goes a long way",
+   "word": "go a long way",
+   "ipa": "/ɡəʊ ə lɒŋ weɪ/",
+   "pos": "cụm từ",
+   "vi": "có tác dụng lớn"
+  },
+  {
+   "key": "borrow",
+   "word": "borrow",
+   "ipa": "/ˈbɒrəʊ/",
+   "pos": "động từ",
+   "vi": "mượn"
+  },
+  {
+   "key": "grabbing",
+   "word": "grab",
+   "ipa": "/ɡræb/",
+   "pos": "động từ",
+   "vi": "giật, chộp lấy"
+  },
+  {
+   "key": "patient",
+   "word": "patient",
+   "ipa": "/ˈpeɪʃnt/",
+   "pos": "tính từ",
+   "vi": "kiên nhẫn"
+  },
+  {
+   "key": "directions",
+   "word": "directions",
+   "ipa": "/dəˈrekʃnz/",
+   "pos": "danh từ",
+   "vi": "lời hướng dẫn"
+  }
+ ],
+ "parts": [
+  {
+   "type": "match",
+   "title": "Part 1 · Matching headings",
+   "instr": "Chọn tiêu đề phù hợp nhất cho mỗi đoạn. Có 2 tiêu đề thừa.",
+   "options": [
+    "Why hands go up before answers",
+    "Learning together with many people",
+    "The problem with arriving late",
+    "Asking nicely, not taking",
+    "Wait for the whole instruction",
+    "How to finish a project quickly",
+    "Ways to make the teacher laugh"
+   ],
+   "items": [
+    {
+     "label": "Paragraph A",
+     "para": "A",
+     "answer": 0,
+     "tag": "Ý chính",
+     "why": "Đoạn A: giơ tay thay vì hét câu trả lời."
+    },
+    {
+     "label": "Paragraph B",
+     "para": "B",
+     "answer": 1,
+     "tag": "Ý chính",
+     "why": "Đoạn B: nhiều học sinh cùng học, cùng vui."
+    },
+    {
+     "label": "Paragraph C",
+     "para": "C",
+     "answer": 2,
+     "tag": "Ý chính",
+     "why": "Đoạn C: đến muộn làm cả lớp gián đoạn."
+    },
+    {
+     "label": "Paragraph D",
+     "para": "D",
+     "answer": 3,
+     "tag": "Ý chính",
+     "why": "Đoạn D: hỏi mượn bút, không giật lấy."
+    },
+    {
+     "label": "Paragraph E",
+     "para": "E",
+     "answer": 4,
+     "tag": "Ý chính",
+     "why": "Đoạn E: nghe hết hướng dẫn rồi mới làm. Tiêu đề *finish quickly* là bẫy."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 2 · Reading comprehension",
+   "instr": "Chọn đáp án đúng hoặc True / False.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to paragraph A, what would happen if nobody raised their hand?",
+     "options": [
+      "The classroom would be too noisy to think.",
+      "The teacher would ask fewer questions.",
+      "Students would learn faster.",
+      "Nobody would answer the questions."
+     ],
+     "why": "*It would be far too noisy to think!*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer says arriving late only affects the student who is late.",
+     "answer": false,
+     "why": "Sai. *the whole class is interrupted.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "Which of these is NOT mentioned as a result of arriving late?",
+     "options": [
+      "The late student has to stay after school.",
+      "The teacher may stop teaching.",
+      "Other students lose their concentration.",
+      "The door and chairs make noise."
+     ],
+     "why": "Bài không nhắc việc phải ở lại sau giờ học."
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "Why does the writer mention China?",
+     "options": [
+      "Students there study manners at school.",
+      "Chinese students are never late.",
+      "Chinese classrooms are very quiet.",
+      "Students there must borrow pencils."
+     ],
+     "why": "*…in China students actually take lessons in manners at school.*"
+    },
+    {
+     "type": "tf",
+     "tag": "Đúng / Sai",
+     "q": "The writer thinks you should ask before using a classmate's pencil.",
+     "answer": true,
+     "why": "Đúng. *ask to borrow one instead of grabbing it.*"
+    },
+    {
+     "type": "mc",
+     "tag": "Chi tiết",
+     "q": "According to paragraph E, what might happen if you start a project before the teacher finishes explaining?",
+     "options": [
+      "You might make a big mess.",
+      "You might finish first and win a prize.",
+      "The teacher might give you extra time.",
+      "You might lose your pencil."
+     ],
+     "why": "*you might end up with a big mess!*"
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 3 · Picture tasks",
+   "instr": "Quan sát tranh minh hoạ trong sách và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "What is the boy doing right?",
+     "options": [
+      "He is raising his hand and waiting to be called.",
+      "He is shouting the answer.",
+      "He is borrowing a pencil.",
+      "He is arriving late."
+     ],
+     "why": "Đúng lời khuyên đoạn A: giơ tay, chờ thầy cô gọi tên.",
+     "image": "images/sc-hand.jpg",
+     "alt": "A boy at his desk with his hand raised; a girl sits quietly next to him"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "According to paragraph C, what should this boy say?",
+     "options": [
+      "\"I'm sorry I'm late.\"",
+      "\"Good job!\"",
+      "\"May I borrow a pencil?\"",
+      "\"Me first!\""
+     ],
+     "why": "*a simple \"I'm sorry I'm late\" goes a long way.*",
+     "image": "images/sc-late.jpg",
+     "alt": "A teacher pointing at the clock as a boy runs into the classroom"
+    },
+    {
+     "type": "mc",
+     "tag": "Hình ảnh",
+     "q": "Why is the teacher pointing at the clock?",
+     "options": [
+      "to show that the boy has arrived late",
+      "to start a new lesson about time",
+      "to tell the class it is lunchtime",
+      "because the clock is broken"
+     ],
+     "why": "Cô chỉ đồng hồ khi cậu bé chạy vào → nhắc cậu đã đến muộn.",
+     "image": "images/sc-late.jpg",
+     "alt": "A teacher pointing at the clock as a boy runs into the classroom"
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 4 · Gapped text",
+   "instr": "Đọc đoạn văn ngắn và chọn câu phù hợp cho mỗi chỗ trống. Có 2 câu thừa.",
+   "textTitle": "Slow down, Nam!",
+   "text": "Nam was always the first to finish his work, but he often got low marks. [1] One day, the teacher gave instructions for a science poster. [2] When he finished, his poster was exactly what the teacher wanted. [3]",
+   "options": [
+    "This was because he never listened to the whole set of instructions.",
+    "This time, Nam waited until she had finished explaining before he started.",
+    "He realised that being patient was more important than being fast.",
+    "As usual, he grabbed a pencil from his friend's desk.",
+    "He started cutting paper before she had said a word."
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "tag": "Liên kết",
+     "why": "Giải thích vì sao Nam hay bị điểm thấp: không nghe hết hướng dẫn."
+    },
+    {
+     "answer": 1,
+     "tag": "Liên kết",
+     "why": "*This time* → lần này khác: Nam chờ cô giảng xong. Phương án *started cutting paper* mâu thuẫn với kết quả tốt."
+    },
+    {
+     "answer": 2,
+     "tag": "Liên kết",
+     "why": "Rút ra bài học: kiên nhẫn quan trọng hơn nhanh."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Words in context",
+   "instr": "Đoán nghĩa của từ/cụm từ dựa vào ngữ cảnh.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…thirty students would shout their answers at once* (A). **At once** here means…",
+     "options": [
+      "at the same time",
+      "immediately after the lesson",
+      "only one time",
+      "very slowly"
+     ],
+     "why": "**At once** ở đây = cùng một lúc."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…a simple \"I'm sorry I'm late\" goes a long way* (C). This means it…",
+     "options": [
+      "helps a lot",
+      "takes a long time to say",
+      "travels far",
+      "is not enough"
+     ],
+     "why": "**Go a long way** = có tác dụng lớn."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ vựng",
+     "q": "*…instead of grabbing it from someone's desk* (D). To **grab** something is to…",
+     "options": [
+      "take it quickly and roughly",
+      "ask for it politely",
+      "give it back",
+      "clean it carefully"
+     ],
+     "why": "**Grab** = chộp, giật lấy nhanh."
+    }
+   ]
+  }
+ ]
+}
