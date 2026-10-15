@@ -283,7 +283,7 @@ const total=n;
 const beforeTotal=Object.values(Q).filter(q=>q.before).length;
 function beforeDone(){let d=0;for(const i in Q)if(Q[i].before&&state[i]!==undefined)d++;return d}
 function unlocked(){return beforeDone()>=beforeTotal}
-main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn" id="btnReset" type="button">Làm lại từ đầu</button></div><div class="submit"><button class="btn primary" id="btnSubmit" type="button" disabled>📨 Nộp bài cho cô</button><div id="sendStatus"></div></div><p class="write">✍️ Con thử viết lại bài này (ít nhất 150 từ) bằng lời của mình, không nhìn bài mẫu, rồi gửi cô chấm qua Teams nhé.</p></div><p class="credit">${esc(L.source)}</p>`);
+main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn" id="btnReset" type="button">Làm lại từ đầu</button></div><div class="submit"><button class="btn primary" id="btnSubmit" type="button" disabled>📨 Nộp bài cho cô</button><div id="sendStatus"></div></div><p class="write">✍️ Con nên thử viết lại bài này (ít nhất 150 từ, tốt nhất khoảng 190 từ) bằng lời của mình, dựa vào các phân tích và từ vựng ngữ pháp vừa học, rồi gửi cô chấm qua Teams nhé.</p></div><p class="credit">${esc(L.source)}</p>`);
 
 let wasOpen=null;
 function applyLock(){
