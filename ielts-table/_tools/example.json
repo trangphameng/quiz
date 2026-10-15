@@ -1,0 +1,348 @@
+{
+ "id": "T00",
+ "pageTitle": "Task 1 Table T99 · Coffee and tea consumption",
+ "eyebrow": "IELTS Writing Task 1 · Table · Đề T99",
+ "heading": "Coffee and tea consumption in four countries",
+ "topic": "Coffee and tea consumption",
+ "kind": "Bảng tĩnh · 1 mốc năm",
+ "book": "VÍ DỤ ĐỊNH DẠNG – không đăng",
+ "source": "Bài mẫu lấy từ sách: Sách thử – Test (dữ liệu thử).",
+ "prompt": [
+  "The table below shows the average number of cups of coffee and tea drunk per person per week in four countries in 2020.",
+  "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "Write at least 150 words."
+ ],
+ "tables": [
+  {
+   "caption": "Cups per person per week (2020)",
+   "head": [
+    [
+     "Country",
+     "Coffee",
+     "Tea"
+    ]
+   ],
+   "rows": [
+    [
+     "Vietnam",
+     "9",
+     "6"
+    ],
+    [
+     "Japan",
+     "5",
+     "12"
+    ],
+    [
+     "Brazil",
+     "14",
+     "2"
+    ],
+    [
+     "UK",
+     "7",
+     "15"
+    ]
+   ],
+   "note": "Source: test data"
+  }
+ ],
+ "words": 160,
+ "sample": [
+  {
+   "label": "Mở bài",
+   "text": "The table {compares|compare} how many cups of coffee and tea people drank weekly in four countries in 2020."
+  },
+  {
+   "label": "Overview",
+   "text": "Overall, coffee was the more popular drink in Vietnam and Brazil, {whereas|whereas} tea was preferred in Japan and the UK."
+  },
+  {
+   "label": "Thân bài 1",
+   "text": "Brazilians drank 14 cups of coffee, twice as many as the British."
+  },
+  {
+   "label": "Thân bài 2",
+   "text": "The UK had the highest figure for tea, at 15 cups."
+  }
+ ],
+ "vocab": [
+  {
+   "key": "compare",
+   "word": "compare",
+   "ipa": "/kəmˈpeə(r)/",
+   "pos": "v",
+   "vi": "so sánh"
+  },
+  {
+   "key": "whereas",
+   "word": "whereas",
+   "ipa": "/weərˈæz/",
+   "pos": "conj",
+   "vi": "trong khi"
+  }
+ ],
+ "parts": [
+  {
+   "type": "questions",
+   "before": true,
+   "title": "Part 1 · Đọc bảng",
+   "instr": "Nhìn bảng và trả lời.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Đọc bảng",
+     "q": "Nước nào uống nhiều cà phê nhất?",
+     "options": [
+      "Brazil",
+      "Vietnam",
+      "UK",
+      "Japan"
+     ],
+     "why": "Brazil 14 cốc."
+    },
+    {
+     "type": "mc",
+     "tag": "Đọc bảng",
+     "q": "Nước nào uống ít trà nhất?",
+     "options": [
+      "Brazil",
+      "Vietnam",
+      "UK",
+      "Japan"
+     ],
+     "why": "Brazil 2 cốc."
+    },
+    {
+     "type": "mc",
+     "tag": "Đọc bảng",
+     "q": "Bảng có mấy mốc thời gian?",
+     "options": [
+      "1 mốc",
+      "2 mốc",
+      "3 mốc",
+      "4 mốc"
+     ],
+     "why": "Chỉ 2020 -> bảng tĩnh, dùng quá khứ đơn."
+    },
+    {
+     "type": "mc",
+     "tag": "Đọc bảng",
+     "q": "Brazil uống cà phê gấp mấy lần UK?",
+     "options": [
+      "Gấp đôi",
+      "Gấp ba",
+      "Bằng nhau",
+      "Một nửa"
+     ],
+     "why": "14 = 2 x 7."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "before": true,
+   "title": "Part 2 · Đặc điểm chính",
+   "instr": "Chọn ý.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Ý chính",
+     "q": "Ý nào nên đưa vào overview?",
+     "long": true,
+     "options": [
+      "Hai nước thích cà phê, hai nước thích trà",
+      "Vietnam uống 9 cốc cà phê",
+      "Japan uống 5 cốc cà phê",
+      "UK uống 7 cốc cà phê"
+     ],
+     "why": "Overview nêu xu hướng chung, không số liệu."
+    },
+    {
+     "type": "mc",
+     "tag": "Ý chính",
+     "q": "Chi tiết nào ít quan trọng nhất?",
+     "options": [
+      "Japan uống 5 cốc cà phê",
+      "Brazil cao nhất về cà phê",
+      "UK cao nhất về trà",
+      "Brazil thấp nhất về trà"
+     ],
+     "why": "Không phải cao nhất hay thấp nhất."
+    },
+    {
+     "type": "mc",
+     "tag": "Overview",
+     "q": "Chọn overview tốt nhất",
+     "long": true,
+     "options": [
+      "Overall, coffee was more popular in Vietnam and Brazil, whereas tea was preferred in Japan and the UK.",
+      "Overall, Brazil drank 14 cups of coffee.",
+      "Overall, I think tea is healthier.",
+      "Overall, Japan drank 12 cups of tea and 5 cups of coffee."
+     ],
+     "why": "Không số liệu, không ý kiến."
+    }
+   ]
+  },
+  {
+   "type": "match",
+   "before": true,
+   "plain": true,
+   "pick": "Chọn đoạn",
+   "title": "Part 3 · Nhóm số liệu",
+   "instr": "Mỗi nhóm nên vào đoạn nào?",
+   "options": [
+    "Thân bài 1",
+    "Thân bài 2",
+    "Không cần nêu riêng"
+   ],
+   "items": [
+    {
+     "label": "Vietnam và Brazil (thích cà phê)",
+     "answer": 0,
+     "why": "Nhóm cà phê."
+    },
+    {
+     "label": "Japan và UK (thích trà)",
+     "answer": 1,
+     "why": "Nhóm trà."
+    },
+    {
+     "label": "Tổng số cốc của cả bốn nước",
+     "answer": 2,
+     "why": "Bảng không cho tổng."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 4 · Ngôn ngữ số liệu",
+   "instr": "Chọn cách viết đúng.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "So sánh",
+     "q": "14 so với 7 nói thế nào?",
+     "options": [
+      "twice as many as",
+      "twice more than",
+      "two times many as",
+      "double than"
+     ],
+     "why": "**twice as many as** + danh từ đếm được."
+    },
+    {
+     "type": "mc",
+     "tag": "Chủ ngữ",
+     "q": "Câu nào đúng?",
+     "long": true,
+     "options": [
+      "The figure for tea in the UK was 15 cups.",
+      "The UK was 15 cups of tea.",
+      "Tea in the UK were 15 cups.",
+      "The UK's tea is 15 cups."
+     ],
+     "why": "Chủ ngữ là số liệu."
+    },
+    {
+     "type": "mc",
+     "tag": "Từ nối",
+     "q": "Từ nào thay được *whereas*?",
+     "options": [
+      "while",
+      "because",
+      "so",
+      "although of"
+     ],
+     "why": "while = whereas."
+    },
+    {
+     "type": "mc",
+     "tag": "Thì",
+     "q": "Đề này dùng thì gì?",
+     "options": [
+      "Quá khứ đơn",
+      "Hiện tại đơn",
+      "Tương lai",
+      "Hiện tại hoàn thành"
+     ],
+     "why": "Mốc 2020 đã qua."
+    }
+   ]
+  },
+  {
+   "type": "questions",
+   "title": "Part 5 · Đúng với bảng không?",
+   "instr": "Đọc câu và so với bảng.",
+   "questions": [
+    {
+     "type": "mc",
+     "tag": "Kiểm tra số liệu",
+     "q": "Câu này có đúng với bảng không?",
+     "ctx": "The UK had the highest figure for tea.",
+     "options": [
+      "Đúng",
+      "Sai: Japan cao nhất",
+      "Sai: Vietnam cao nhất",
+      "Sai: Brazil cao nhất"
+     ],
+     "why": "UK 15 > Japan 12."
+    },
+    {
+     "type": "mc",
+     "tag": "Kiểm tra số liệu",
+     "q": "Câu này có đúng với bảng không?",
+     "ctx": "Vietnamese people drank more tea than coffee.",
+     "options": [
+      "Sai: cà phê 9 > trà 6",
+      "Đúng",
+      "Sai: bằng nhau",
+      "Sai: Vietnam không có số liệu"
+     ],
+     "why": "9 > 6."
+    },
+    {
+     "type": "mc",
+     "tag": "Kiểm tra số liệu",
+     "q": "Câu này có đúng với bảng không?",
+     "ctx": "Japan drank twice as much coffee as tea.",
+     "options": [
+      "Sai: ngược lại, trà (12) nhiều hơn cà phê (5)",
+      "Đúng",
+      "Sai: bằng nhau",
+      "Sai: Japan không uống cà phê"
+     ],
+     "why": "Japan: trà 12 cốc, cà phê 5 cốc, nên phải viết \"Japan drank more than twice as much tea as coffee\"."
+    }
+   ]
+  },
+  {
+   "type": "gap",
+   "title": "Part 6 · Hoàn thành bài mẫu",
+   "instr": "Chọn cụm từ cho chỗ trống.",
+   "text": "Brazilians drank 14 cups, [1] the British. Tea was most popular in the UK, [2] 15 cups, [3] Brazil had only 2.",
+   "options": [
+    "twice as many as",
+    "at",
+    "whereas",
+    "because",
+    "more as"
+   ],
+   "items": [
+    {
+     "answer": 0,
+     "why": "twice as many as"
+    },
+    {
+     "answer": 1,
+     "why": "at + số"
+    },
+    {
+     "answer": 2,
+     "why": "whereas so sánh"
+    }
+   ]
+  }
+ ]
+}
