@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Task 1 Table T04 · Income spent by adults and children</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+:root{
+  --bg:#EEF2F0; --sheet:#FFFFFF; --ink:#18241F; --muted:#56665E; --line:#D3DDD8;
+  --accent:#1F6B57; --accent-soft:#E0EFE9; --mark:#FFE27A; --mark-ink:#18241F;
+  --good:#1D7F55; --good-soft:#E1F4EA; --bad:#B83A33; --bad-soft:#FBE6E4;
+  --head:#F3F7F5; --zebra:#F8FAF9;
+  --f-ui:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-read:"Literata", Georgia, "Times New Roman", serif;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101815; --sheet:#18221E; --ink:#E4ECE8; --muted:#98A9A1; --line:#2B3A34;
+  --accent:#6FD0B1; --accent-soft:#1E352D; --mark:#6B5A1C; --mark-ink:#FFF3C9;
+  --good:#58C892; --good-soft:#163428; --bad:#F2837B; --bad-soft:#3A1E1D;
+  --head:#1E2A25; --zebra:#1B2521; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101815; --sheet:#18221E; --ink:#E4ECE8; --muted:#98A9A1; --line:#2B3A34;
+  --accent:#6FD0B1; --accent-soft:#1E352D; --mark:#6B5A1C; --mark-ink:#FFF3C9;
+  --good:#58C892; --good-soft:#163428; --bad:#F2837B; --bad-soft:#3A1E1D;
+  --head:#1E2A25; --zebra:#1B2521; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:16px;line-height:1.55;padding:0 16px 96px}
+button,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto}
+
+.bar{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);margin:0 -16px;padding:10px 16px}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.bar a.home{color:var(--accent);text-decoration:none;font-size:14px;font-weight:600;white-space:nowrap}
+.bar-title{font-weight:600;font-size:14px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.score{font-size:13px;font-variant-numeric:tabular-nums;display:flex;gap:10px;align-items:center;white-space:nowrap}
+.meter{width:110px;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+@media (max-width:560px){.bar-title{display:none}.score{flex:1;justify-content:flex-end}.meter{width:70px}}
+
+header.hero{padding:28px 0 8px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-family:var(--f-read);font-weight:600;font-size:clamp(26px,5.5vw,38px);line-height:1.15;margin:6px 0 10px;text-wrap:balance}
+.lede{color:var(--muted);max-width:72ch;margin:0}
+.parts-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.parts-nav a{font-size:13px;color:var(--accent);text-decoration:none;background:var(--sheet);border:1px solid var(--line);border-radius:99px;padding:5px 12px}
+.parts-nav a.locked{color:var(--muted)}
+
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start;margin-top:24px}
+@media (max-width:900px){.layout{grid-template-columns:1fr}}
+.reading{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px 22px}
+@media (max-width:900px){.reading{position:static;max-height:none;overflow:visible}}
+
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);margin:0 -4px 16px;padding:0 4px}
+.tab{border:0;background:none;padding:8px 12px;font-size:14px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-1px;cursor:pointer}
+.tab.on{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:disabled{cursor:not-allowed;opacity:.7}
+.pane h2{font-family:var(--f-read);font-weight:600;font-size:22px;margin:2px 0 12px;line-height:1.25}
+.prompt{font-family:var(--f-read);font-size:16px;line-height:1.65;margin:0 0 14px;padding:12px 14px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0}
+.prompt p{margin:0 0 6px}.prompt p:last-child{margin:0}
+.tcap{font-weight:700;font-size:15px;margin:0 0 6px;text-align:center}
+.tscroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table.data{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+table.data th,table.data td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+table.data th:first-child,table.data td:first-child{text-align:left;white-space:normal;min-width:7em}
+table.data thead th{background:var(--head);font-weight:700;vertical-align:bottom}
+table.data tbody tr:nth-child(even){background:var(--zebra)}
+table.data tbody tr:last-child td{border-bottom:0}
+.tnote{font-size:12px;color:var(--muted);margin:6px 0 0}
+.fig{margin:12px 0 0;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.fig img{display:block;width:100%;height:auto}
+.para{margin:0 0 14px;font-family:var(--f-read);font-size:17px;line-height:1.7}
+.para .lb{display:block;font-family:var(--f-ui);font-weight:700;color:var(--accent);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.src a,.credit a{color:inherit;text-decoration:underline;word-break:break-all}
+.src{font-size:12px;color:var(--muted);margin-top:8px;border-top:1px solid var(--line);padding-top:10px}
+.lockbox{text-align:center;color:var(--muted);padding:28px 8px;font-size:15px}
+.lockbox b{display:block;font-size:30px;margin-bottom:6px}
+.w{background:linear-gradient(transparent 55%,var(--mark) 55%);color:var(--mark-ink);border:0;padding:0 1px;cursor:pointer;font-family:inherit;font-size:inherit;line-height:inherit;border-radius:2px}
+.w:hover,.w.on{background:var(--mark)}
+details.vocab{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+details.vocab summary{cursor:pointer;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.vlist{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0 18px}
+.vlist li{padding:8px 0;border-top:1px solid var(--line)}
+.vw{font-weight:600}.vw small{font-weight:400;color:var(--muted);margin-left:6px}
+.vvi{font-size:14px}
+
+section.part{margin-bottom:28px;scroll-margin-top:70px}
+section.part[hidden]{display:none}
+.part h3{font-family:var(--f-read);font-weight:600;font-size:22px;margin:0 0 4px}
+.instr{color:var(--muted);font-size:14px;margin:0 0 10px}
+.gate{background:var(--sheet);border:1px dashed var(--line);border-radius:var(--r);padding:20px;text-align:center;color:var(--muted);margin-bottom:28px}
+.gate b{color:var(--ink)}
+.unlocked{background:var(--good-soft);color:var(--good);border-radius:10px;padding:10px 14px;font-size:14px;font-weight:600;margin:0 0 14px}
+.q{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin-top:10px}
+.q-top{display:flex;gap:10px;align-items:baseline}
+.qn{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent);min-width:2em}
+.qt{flex:1;min-width:0}
+.tag{display:inline-block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-right:6px;vertical-align:1px}
+.quote{font-family:var(--f-read);font-style:italic}
+.ctx{margin:10px 0 0;font-family:var(--f-read);font-size:16px;line-height:1.6;padding:8px 12px;border-left:3px solid var(--line);background:var(--bg);border-radius:0 8px 8px 0}
+.who{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:10px;margin-top:16px;max-width:620px}
+@media (max-width:520px){.who{grid-template-columns:1fr}}
+.who label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--muted)}
+.who input,.who select{font:inherit;font-size:16px;color:var(--ink);background:var(--sheet);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.who input:focus,.who select:focus{border-color:var(--accent)}
+.who.need input:placeholder-shown,.who.need select:invalid{border-color:var(--bad);background:var(--bad-soft)}
+.submit{flex-basis:100%;border-top:1px solid var(--line);padding-top:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.submit .btn{font-size:16px;padding:10px 18px;font-weight:600}
+.submit .btn:disabled{opacity:.5;cursor:not-allowed}
+#sendStatus{font-size:14px;flex:1;min-width:200px}
+#sendStatus.sent{color:var(--good);font-weight:600}
+#sendStatus a{color:var(--accent);font-weight:600}
+.write{flex-basis:100%;font-size:14px;background:var(--accent-soft);border-radius:10px;padding:10px 14px;margin:0}
+.credit{margin-top:16px;font-size:12px;color:var(--muted);line-height:1.5}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.opts.long{grid-template-columns:1fr}
+.opt{width:100%;text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:9px 12px;cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt .k{font-weight:700;color:var(--muted);min-width:1em}
+.opt:disabled{cursor:default}
+.ok{border-color:var(--good)!important;background:var(--good-soft)!important}
+.ok .k{color:var(--good)}
+.no{border-color:var(--bad)!important;background:var(--bad-soft)!important}
+.no .k{color:var(--bad)}
+.why{margin-top:12px;border-radius:10px;padding:10px 12px;font-size:15px;background:var(--accent-soft)}
+.why .vd{display:block;font-size:13px;font-weight:700;margin-bottom:2px}
+.why.good .vd{color:var(--good)}.why.bad .vd{color:var(--bad)}
+
+.bank{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin:0}
+.bank ol{margin:0;padding-left:1.6em}
+.bank li{padding:3px 0}
+.bank li::marker{font-weight:700;color:var(--accent)}
+.sel{width:100%;margin-top:10px;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:9px 12px;cursor:pointer}
+.sel:disabled{cursor:default;opacity:1}
+.gaptext{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;font-family:var(--f-read);font-size:17px;line-height:1.75;margin-bottom:10px}
+.gaptext h4{font-family:var(--f-ui);font-size:15px;margin:0 0 6px}
+.gap{display:inline-block;min-width:2.6em;text-align:center;font-family:var(--f-ui);font-size:14px;font-weight:700;color:var(--accent);border-bottom:2px solid var(--accent);margin:0 2px;padding:0 4px}
+.gap.filled{font-family:var(--f-read);font-weight:400;font-style:italic;color:var(--good);border-color:var(--good);text-align:left}
+
+.result{margin-top:20px;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.big{font-family:var(--f-read);font-size:44px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+.big small{font-size:20px;color:var(--muted)}
+.result p{margin:0;flex:1;min-width:200px}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--sheet);border-radius:99px;padding:7px 14px;font-size:14px;cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+
+.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:25;border:0;background:var(--accent);color:var(--sheet);border-radius:99px;padding:11px 16px;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.2);cursor:pointer}
+@media (max-width:900px){.fab{display:block}}
+.drawer{position:fixed;inset:0;z-index:40;background:rgba(10,15,25,.45);display:flex;align-items:flex-end}
+.drawer[hidden]{display:none}
+.drawer .panel{background:var(--sheet);width:100%;max-height:85vh;overflow:auto;border-radius:16px 16px 0 0;padding:14px 16px 28px}
+.drawer .close{float:right;margin:2px 0 8px 8px}
+
+.pop{position:absolute;z-index:50;max-width:min(320px,calc(100vw - 32px));background:var(--ink);color:var(--bg);border-radius:10px;padding:10px 12px;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.pop .ipa{opacity:.75;margin-left:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-in">
+  <a class="home" href="index.html">← Mục lục</a>
+  <div class="bar-title" id="barTitle"></div>
+  <div class="score"><span id="scoreTxt"></span><span class="meter"><i id="meter"></i></span></div>
+</div></div>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="h1"></h1>
+    <p class="lede">Đọc đề và bảng số liệu, làm <b>Phần 1–3</b> trước. Làm xong, <b>bài mẫu</b> sẽ mở để con làm tiếp Phần 4–6. Chọn đáp án là thấy ngay đúng/sai và lời giải thích.</p>
+    <div class="who" id="who">
+      <label>Your name / Họ và tên<input id="stuName" type="text" autocomplete="name" placeholder="Nhập họ và tên"></label>
+      <label>Class / Lớp<select id="stuClass" required><option value="" disabled selected>— Chọn lớp —</option><option>A2</option><option>B1</option><option>B2</option><option>IELTS</option><option>Khác</option></select></label>
+    </div>
+    <nav class="parts-nav" id="partsNav" aria-label="Các phần"></nav>
+  </header>
+
+  <div class="layout">
+    <aside class="reading" id="reading"></aside>
+    <main id="main"></main>
+  </div>
+</div>
+
+<button class="fab" id="fab" type="button">📊 Bảng &amp; bài mẫu</button>
+<div class="drawer" id="drawer" hidden><div class="panel" id="drawerPanel"></div></div>
+<div class="pop" id="pop" hidden></div>
+
+<script>
+const L = {"id": "T04", "pageTitle": "Task 1 Table T04 · Income spent by adults and children", "eyebrow": "IELTS Writing Task 1 · Table · Đề T04", "heading": "Proportion of income spent on four items in the UK (1998)", "topic": "Income spent by adults and children", "kind": "Bảng tĩnh · 1 mốc năm (1998)", "book": "IELTS Liz (ieltsliz.com)", "source": "Đề và bài mẫu: IELTS Liz, https://ieltsliz.com/ielts-table-spending-on-items/ (có chỉnh sửa nhỏ). Dùng cho mục đích học tập.", "prompt": ["The table below shows the proportion of income adults and children spent on 4 common items in the UK in 1998.", "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.", "Write at least 150 words."], "tables": [{"caption": "The proportion of income adults and children spent on 4 common items in the UK in 1998", "head": [["", "food", "electronic equipment", "music", "videos"]], "rows": [["adults", "25%", "5%", "5%", "1%"], ["men", "14%", "10%", "5%", "2%"], ["women", "39%", "1%", "5%", "0.5%"], ["children", "10%", "23%", "39%", "12%"], ["boys", "9%", "18%", "38%", "18%"], ["girls", "11%", "5%", "40%", "17%"]]}], "words": 212, "sample": [{"label": "Mở bài", "text": "The table {illustrates|illustrate} the percentage of income that was spent on food, electronic equipment, music and videos by both adults and children, {divided by gender|divided}, in the UK in 1998."}, {"label": "Overview", "text": "Overall, adults spent less of their whole income on the four items {compared to|compared} children. Adult spending was {mainly|mainly} on food, with women spending {nearly three times as much as|three} men on that item, and little was spent on other items. For children, {a large proportion of|proportion} their money was spent on music, and spending on other items was also {significant|significant}, with the least spent on food."}, {"label": "Thân bài 1", "text": "For adults, 25% of their money {went on|wenton} food, with women using {up to|upto} 39% of their income on it, compared to only 14% for men. Expenditure on electronic equipment {accounted for|account} 10% of men's income but only 1% for women. {No more than|nomore} 5% was spent on all other items by both genders."}, {"label": "Thân bài 2", "text": "{In terms of|interms} children, expenditure on music was 39%, with girls spending 40% (two {percentage points|points} more than boys). Spending on electronic equipment was 23% overall, {although|although} girls only used 5% of their money on this. For videos, both genders used around 18% of their income. However, food accounted for only about 10% of spending in total and by each gender."}], "vocab": [{"key": "illustrate", "word": "illustrate", "ipa": "/ˈɪləstreɪt/", "pos": "v", "vi": "minh hoạ, thể hiện"}, {"key": "divided", "word": "divided by gender", "ipa": "/dɪˈvaɪdɪd baɪ ˈdʒendə(r)/", "pos": "phrase", "vi": "chia theo giới tính"}, {"key": "compared", "word": "compared to", "ipa": "/kəmˈpeəd tə/", "pos": "prep", "vi": "so với"}, {"key": "mainly", "word": "mainly", "ipa": "/ˈmeɪnli/", "pos": "adv", "vi": "chủ yếu"}, {"key": "three", "word": "nearly three times as much as", "ipa": "/ˈnɪəli θriː taɪmz əz mʌtʃ əz/", "pos": "phrase", "vi": "gần gấp ba lần"}, {"key": "proportion", "word": "a large proportion of", "ipa": "/ə lɑːdʒ prəˈpɔːʃn əv/", "pos": "n phrase", "vi": "một phần lớn của"}, {"key": "significant", "word": "significant", "ipa": "/sɪɡˈnɪfɪkənt/", "pos": "adj", "vi": "đáng kể"}, {"key": "wenton", "word": "(money) go on", "ipa": "/ɡəʊ ɒn/", "pos": "phrasal v", "vi": "(tiền) được tiêu vào"}, {"key": "upto", "word": "up to", "ipa": "/ʌp tuː/", "pos": "prep", "vi": "lên tới"}, {"key": "account", "word": "account for", "ipa": "/əˈkaʊnt fə(r)/", "pos": "v", "vi": "chiếm (bao nhiêu %)"}, {"key": "nomore", "word": "no more than", "ipa": "/nəʊ mɔː ðən/", "pos": "phrase", "vi": "không quá"}, {"key": "interms", "word": "in terms of", "ipa": "/ɪn tɜːmz əv/", "pos": "prep", "vi": "về mặt, xét về"}, {"key": "points", "word": "percentage point", "ipa": "/pəˈsentɪdʒ pɔɪnt/", "pos": "n", "vi": "điểm phần trăm (40% − 38% = 2 điểm %)"}, {"key": "although", "word": "although", "ipa": "/ɔːlˈðəʊ/", "pos": "conj", "vi": "mặc dù"}], "parts": [{"type": "questions", "before": true, "title": "Part 1 · Đọc bảng", "instr": "Nhìn bảng rồi trả lời. Chưa cần xem bài mẫu.", "questions": [{"type": "mc", "tag": "Đọc bảng", "q": "Nhóm nào dành tỉ lệ thu nhập cao nhất cho **food**?", "options": ["women", "adults", "girls", "men"], "why": "Cột food: women 39% là cao nhất. Girls có 40% nhưng đó là cột **music** (nhầm cột); food của girls chỉ 11%."}, {"type": "mc", "tag": "Đọc bảng", "q": "Trẻ em (children) chi nhiều nhất cho mục nào?", "options": ["music", "electronic equipment", "videos", "food"], "why": "Hàng children: music 39%, cao hơn electronic equipment (23%), videos (12%), food (10%)."}, {"type": "mc", "tag": "Thì", "q": "Bảng chỉ có năm 1998. Bài viết nên dùng thì nào?", "options": ["Quá khứ đơn (spent, accounted for)", "Hiện tại đơn (spend, account for)", "Hiện tại hoàn thành (have spent)", "Tương lai (will spend)"], "why": "Năm 1998 đã qua nên dùng **quá khứ đơn**. Bảng chỉ có 1 mốc, nên không viết *increased/decreased*.", "long": true}, {"type": "mc", "tag": "Đơn vị", "q": "Số **39%** ở hàng women, cột food nghĩa là gì?", "options": ["Phụ nữ dành 39% thu nhập cho thực phẩm", "39% phụ nữ có mua thực phẩm", "Phụ nữ chiếm 39% tổng chi thực phẩm ở UK", "Chi tiêu thực phẩm của phụ nữ tăng 39%"], "why": "Tiêu đề bảng: *proportion of income … spent on*. Đây là phần trăm **thu nhập** của nhóm đó, không phải % số người hay mức tăng.", "long": true}]}, {"type": "questions", "before": true, "title": "Part 2 · Đặc điểm chính", "instr": "Chọn ý đáng viết. Bảng có 24 con số, không thể nêu hết.", "questions": [{"type": "mc", "tag": "Ý chính", "q": "Ý nào nên đưa vào **overview**?", "options": ["Người lớn chi chủ yếu cho thực phẩm, trẻ em chi nhiều nhất cho âm nhạc", "Men chi 5% cho âm nhạc", "Boys chi 9% cho thực phẩm", "Adults chi 1% cho videos"], "why": "Overview so sánh hai nhóm lớn (người lớn và trẻ em) theo mục chi nổi bật nhất. Các ý kia là số lẻ, để ở thân bài.", "long": true}, {"type": "mc", "tag": "Ý chính", "q": "Chi tiết nào **ít quan trọng nhất**?", "options": ["Men chi 2% cho videos", "Women chi 39% cho thực phẩm", "Girls chi 40% cho âm nhạc", "Children chi ít nhất cho thực phẩm (10%)"], "why": "Ba ý kia là cao nhất hoặc thấp nhất. 2% cho videos của men không nổi bật, có thể gộp vào câu \"các mục khác dưới 5%\".", "long": true}, {"type": "mc", "tag": "Overview", "q": "Chọn overview tốt nhất.", "options": ["Overall, adults spent most of their income on food, whereas children spent the largest share on music.", "Overall, women spent 39% on food and men spent 14%.", "Overall, children spend too much money on music, which is a waste.", "Overall, boys spent 9% on food, 18% on electronics, 38% on music and 18% on videos."], "why": "Overview tốt nêu xu hướng chính của hai nhóm, không có số. Các câu kia: có số liệu, nêu ý kiến cá nhân, hoặc liệt kê một hàng.", "long": true}]}, {"type": "match", "before": true, "plain": true, "pick": "Chọn đoạn", "title": "Part 3 · Nhóm số liệu", "instr": "Bài mẫu chia theo người lớn và trẻ em. Mỗi nhóm nên vào đoạn nào?", "options": ["Thân bài 1", "Thân bài 2", "Overview"], "items": [{"label": "Men và women: thực phẩm, thiết bị điện tử", "answer": 0, "why": "Số liệu của **người lớn** (men, women) vào Thân bài 1, so sánh nam và nữ."}, {"label": "Boys và girls: âm nhạc, thiết bị điện tử, videos", "answer": 1, "why": "Số liệu của **trẻ em** (boys, girls) vào Thân bài 2. Chia theo nhóm người giúp so sánh giới tính trong cùng đoạn."}, {"label": "Trẻ em dành phần thu nhập cho 4 mục lớn hơn người lớn", "answer": 2, "why": "Đây là so sánh chung giữa hai nhóm, không cần số, nên đặt ở **Overview**."}]}, {"type": "questions", "title": "Part 4 · Ngôn ngữ số liệu", "instr": "Bài mẫu đã mở. Chọn cách viết đúng.", "questions": [{"type": "mc", "tag": "So sánh", "q": "Women 39%, men 14% cho thực phẩm. Cách nói nào đúng?", "options": ["nearly three times as much as men", "three times higher as men", "triple than men", "three times much as men"], "why": "39 : 14 ≈ 2.8, nên **nearly three times as much as**. Cấu trúc: *số lần + as much/many + as*. Nói \"gấp đôi\" là chưa đúng số liệu."}, {"type": "mc", "tag": "Phần trăm", "q": "Girls 40%, boys 38% cho âm nhạc. Cách nói nào chính xác?", "options": ["two percentage points more than boys", "two percents more than boys", "two percentage more than boys", "more two percent than boys"], "why": "Hiệu giữa hai tỉ lệ (40% − 38%) gọi là **percentage points**. *percent* không thêm *s*; *percentage* cần danh từ đi sau."}, {"type": "mc", "tag": "Chủ ngữ", "q": "Câu nào đúng?", "options": ["The proportion of income spent on videos by women was 0.5%.", "The proportion of income spent on videos by women were 0.5%.", "Women was 0.5% on videos.", "Videos of women is 0.5%."], "why": "Chủ ngữ là **the proportion** (số ít) nên đi với *was*. *women* chỉ nằm trong cụm bổ nghĩa, không quyết định động từ.", "long": true}, {"type": "mc", "tag": "Mở bài", "q": "Chọn câu mở bài tốt nhất.", "options": ["The table compares the percentage of their income that adults and children in the UK spent on four common items in 1998.", "The proportion of income adults and children spent on 4 common items in the UK in 1998.", "The chart shows the proportion of income adults and children spent on four items in the UK in 1998.", "The table shows how much income adults and children spend on four items in the UK in 1998."], "why": "Mở bài tốt viết lại đề bằng lời mình (*compares the percentage of their income*), đúng thì. Các câu kia: chép nguyên tiêu đề, gọi bảng là *chart*, hoặc sai thì (*spend*).", "long": true}]}, {"type": "questions", "title": "Part 5 · Đúng với bảng không?", "instr": "Đọc câu, so lại với bảng. Sai một con số là mất điểm Task Achievement.", "questions": [{"type": "mc", "tag": "Kiểm tra số liệu", "q": "Câu này có đúng với bảng không?", "options": ["Đúng", "Sai: boys chi nhiều hơn (38% so với 40%)", "Sai: hai nhóm bằng nhau", "Sai: girls chi 17% cho âm nhạc"], "why": "Cột music: girls 40% > boys 38%. Câu đúng. 17% là videos của girls (nhầm cột).", "ctx": "Girls spent a larger proportion of their income on music than boys."}, {"type": "mc", "tag": "Kiểm tra số liệu", "q": "Câu này có đúng với bảng không?", "options": ["Sai: gấp 10 lần (10% so với 1%)", "Đúng", "Sai: women chi nhiều hơn", "Sai: hai nhóm bằng nhau (5%)"], "why": "Electronic equipment: men 10%, women 1%, tức gấp 10 lần chứ không phải gấp đôi. 5% là số của adults (nhầm hàng).", "ctx": "Men spent twice as much of their income on electronic equipment as women."}, {"type": "mc", "tag": "Kiểm tra số liệu", "q": "Câu này có đúng với bảng không?", "options": ["Sai: thực phẩm mới thấp nhất (10%)", "Đúng", "Sai: âm nhạc thấp nhất", "Sai: thiết bị điện tử thấp nhất (5%)"], "why": "Hàng children: food 10% < videos 12%. 5% cho thiết bị điện tử là số của girls (nhầm hàng).", "ctx": "Children spent the least on videos."}]}, {"type": "gap", "title": "Part 6 · Hoàn thành bài mẫu", "instr": "Đoạn trích từ Thân bài 1. Chọn cụm cho mỗi chỗ trống. Có 2 cụm thừa.", "textTitle": "Adults", "text": "For adults, 25% of their money [1] food, with women using up to 39% of their income on it, [2] only 14% for men. Expenditure on electronic equipment [3] 10% of men's income but only 1% for women.", "options": ["went on", "compared to", "accounted for", "was accounted for", "spent for"], "items": [{"answer": 0, "why": "**money went on** + thứ được mua = tiền được tiêu vào. *spent for* sai giới từ (spend money **on**)."}, {"answer": 1, "why": "**compared to** + số liệu so sánh, đứng sau dấu phẩy."}, {"answer": 2, "why": "**accounted for** + % = chiếm, chủ động. Không dùng bị động *was accounted for*."}]}]};
+const KEY='ieltstable-'+location.pathname+'-'+L.id;
+let state={};
+try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const linkify=s=>esc(s).replace(/https?:\/\/[^\s<]+/g,u=>`<a href="${u}" target="_blank" rel="noopener">${u}</a>`);
+const fmt=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\*([^*]+)\*/g,'<span class="quote">$1</span>');
+const ABC=i=>String.fromCharCode(65+i);
+function seeded(n){let x=n*9301+49297;return()=>{x=(x*9301+49297)%233280;return x/233280}}
+
+document.title=L.pageTitle;
+document.getElementById('barTitle').textContent=L.pageTitle;
+document.getElementById('eyebrow').textContent=L.eyebrow;
+document.getElementById('h1').textContent=L.heading;
+const V={}; L.vocab.forEach(v=>V[v.key]=v);
+const wordify=s=>esc(s).replace(/\{([^|}]+)\|([^}]+)\}/g,(_,d,k)=>`<button type="button" class="w" data-k="${k}">${d}</button>`);
+
+/* left panel: task + table | sample answer (locked until parts marked "before" are done) */
+let tab='task';
+function tableHTML(t){
+  const head=t.head.map(r=>'<tr>'+r.map(c=>`<th>${esc(c)}</th>`).join('')+'</tr>').join('');
+  const rows=t.rows.map(r=>'<tr>'+r.map(c=>`<td>${esc(c)}</td>`).join('')+'</tr>').join('');
+  return `${t.caption?`<p class="tcap">${esc(t.caption)}</p>`:''}<div class="tscroll"><table class="data"><thead>${head}</thead><tbody>${rows}</tbody></table></div>${t.note?`<p class="tnote">${esc(t.note)}</p>`:''}`;
+}
+function panelHTML(){
+  const open=unlocked();
+  let h=`<div class="tabs" role="tablist"><button type="button" class="tab${tab==='task'?' on':''}" data-tab="task">📊 Đề bài</button>`+
+    `<button type="button" class="tab${tab==='sample'?' on':''}" data-tab="sample"${open?'':' aria-disabled="true"'}>${open?'📝':'🔒'} Bài mẫu</button></div>`;
+  if(tab==='task'){
+    h+=`<div class="pane"><div class="prompt">${L.prompt.map(p=>`<p>${esc(p)}</p>`).join('')}</div>`+
+      (L.tables||[]).map(tableHTML).join('<div style="height:14px"></div>')+
+      (L.image?`<figure class="fig"><img src="${esc(L.image)}" alt="Bảng số liệu của đề" loading="lazy"></figure>`:'')+`</div>`;
+  } else if(!open){
+    h+=`<div class="lockbox"><b>🔒</b>Bài mẫu sẽ mở khi con làm xong <b>Phần 1–${beforeParts}</b> (${beforeTotal} câu).<br>Còn ${beforeTotal-beforeDone()} câu.</div>`;
+  } else {
+    h+=`<div class="pane"><h2>Bài mẫu <small style="font-size:14px;color:var(--muted);font-family:var(--f-ui);font-weight:400">(${L.words} từ)</small></h2>`+
+      L.sample.map(p=>`<p class="para"><span class="lb">${esc(p.label)}</span>${wordify(p.text)}</p>`).join('')+
+      `<details class="vocab" open><summary>Từ vựng (${L.vocab.length})</summary><ul class="vlist">${L.vocab.map(v=>`<li><div class="vw">${esc(v.word)}<small>${esc(v.ipa)} · ${esc(v.pos)}</small></div><div class="vvi">${esc(v.vi)}</div></li>`).join('')}</ul></details>`+
+      `<div class="src">${linkify(L.source)}</div></div>`;
+  }
+  return h;
+}
+function renderPanels(){
+  document.getElementById('reading').innerHTML=panelHTML();
+  if(!drawer.hidden)document.getElementById('drawerBody').innerHTML=panelHTML();
+}
+
+/* parts */
+const main=document.getElementById('main'), nav=document.getElementById('partsNav');
+const Q={}; let n=0;
+const beforeParts=L.parts.filter(p=>p.before).length;
+L.parts.forEach((part,pi)=>{
+  const sid='part'+(pi+1);
+  nav.insertAdjacentHTML('beforeend',`<a href="#${sid}" data-after="${part.before?0:1}">${esc(part.title.split('·')[0].trim())}</a>`);
+  if(!part.before&&L.parts[pi-1]&&L.parts[pi-1].before)
+    main.insertAdjacentHTML('beforeend',`<div class="gate" id="gate">🔒 <b>Phần ${pi+1}–${L.parts.length}</b> sẽ mở khi con làm xong Phần 1–${pi}.<br>Lúc đó bài mẫu cũng mở ở khung “Bài mẫu”.</div><div class="unlocked" id="unlockMsg" hidden>🎉 Bài mẫu đã mở! Xem ở thẻ “📝 Bài mẫu” (điện thoại: nút 📊 góc dưới) rồi làm tiếp Phần ${pi+1}–${L.parts.length}.</div>`);
+  let h=`<section class="part" id="${sid}" data-after="${part.before?0:1}"><h3>${esc(part.title)}</h3><p class="instr">${esc(part.instr)}</p>`;
+  if(part.type==='questions'){
+    part.questions.forEach(q=>{
+      n++; let opts, ans;
+      if(q.type==='tf'){opts=['True','False'];ans=q.answer?0:1}
+      else{const r=seeded(n*7+L.id.length);const idx=q.options.map((_,i)=>i);for(let i=idx.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[idx[i],idx[j]]=[idx[j],idx[i]]}
+        opts=idx.map(i=>q.options[i]);ans=idx.indexOf(q.answer||0)}
+      Q[n]={kind:'btn',ans,why:q.why,label:i=>ABC(i),before:!!part.before};
+      h+=`<div class="q" id="q${n}"><div class="q-top"><span class="qn">${n}.</span><div class="qt">${q.tag?`<span class="tag">${esc(q.tag)}</span>`:''}${fmt(q.q)}</div></div>
+        ${q.ctx?`<div class="ctx">${fmt(q.ctx)}</div>`:''}
+        <ul class="opts${q.long?' long':''}">${opts.map((o,oi)=>`<li><button type="button" class="opt" data-q="${n}" data-o="${oi}"><span class="k">${ABC(oi)}</span><span>${fmt(o)}</span></button></li>`).join('')}</ul>
+        <div class="why" hidden></div></div>`;
+    });
+  } else {
+    const lab=part.plain?(i=>part.options[i]):(i=>ABC(i).toLowerCase());
+    if(part.type==='gap'){
+      let t=esc(part.text).replace(/\[(\d+)\]/g,(_,k)=>`<span class="gap" id="g${n+ +k}">${n+ +k}</span>`);
+      h+=`<div class="gaptext">${part.textTitle?`<h4>${esc(part.textTitle)}</h4>`:''}${t}</div>`;
+    }
+    if(!part.plain)h+=`<div class="bank"><ol type="a">${part.options.map(o=>`<li>${esc(o)}</li>`).join('')}</ol></div>`;
+    part.items.forEach(it=>{
+      n++;
+      Q[n]={kind:'sel',ans:it.answer,why:it.why,label:lab,text:part.options[it.answer],gap:part.type==='gap',plain:!!part.plain,before:!!part.before};
+      const label=part.type==='match'?it.label:`Chỗ trống ${n}`;
+      h+=`<div class="q" id="q${n}"><div class="q-top"><span class="qn">${n}.</span><div class="qt">${it.tag?`<span class="tag">${esc(it.tag)}</span>`:''}<b>${fmt(label)}</b></div></div>
+        <select class="sel" data-q="${n}" aria-label="${esc(label)}"><option value="">— ${esc(part.pick||(part.type==='match'?'Chọn':'Chọn cụm từ'))} —</option>${part.options.map((o,oi)=>`<option value="${oi}">${part.plain?esc(o):lab(oi)+'. '+esc(o)}</option>`).join('')}</select>
+        <div class="why" hidden></div></div>`;
+    });
+  }
+  main.insertAdjacentHTML('beforeend',h+'</section>');
+});
+const total=n;
+const beforeTotal=Object.values(Q).filter(q=>q.before).length;
+function beforeDone(){let d=0;for(const i in Q)if(Q[i].before&&state[i]!==undefined)d++;return d}
+function unlocked(){return beforeDone()>=beforeTotal}
+main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn" id="btnReset" type="button">Làm lại từ đầu</button></div><div class="submit"><button class="btn primary" id="btnSubmit" type="button" disabled>📨 Nộp bài cho cô</button><div id="sendStatus"></div></div><p class="write">✍️ Con nên thử viết lại bài này (ít nhất 150 từ, tốt nhất khoảng 190 từ) bằng lời của mình, dựa vào các phân tích và từ vựng ngữ pháp vừa học, rồi gửi cô chấm qua Teams nhé.</p></div><p class="credit">${linkify(L.source)}</p>`);
+
+let wasOpen=null;
+function applyLock(){
+  const open=unlocked();
+  document.querySelectorAll('section.part[data-after="1"]').forEach(s=>s.hidden=!open);
+  document.querySelectorAll('.parts-nav a[data-after="1"]').forEach(a=>a.classList.toggle('locked',!open));
+  const g=document.getElementById('gate'), m=document.getElementById('unlockMsg');
+  if(g)g.hidden=open; if(m)m.hidden=!open;
+  if(wasOpen===false&&open){tab='sample';}
+  if(!open&&tab==='sample')tab='task';
+  wasOpen=open; renderPanels();
+}
+
+/* answering */
+function paint(i){
+  const q=Q[i], box=document.getElementById('q'+i), pick=state[i];
+  if(pick===undefined)return;
+  const right=pick===q.ans;
+  if(q.kind==='btn'){
+    box.querySelectorAll('.opt').forEach(b=>{b.disabled=true;const o=+b.dataset.o;if(o===q.ans)b.classList.add('ok');else if(o===pick)b.classList.add('no')});
+  } else {
+    const s=box.querySelector('.sel'); s.value=pick; s.disabled=true; s.classList.add(right?'ok':'no');
+    if(q.gap){const g=document.getElementById('g'+i); if(g){g.textContent=q.text; g.classList.add('filled')}}
+  }
+  const why=box.querySelector('.why');
+  why.className='why '+(right?'good':'bad');
+  why.innerHTML=`<span class="vd">${right?'Đúng rồi!':'Chưa đúng. Đáp án: '+esc(q.label(q.ans))+(q.kind==='sel'&&!q.plain?' – '+esc(q.text||''):'')}</span>${fmt(q.why)}`;
+  why.hidden=false;
+}
+function answer(i,v){
+  if(state[i]!==undefined)return;
+  state[i]=v;save();paint(i);updateScore();
+  if(Q[i].before)applyLock();
+}
+function updateScore(){
+  let done=0,ok=0; for(const i in Q){if(state[i]!==undefined){done++;if(state[i]===Q[i].ans)ok++}}
+  document.getElementById('scoreTxt').textContent=`Đúng ${ok}/${total} · Đã làm ${done}`;
+  document.getElementById('meter').style.width=(done/total*100)+'%';
+  document.getElementById('bigScore').innerHTML=`${ok}<small>/${total}</small>`;
+  let m;
+  if(done<total)m=`Con đã làm ${done}/${total} câu. Làm tiếp các câu còn lại nhé.`;
+  else if(ok>=18)m='Xuất sắc! Con đọc bảng và dùng ngôn ngữ số liệu rất tốt.';
+  else if(ok>=14)m='Tốt lắm! Xem lại các câu sai và đọc kỹ phần giải thích nhé.';
+  else if(ok>=10)m='Khá ổn. Đọc lại bài mẫu và từ vựng rồi bấm "Làm lại từ đầu".';
+  else m='Cố lên! Đọc lại bảng thật chậm, xem kỹ bài mẫu rồi làm lại.';
+  document.getElementById('resultMsg').textContent=m;
+  refreshSubmit(done,ok);
+}
+document.addEventListener('change',e=>{
+  const s=e.target.closest('.sel'); if(!s||s.value==='')return;
+  answer(+s.dataset.q,+s.value);
+});
+
+/* drawer, popover */
+const drawer=document.getElementById('drawer'), panel=document.getElementById('drawerPanel');
+function openDrawer(){
+  panel.innerHTML='<button class="btn close" type="button" id="closeDr">Đóng ✕</button><div id="drawerBody"></div>';
+  drawer.hidden=false; document.body.style.overflow='hidden'; renderPanels();
+}
+function closeDrawer(){drawer.hidden=true;document.body.style.overflow='';hidePop()}
+const pop=document.getElementById('pop'); let popFor=null;
+function showPop(w){
+  if(popFor===w){hidePop();return} hidePop();
+  const v=V[w.dataset.k]; if(!v)return; popFor=w; w.classList.add('on');
+  pop.innerHTML=`<div><b>${esc(v.word)}</b><span class="ipa">${esc(v.ipa)}</span></div><div>${esc(v.pos)} · ${esc(v.vi)}</div>`;
+  pop.hidden=false;
+  const r=w.getBoundingClientRect(), pw=pop.offsetWidth;
+  const fixed=!drawer.hidden; pop.style.position=fixed?'fixed':'absolute';
+  const sx=fixed?0:scrollX, sy=fixed?0:scrollY;
+  let x=r.left+sx; x=Math.max(16,Math.min(x,sx+document.documentElement.clientWidth-pw-16));
+  pop.style.left=x+'px'; pop.style.top=(r.bottom+sy+6)+'px';
+}
+function hidePop(){pop.hidden=true;if(popFor)popFor.classList.remove('on');popFor=null}
+document.addEventListener('click',e=>{
+  const o=e.target.closest('.opt');
+  if(o&&!o.disabled){answer(+o.dataset.q,+o.dataset.o);return}
+  const t=e.target.closest('.tab'); if(t){tab=t.dataset.tab;hidePop();renderPanels();return}
+  const w=e.target.closest('.w[data-k]'); if(w){showPop(w);return}
+  if(e.target.id==='fab'){openDrawer();return}
+  if(e.target.id==='closeDr'||e.target===drawer){closeDrawer();return}
+  if(!e.target.closest('#pop'))hidePop();
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){hidePop();if(!drawer.hidden)closeDrawer()}});
+window.addEventListener('resize',hidePop);
+document.getElementById('reading').addEventListener('scroll',hidePop);
+document.getElementById('btnReset').onclick=()=>{
+  state={};save();sent=false;saveSent();setStatus('');
+  document.querySelectorAll('.opt').forEach(b=>{b.disabled=false;b.classList.remove('ok','no')});
+  document.querySelectorAll('.sel').forEach(s=>{s.disabled=false;s.value='';s.classList.remove('ok','no')});
+  document.querySelectorAll('.gap').forEach(g=>{g.textContent=g.id.slice(1);g.classList.remove('filled')});
+  document.querySelectorAll('.why').forEach(w=>w.hidden=true);
+  wasOpen=null;tab='task';applyLock();updateScore();scrollTo({top:0});
+};
+document.getElementById('btnWrong').onclick=()=>{
+  const ids=Object.keys(Q).map(Number);
+  const t=ids.find(i=>state[i]!==undefined&&state[i]!==Q[i].ans)||ids.find(i=>state[i]===undefined);
+  if(t){let el=document.getElementById('q'+t); if(el.closest('section').hidden)el=document.getElementById('gate'); el.scrollIntoView({block:'center'})}
+};
+
+/* student info + submit to teacher's Google Form */
+const RESULTS={formUrl:"https://docs.google.com/forms/d/e/1FAIpQLSeOg0kZytzgKzyBIxFD-THAoS44sTOEvDr4VqO1LnX-6kmfYQ/",
+  fields:{name:"entry.1398331139",cls:"entry.770361974",lesson:"entry.449687323",score:"entry.426447052",details:"entry.1388890653"}};
+const SKEY='manners-student', SENTKEY=KEY+'-sent';
+const nameEl=document.getElementById('stuName'), clsEl=document.getElementById('stuClass');
+try{const s=JSON.parse(localStorage.getItem(SKEY)||'{}');if(s.name)nameEl.value=s.name;if(s.cls)clsEl.value=s.cls}catch(e){}
+let sent=false; try{sent=localStorage.getItem(SENTKEY)==='1'}catch(e){}
+const saveSent=()=>{try{sent?localStorage.setItem(SENTKEY,'1'):localStorage.removeItem(SENTKEY)}catch(e){}};
+const student=()=>({name:nameEl.value.trim().replace(/\s+/g,' '),cls:clsEl.value});
+function saveStudent(){try{localStorage.setItem(SKEY,JSON.stringify(student()))}catch(e){};updateScore()}
+nameEl.addEventListener('input',saveStudent); clsEl.addEventListener('change',e=>{e.stopPropagation();saveStudent()});
+const statusEl=document.getElementById('sendStatus'), btnSubmit=document.getElementById('btnSubmit');
+function setStatus(html,ok){statusEl.innerHTML=html;statusEl.className=ok?'sent':''}
+function refreshSubmit(done,ok){
+  const s=student();
+  if(sent){btnSubmit.disabled=true;btnSubmit.textContent='✅ Đã nộp';if(!statusEl.innerHTML)setStatus('Con đã nộp bài này. Muốn làm và nộp lại, bấm "Làm lại từ đầu".',true);return}
+  btnSubmit.textContent='📨 Nộp bài cho cô';
+  btnSubmit.disabled=done<total;
+  if(statusEl.className==='sent')return;
+  if(done<total)setStatus(`Làm đủ ${total} câu để nộp bài (còn ${total-done} câu).`);
+  else if(!s.name||!s.cls)setStatus('Nhập <b>họ tên</b> và chọn <b>lớp</b> ở đầu trang rồi bấm Nộp bài.');
+  else setStatus(`Sẵn sàng nộp: <b>${esc(s.name)}</b> · lớp ${esc(s.cls)} · ${ok}/${total} câu đúng.`);
+}
+function formParams(){
+  const f=RESULTS.fields,p=new URLSearchParams(),s=student();
+  let ok=0; const det=[];
+  for(const i in Q){const g=state[i]===Q[i].ans; if(g)ok++; det.push(i+(g?'✓':'✗'))}
+  p.append(f.name,s.name); p.append(f.cls,s.cls);
+  p.append(f.lesson,`Task 1 Table ${L.id} · ${L.topic}`);
+  p.append(f.score,`${ok}/${total} (${Math.round(ok/total*100)}%)`);
+  p.append(f.details,det.join(' '));
+  return p;
+}
+btnSubmit.onclick=()=>{
+  const s=student();
+  if(!s.name||!s.cls){document.getElementById('who').classList.add('need');scrollTo({top:0,behavior:'smooth'});(s.name?clsEl:nameEl).focus({preventScroll:true});setStatus('Con chưa nhập họ tên hoặc chưa chọn lớp ở đầu trang.');return}
+  const params=formParams(); btnSubmit.disabled=true; setStatus('⏳ Đang gửi kết quả cho cô…');
+  fetch(RESULTS.formUrl+'formResponse',{method:'POST',mode:'no-cors',body:params})
+    .then(()=>{sent=true;saveSent();setStatus('✅ Đã gửi kết quả cho cô. Con không cần làm gì thêm.',true);btnSubmit.textContent='✅ Đã nộp'})
+    .catch(()=>{btnSubmit.disabled=false;setStatus(`Chưa gửi được tự động. Bấm <a href="${RESULTS.formUrl}viewform?usp=pp_url&${params.toString().replace(/&/g,'&amp;')}" target="_blank" rel="noopener">📨 mở Google Form</a> rồi bấm <b>Gửi / Submit</b> để nộp bài.`)});
+};
+for(const i in Q)paint(+i);
+applyLock();
+updateScore();
+</script>
+</body>
+</html>

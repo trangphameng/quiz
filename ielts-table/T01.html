@@ -76,6 +76,7 @@ table.data tbody tr:last-child td{border-bottom:0}
 .fig img{display:block;width:100%;height:auto}
 .para{margin:0 0 14px;font-family:var(--f-read);font-size:17px;line-height:1.7}
 .para .lb{display:block;font-family:var(--f-ui);font-weight:700;color:var(--accent);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.src a,.credit a{color:inherit;text-decoration:underline;word-break:break-all}
 .src{font-size:12px;color:var(--muted);margin-top:8px;border-top:1px solid var(--line);padding-top:10px}
 .lockbox{text-align:center;color:var(--muted);padding:28px 8px;font-size:15px}
 .lockbox b{display:block;font-size:30px;margin-bottom:6px}
@@ -198,6 +199,7 @@ let state={};
 try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const linkify=s=>esc(s).replace(/https?:\/\/[^\s<]+/g,u=>`<a href="${u}" target="_blank" rel="noopener">${u}</a>`);
 const fmt=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\*([^*]+)\*/g,'<span class="quote">$1</span>');
 const ABC=i=>String.fromCharCode(65+i);
 function seeded(n){let x=n*9301+49297;return()=>{x=(x*9301+49297)%233280;return x/233280}}
@@ -230,7 +232,7 @@ function panelHTML(){
     h+=`<div class="pane"><h2>Bài mẫu <small style="font-size:14px;color:var(--muted);font-family:var(--f-ui);font-weight:400">(${L.words} từ)</small></h2>`+
       L.sample.map(p=>`<p class="para"><span class="lb">${esc(p.label)}</span>${wordify(p.text)}</p>`).join('')+
       `<details class="vocab" open><summary>Từ vựng (${L.vocab.length})</summary><ul class="vlist">${L.vocab.map(v=>`<li><div class="vw">${esc(v.word)}<small>${esc(v.ipa)} · ${esc(v.pos)}</small></div><div class="vvi">${esc(v.vi)}</div></li>`).join('')}</ul></details>`+
-      `<div class="src">${esc(L.source)}</div></div>`;
+      `<div class="src">${linkify(L.source)}</div></div>`;
   }
   return h;
 }
@@ -283,7 +285,7 @@ const total=n;
 const beforeTotal=Object.values(Q).filter(q=>q.before).length;
 function beforeDone(){let d=0;for(const i in Q)if(Q[i].before&&state[i]!==undefined)d++;return d}
 function unlocked(){return beforeDone()>=beforeTotal}
-main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn" id="btnReset" type="button">Làm lại từ đầu</button></div><div class="submit"><button class="btn primary" id="btnSubmit" type="button" disabled>📨 Nộp bài cho cô</button><div id="sendStatus"></div></div><p class="write">✍️ Con nên thử viết lại bài này (ít nhất 150 từ, tốt nhất khoảng 190 từ) bằng lời của mình, dựa vào các phân tích và từ vựng ngữ pháp vừa học, rồi gửi cô chấm qua Teams nhé.</p></div><p class="credit">${esc(L.source)}</p>`);
+main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn" id="btnReset" type="button">Làm lại từ đầu</button></div><div class="submit"><button class="btn primary" id="btnSubmit" type="button" disabled>📨 Nộp bài cho cô</button><div id="sendStatus"></div></div><p class="write">✍️ Con nên thử viết lại bài này (ít nhất 150 từ, tốt nhất khoảng 190 từ) bằng lời của mình, dựa vào các phân tích và từ vựng ngữ pháp vừa học, rồi gửi cô chấm qua Teams nhé.</p></div><p class="credit">${linkify(L.source)}</p>`);
 
 let wasOpen=null;
 function applyLock(){

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Task 1 Table T02 · Indian students in UK universities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+:root{
+  --bg:#EEF2F0; --sheet:#FFFFFF; --ink:#18241F; --muted:#56665E; --line:#D3DDD8;
+  --accent:#1F6B57; --accent-soft:#E0EFE9; --mark:#FFE27A; --mark-ink:#18241F;
+  --good:#1D7F55; --good-soft:#E1F4EA; --bad:#B83A33; --bad-soft:#FBE6E4;
+  --head:#F3F7F5; --zebra:#F8FAF9;
+  --f-ui:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-read:"Literata", Georgia, "Times New Roman", serif;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101815; --sheet:#18221E; --ink:#E4ECE8; --muted:#98A9A1; --line:#2B3A34;
+  --accent:#6FD0B1; --accent-soft:#1E352D; --mark:#6B5A1C; --mark-ink:#FFF3C9;
+  --good:#58C892; --good-soft:#163428; --bad:#F2837B; --bad-soft:#3A1E1D;
+  --head:#1E2A25; --zebra:#1B2521; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101815; --sheet:#18221E; --ink:#E4ECE8; --muted:#98A9A1; --line:#2B3A34;
+  --accent:#6FD0B1; --accent-soft:#1E352D; --mark:#6B5A1C; --mark-ink:#FFF3C9;
+  --good:#58C892; --good-soft:#163428; --bad:#F2837B; --bad-soft:#3A1E1D;
+  --head:#1E2A25; --zebra:#1B2521; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:16px;line-height:1.55;padding:0 16px 96px}
+button,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto}
+
+.bar{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);margin:0 -16px;padding:10px 16px}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.bar a.home{color:var(--accent);text-decoration:none;font-size:14px;font-weight:600;white-space:nowrap}
+.bar-title{font-weight:600;font-size:14px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.score{font-size:13px;font-variant-numeric:tabular-nums;display:flex;gap:10px;align-items:center;white-space:nowrap}
+.meter{width:110px;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+@media (max-width:560px){.bar-title{display:none}.score{flex:1;justify-content:flex-end}.meter{width:70px}}
+
+header.hero{padding:28px 0 8px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-family:var(--f-read);font-weight:600;font-size:clamp(26px,5.5vw,38px);line-height:1.15;margin:6px 0 10px;text-wrap:balance}
+.lede{color:var(--muted);max-width:72ch;margin:0}
+.parts-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.parts-nav a{font-size:13px;color:var(--accent);text-decoration:none;background:var(--sheet);border:1px solid var(--line);border-radius:99px;padding:5px 12px}
+.parts-nav a.locked{color:var(--muted)}
+
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start;margin-top:24px}
+@media (max-width:900px){.layout{grid-template-columns:1fr}}
+.reading{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px 22px}
+@media (max-width:900px){.reading{position:static;max-height:none;overflow:visible}}
+
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);margin:0 -4px 16px;padding:0 4px}
+.tab{border:0;background:none;padding:8px 12px;font-size:14px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-1px;cursor:pointer}
+.tab.on{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:disabled{cursor:not-allowed;opacity:.7}
+.pane h2{font-family:var(--f-read);font-weight:600;font-size:22px;margin:2px 0 12px;line-height:1.25}
+.prompt{font-family:var(--f-read);font-size:16px;line-height:1.65;margin:0 0 14px;padding:12px 14px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0}
+.prompt p{margin:0 0 6px}.prompt p:last-child{margin:0}
+.tcap{font-weight:700;font-size:15px;margin:0 0 6px;text-align:center}
+.tscroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table.data{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+table.data th,table.data td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+table.data th:first-child,table.data td:first-child{text-align:left;white-space:normal;min-width:7em}
+table.data thead th{background:var(--head);font-weight:700;vertical-align:bottom}
+table.data tbody tr:nth-child(even){background:var(--zebra)}
+table.data tbody tr:last-child td{border-bottom:0}
+.tnote{font-size:12px;color:var(--muted);margin:6px 0 0}
+.fig{margin:12px 0 0;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.fig img{display:block;width:100%;height:auto}
+.para{margin:0 0 14px;font-family:var(--f-read);font-size:17px;line-height:1.7}
+.para .lb{display:block;font-family:var(--f-ui);font-weight:700;color:var(--accent);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.src a,.credit a{color:inherit;text-decoration:underline;word-break:break-all}
+.src{font-size:12px;color:var(--muted);margin-top:8px;border-top:1px solid var(--line);padding-top:10px}
+.lockbox{text-align:center;color:var(--muted);padding:28px 8px;font-size:15px}
+.lockbox b{display:block;font-size:30px;margin-bottom:6px}
+.w{background:linear-gradient(transparent 55%,var(--mark) 55%);color:var(--mark-ink);border:0;padding:0 1px;cursor:pointer;font-family:inherit;font-size:inherit;line-height:inherit;border-radius:2px}
+.w:hover,.w.on{background:var(--mark)}
+details.vocab{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+details.vocab summary{cursor:pointer;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.vlist{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0 18px}
+.vlist li{padding:8px 0;border-top:1px solid var(--line)}
+.vw{font-weight:600}.vw small{font-weight:400;color:var(--muted);margin-left:6px}
+.vvi{font-size:14px}
+
+section.part{margin-bottom:28px;scroll-margin-top:70px}
+section.part[hidden]{display:none}
+.part h3{font-family:var(--f-read);font-weight:600;font-size:22px;margin:0 0 4px}
+.instr{color:var(--muted);font-size:14px;margin:0 0 10px}
+.gate{background:var(--sheet);border:1px dashed var(--line);border-radius:var(--r);padding:20px;text-align:center;color:var(--muted);margin-bottom:28px}
+.gate b{color:var(--ink)}
+.unlocked{background:var(--good-soft);color:var(--good);border-radius:10px;padding:10px 14px;font-size:14px;font-weight:600;margin:0 0 14px}
+.q{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin-top:10px}
+.q-top{display:flex;gap:10px;align-items:baseline}
+.qn{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent);min-width:2em}
+.qt{flex:1;min-width:0}
+.tag{display:inline-block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-right:6px;vertical-align:1px}
+.quote{font-family:var(--f-read);font-style:italic}
+.ctx{margin:10px 0 0;font-family:var(--f-read);font-size:16px;line-height:1.6;padding:8px 12px;border-left:3px solid var(--line);background:var(--bg);border-radius:0 8px 8px 0}
+.who{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:10px;margin-top:16px;max-width:620px}
+@media (max-width:520px){.who{grid-template-columns:1fr}}
+.who label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--muted)}
+.who input,.who select{font:inherit;font-size:16px;color:var(--ink);background:var(--sheet);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.who input:focus,.who select:focus{border-color:var(--accent)}
+.who.need input:placeholder-shown,.who.need select:invalid{border-color:var(--bad);background:var(--bad-soft)}
+.submit{flex-basis:100%;border-top:1px solid var(--line);padding-top:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.submit .btn{font-size:16px;padding:10px 18px;font-weight:600}
+.submit .btn:disabled{opacity:.5;cursor:not-allowed}
+#sendStatus{font-size:14px;flex:1;min-width:200px}
+#sendStatus.sent{color:var(--good);font-weight:600}
+#sendStatus a{color:var(--accent);font-weight:600}
+.write{flex-basis:100%;font-size:14px;background:var(--accent-soft);border-radius:10px;padding:10px 14px;margin:0}
+.credit{margin-top:16px;font-size:12px;color:var(--muted);line-height:1.5}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.opts.long{grid-template-columns:1fr}
+.opt{width:100%;text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:9px 12px;cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt .k{font-weight:700;color:var(--muted);min-width:1em}
+.opt:disabled{cursor:default}
+.ok{border-color:var(--good)!important;background:var(--good-soft)!important}
+.ok .k{color:var(--good)}
+.no{border-color:var(--bad)!important;background:var(--bad-soft)!important}
+.no .k{color:var(--bad)}
+.why{margin-top:12px;border-radius:10px;padding:10px 12px;font-size:15px;background:var(--accent-soft)}
+.why .vd{display:block;font-size:13px;font-weight:700;margin-bottom:2px}
+.why.good .vd{color:var(--good)}.why.bad .vd{color:var(--bad)}
+
+.bank{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin:0}
+.bank ol{margin:0;padding-left:1.6em}
+.bank li{padding:3px 0}
+.bank li::marker{font-weight:700;color:var(--accent)}
+.sel{width:100%;margin-top:10px;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:9px 12px;cursor:pointer}
+.sel:disabled{cursor:default;opacity:1}
+.gaptext{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;font-family:var(--f-read);font-size:17px;line-height:1.75;margin-bottom:10px}
+.gaptext h4{font-family:var(--f-ui);font-size:15px;margin:0 0 6px}
+.gap{display:inline-block;min-width:2.6em;text-align:center;font-family:var(--f-ui);font-size:14px;font-weight:700;color:var(--accent);border-bottom:2px solid var(--accent);margin:0 2px;padding:0 4px}
+.gap.filled{font-family:var(--f-read);font-weight:400;font-style:italic;color:var(--good);border-color:var(--good);text-align:left}
+
+.result{margin-top:20px;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.big{font-family:var(--f-read);font-size:44px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+.big small{font-size:20px;color:var(--muted)}
+.result p{margin:0;flex:1;min-width:200px}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--sheet);border-radius:99px;padding:7px 14px;font-size:14px;cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+
+.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:25;border:0;background:var(--accent);color:var(--sheet);border-radius:99px;padding:11px 16px;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.2);cursor:pointer}
+@media (max-width:900px){.fab{display:block}}
+.drawer{position:fixed;inset:0;z-index:40;background:rgba(10,15,25,.45);display:flex;align-items:flex-end}
+.drawer[hidden]{display:none}
+.drawer .panel{background:var(--sheet);width:100%;max-height:85vh;overflow:auto;border-radius:16px 16px 0 0;padding:14px 16px 28px}
+.drawer .close{float:right;margin:2px 0 8px 8px}
+
+.pop{position:absolute;z-index:50;max-width:min(320px,calc(100vw - 32px));background:var(--ink);color:var(--bg);border-radius:10px;padding:10px 12px;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.pop .ipa{opacity:.75;margin-left:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bar-in">
+  <a class="home" href="index.html">← Mục lục</a>
+  <div class="bar-title" id="barTitle"></div>
+  <div class="score"><span id="scoreTxt"></span><span class="meter"><i id="meter"></i></span></div>
+</div></div>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="h1"></h1>
+    <p class="lede">Đọc đề và bảng số liệu, làm <b>Phần 1–3</b> trước. Làm xong, <b>bài mẫu</b> sẽ mở để con làm tiếp Phần 4–6. Chọn đáp án là thấy ngay đúng/sai và lời giải thích.</p>
+    <div class="who" id="who">
+      <label>Your name / Họ và tên<input id="stuName" type="text" autocomplete="name" placeholder="Nhập họ và tên"></label>
+      <label>Class / Lớp<select id="stuClass" required><option value="" disabled selected>— Chọn lớp —</option><option>A2</option><option>B1</option><option>B2</option><option>IELTS</option><option>Khác</option></select></label>
+    </div>
+    <nav class="parts-nav" id="partsNav" aria-label="Các phần"></nav>
+  </header>
+
+  <div class="layout">
+    <aside class="reading" id="reading"></aside>
+    <main id="main"></main>
+  </div>
+</div>
+
+<button class="fab" id="fab" type="button">📊 Bảng &amp; bài mẫu</button>
+<div class="drawer" id="drawer" hidden><div class="panel" id="drawerPanel"></div></div>
+<div class="pop" id="pop" hidden></div>
+
+<script>
+const L = {"id": "T02", "pageTitle": "Task 1 Table T02 · Indian students in UK universities", "eyebrow": "IELTS Writing Task 1 · Table · Đề T02", "heading": "Full-time students from India at UK universities", "topic": "Indian students in UK universities", "kind": "Bảng thay đổi · 2020/21 -> 2021/22", "book": "IELTS Liz (ieltsliz.com)", "source": "Đề và bài mẫu: IELTS Liz, https://ieltsliz.com/ielts-table-band-9-model-answer/ (Model Answer 1, có chỉnh sửa nhỏ). Dùng cho mục đích học tập.", "prompt": ["The table below shows the number of full-time students from India who studied at various universities in the UK in 2020/21 and 2021/22.", "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.", "Write at least 150 words."], "tables": [{"caption": "Full-time Students from India", "head": [["University", "2020/21", "2021/22", "Change", "% Increase"]], "rows": [["Coventry University", "2,390", "5,290", "2,900", "121.3"], ["The University of Greenwich", "2,455", "4,540", "2,085", "84.9"], ["BPP University", "3,505", "5,145", "1,640", "46.8"], ["Sheffield University", "815", "2,345", "1,530", "187.7"], ["Anglia Ruskin University", "1,925", "3,265", "1,340", "69.6"], ["The University of Leicester", "1,175", "2,390", "1,215", "103.4"]], "note": "Source: www.ieltsliz.com"}], "words": 198, "sample": [{"label": "Mở bài", "text": "The table {gives information about|info} how many full-time students coming from India studied at six British universities in two academic years (2020/21 and 2021/22), {as well as|aswell} the change in numbers and the percentage increase."}, {"label": "Overview", "text": "Overall, the greatest percentage increase in Indian students {could be seen|seen} at Sheffield University, {while|while} BPP University showed the lowest increase over the two years. The university with the most students from India was BPP University in the first year and Coventry University in the second year."}, {"label": "Thân bài 1", "text": "Sheffield University saw {a dramatic rise|dramatic} of 187.7% in Indian students, reaching 2,345 in 2021/22. {Likewise|likewise}, the number also {climbed considerably|climbed} for Coventry University by 2,900 students (121.3%) {to hit|hit} 5,290 students in 2021/22. Another significant increase was seen at Leicester University, from 1,175 to 2,390 students, {a rise of|riseof} 103.4%."}, {"label": "Thân bài 2", "text": "All other universities saw an increase of {under 100%|under} in the number of Indian students from 2020/21 to 2021/22. The number of students going to the University of Greenwich and Anglia Ruskin University rose by 2,085 students (84.9%) and 1,340 (69.6%) {respectively|resp}. {Regarding|regarding} BPP University, the number of students {remained high|remained} in both years at 3,505 and 5,145, which was {a growth of only|growth} 46.8%."}], "vocab": [{"key": "info", "word": "give information about", "ipa": "/ɡɪv ˌɪnfəˈmeɪʃn əˈbaʊt/", "pos": "v phrase", "vi": "cung cấp thông tin về"}, {"key": "aswell", "word": "as well as", "ipa": "/əz wel əz/", "pos": "conj", "vi": "cũng như, cùng với"}, {"key": "seen", "word": "could be seen (at)", "ipa": "/kʊd bi siːn/", "pos": "v phrase", "vi": "có thể thấy (ở)"}, {"key": "while", "word": "while", "ipa": "/waɪl/", "pos": "conj", "vi": "trong khi (đối lập)"}, {"key": "dramatic", "word": "a dramatic rise", "ipa": "/ə drəˈmætɪk raɪz/", "pos": "n phrase", "vi": "sự tăng vọt"}, {"key": "likewise", "word": "likewise", "ipa": "/ˈlaɪkwaɪz/", "pos": "adv", "vi": "tương tự như vậy"}, {"key": "climbed", "word": "climb considerably", "ipa": "/klaɪm kənˈsɪdərəbli/", "pos": "v phrase", "vi": "tăng đáng kể"}, {"key": "hit", "word": "(rise) to hit", "ipa": "/tə hɪt/", "pos": "v", "vi": "chạm mức, đạt tới"}, {"key": "riseof", "word": "a rise of (+ %)", "ipa": "/ə raɪz əv/", "pos": "n phrase", "vi": "mức tăng là"}, {"key": "under", "word": "under 100%", "ipa": "/ˈʌndə(r)/", "pos": "prep", "vi": "dưới 100%"}, {"key": "resp", "word": "respectively", "ipa": "/rɪˈspektɪvli/", "pos": "adv", "vi": "lần lượt là (đúng thứ tự đã nêu)"}, {"key": "regarding", "word": "regarding", "ipa": "/rɪˈɡɑːdɪŋ/", "pos": "prep", "vi": "về phần, đối với"}, {"key": "remained", "word": "remain high", "ipa": "/rɪˈmeɪn haɪ/", "pos": "v phrase", "vi": "vẫn ở mức cao"}, {"key": "growth", "word": "a growth of only", "ipa": "/ə ɡrəʊθ əv ˈəʊnli/", "pos": "n phrase", "vi": "mức tăng chỉ có"}], "parts": [{"type": "questions", "before": true, "title": "Part 1 · Đọc bảng", "instr": "Nhìn bảng rồi trả lời. Chưa cần xem bài mẫu.", "questions": [{"type": "mc", "tag": "Đọc bảng", "q": "Năm **2021/22**, trường nào có nhiều sinh viên Ấn Độ nhất?", "options": ["Coventry", "BPP", "Greenwich", "Sheffield"], "why": "Năm 2021/22 Coventry có 5,290, nhiều hơn BPP (5,145). BPP chỉ đông nhất ở năm 2020/21 (3,505), nên phải nhìn đúng cột năm."}, {"type": "mc", "tag": "Đọc bảng", "q": "Trường nào có **% tăng** thấp nhất?", "options": ["BPP", "Leicester", "Anglia Ruskin", "Greenwich"], "why": "Cột % Increase: BPP thấp nhất (46.8%). Leicester có số người tăng ít nhất (1,215) nhưng % tăng lại cao (103.4%) vì xuất phát từ số nhỏ."}, {"type": "mc", "tag": "Thì", "q": "Bảng có 2 năm học đã qua (2020/21 và 2021/22). Bài viết nên dùng thì nào?", "options": ["Quá khứ đơn (rose, saw)", "Hiện tại đơn (rises, sees)", "Hiện tại hoàn thành (has risen)", "Tương lai (will rise)"], "why": "Số liệu thuộc các năm đã qua nên dùng **quá khứ đơn**. Hiện tại hoàn thành không đi với mốc thời gian cụ thể như *in 2021/22*."}, {"type": "mc", "tag": "Đơn vị", "q": "Số **2,900** ở cột *Change* của Coventry nghĩa là gì?", "options": ["Số sinh viên tăng thêm 2,900 người", "Số sinh viên tăng 2,900%", "Tổng số sinh viên năm 2021/22", "Số sinh viên năm 2020/21"], "why": "*Change* = 5,290 − 2,390 = 2,900 người, là số tuyệt đối. Phần trăm nằm ở cột bên cạnh (121.3%). Viết *rose by 2,900 students*.", "long": true}]}, {"type": "questions", "before": true, "title": "Part 2 · Đặc điểm chính", "instr": "Chọn ý đáng viết. Bảng có 30 con số, không thể nêu hết.", "questions": [{"type": "mc", "tag": "Ý chính", "q": "Ý nào nên đưa vào **overview**?", "options": ["Sheffield tăng mạnh nhất theo %, BPP tăng ít nhất", "Anglia Ruskin tăng thêm 1,340 sinh viên", "Greenwich có 2,455 sinh viên năm 2020/21", "Leicester tăng 103.4%"], "why": "Overview nêu điểm nổi bật nhất: cao nhất, thấp nhất, xu hướng chung. Các ý còn lại là chi tiết có số, để ở thân bài.", "long": true}, {"type": "mc", "tag": "Ý chính", "q": "Chi tiết nào **ít quan trọng nhất**?", "options": ["Anglia Ruskin có 1,925 sinh viên năm 2020/21", "Coventry đông nhất năm 2021/22", "BPP đông nhất năm 2020/21", "Sheffield tăng mạnh nhất theo %"], "why": "Ba ý kia đều là cao nhất hoặc tăng mạnh nhất. Số của Anglia Ruskin năm đầu không nổi bật, chỉ cần nhắc qua hoặc bỏ.", "long": true}, {"type": "mc", "tag": "Overview", "q": "Chọn overview tốt nhất.", "options": ["Overall, the number of Indian students rose at all six universities, with Sheffield showing the greatest percentage increase and BPP the smallest.", "Overall, Sheffield University rose by 187.7%, from 815 to 2,345 students.", "Overall, Indian students prefer Coventry because it offers better courses.", "Overall, Coventry had 5,290 students, Greenwich had 4,540 and BPP had 5,145."], "why": "Overview tốt nêu xu hướng chung (cả 6 trường đều tăng) và điểm nổi bật, không có số. Các câu kia: có số liệu, nêu lý do ngoài bảng, hoặc liệt kê từng hàng.", "long": true}]}, {"type": "match", "before": true, "plain": true, "pick": "Chọn đoạn", "title": "Part 3 · Nhóm số liệu", "instr": "Bài mẫu chia các trường theo mức tăng. Mỗi nhóm nên vào đoạn nào?", "options": ["Thân bài 1", "Thân bài 2", "Overview"], "items": [{"label": "Sheffield, Coventry, Leicester (tăng trên 100%)", "answer": 0, "why": "Ba trường tăng hơn gấp đôi được gộp vào **Thân bài 1**: Sheffield 187.7%, Coventry 121.3%, Leicester 103.4%."}, {"label": "Greenwich, Anglia Ruskin, BPP (tăng dưới 100%)", "answer": 1, "why": "Ba trường tăng dưới 100% vào **Thân bài 2**. Nhóm theo mức tăng giúp so sánh, thay vì đi lần lượt từng hàng như trong bảng."}, {"label": "Cả 6 trường đều tăng; BPP đông nhất năm đầu, Coventry đông nhất năm sau", "answer": 2, "why": "Đây là xu hướng chung và điểm cao nhất, không cần số cụ thể, nên đặt ở **Overview**."}]}, {"type": "questions", "title": "Part 4 · Ngôn ngữ số liệu", "instr": "Bài mẫu đã mở. Chọn cách viết đúng.", "questions": [{"type": "mc", "tag": "Chủ ngữ", "q": "The number of Indian students at Anglia Ruskin ___ by 1,340.", "options": ["rose", "were rose", "were risen", "rised"], "why": "**The number of** + động từ số ít; *rise* là động từ bất quy tắc (rise – rose – risen) và không dùng bị động. *were* là lỗi chia theo *students*."}, {"type": "mc", "tag": "Giới từ", "q": "Coventry's figure climbed ___ 2,900 students ___ 5,290.", "options": ["by / to", "to / by", "with / at", "for / to"], "why": "**by** + mức thay đổi (tăng thêm 2,900), **to** + mức cuối (lên 5,290). *with* là dịch từ \"tăng với\"."}, {"type": "mc", "tag": "So sánh", "q": "Leicester tăng từ 1,175 lên 2,390. Cách nói nào đúng?", "options": ["roughly doubled", "increased twice more", "rose two times as", "was double than"], "why": "2,390 : 1,175 ≈ 2, nên **roughly doubled** (tăng gần gấp đôi). *twice more* là dịch từ \"tăng gấp đôi hơn\"; *double than* sai cấu trúc."}, {"type": "mc", "tag": "respectively", "q": "Trong câu này, *respectively* cho biết điều gì?", "options": ["Greenwich +2,085, Anglia Ruskin +1,340", "Greenwich +1,340, Anglia Ruskin +2,085", "Cả hai trường đều +2,085", "Hai trường tăng tổng cộng 3,425"], "why": "**respectively** = lần lượt: số thứ nhất đi với trường nhắc trước, số thứ hai với trường nhắc sau. Viết sai thứ tự là sai số liệu.", "ctx": "The number of students at Greenwich and Anglia Ruskin rose by 2,085 and 1,340, respectively."}]}, {"type": "questions", "title": "Part 5 · Đúng với bảng không?", "instr": "Đọc câu, so lại với bảng. Sai một con số là mất điểm Task Achievement.", "questions": [{"type": "mc", "tag": "Kiểm tra số liệu", "q": "Câu này có đúng với bảng không?", "options": ["Đúng", "Sai: Greenwich đông nhất (2,455)", "Sai: Coventry đông nhất (2,390)", "Sai: Sheffield đông nhất"], "why": "Năm 2020/21: BPP 3,505 là cao nhất, hơn Greenwich (2,455) và Coventry (2,390). Câu đúng.", "ctx": "BPP University had the most Indian students in 2020/21."}, {"type": "mc", "tag": "Kiểm tra số liệu", "q": "Câu này có đúng với bảng không?", "options": ["Sai: BPP tăng ít nhất theo % (46.8%)", "Đúng", "Sai: Anglia Ruskin tăng ít nhất (69.6%)", "Sai: Sheffield tăng ít nhất"], "why": "*in percentage terms* = xét theo %. Leicester tăng 103.4%, khá cao. Leicester chỉ có **số người** tăng ít nhất (1,215), đừng nhầm cột *Change* với cột *% Increase*.", "ctx": "The University of Leicester saw the smallest increase in percentage terms."}, {"type": "mc", "tag": "Kiểm tra số liệu", "q": "Câu này có đúng với bảng không?", "options": ["Sai: BPP nhiều hơn (5,145 so với 4,540)", "Đúng", "Sai: hai trường bằng nhau", "Sai: Greenwich chỉ hơn BPP ở năm 2020/21"], "why": "Năm 2021/22: BPP 5,145 > Greenwich 4,540. Năm 2020/21 BPP cũng nhiều hơn (3,505 so với 2,455).", "ctx": "Greenwich had more Indian students than BPP in 2021/22."}]}, {"type": "gap", "title": "Part 6 · Hoàn thành bài mẫu", "instr": "Đoạn trích từ Thân bài 1. Chọn cụm cho mỗi chỗ trống. Có 2 cụm thừa.", "textTitle": "Coventry and Leicester", "text": "Likewise, the number also [1] for Coventry University [2] 2,900 students (121.3%) to hit 5,290 students in 2021/22. Another significant increase was seen at Leicester University, from 1,175 to 2,390 students, [3] 103.4%.", "options": ["climbed considerably", "by", "a rise of", "climbed considerable", "with"], "items": [{"answer": 0, "why": "Bổ nghĩa cho động từ *climbed* cần trạng từ **considerably**. *considerable* là tính từ."}, {"answer": 1, "why": "**by** + mức thay đổi. *with 2,900* là dịch từ \"tăng với 2,900\"."}, {"answer": 2, "why": "**a rise of** + % = mức tăng là. Cụm danh từ này đứng sau dấu phẩy, bổ sung cho cả mệnh đề trước."}]}]};
+const KEY='ieltstable-'+location.pathname+'-'+L.id;
+let state={};
+try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const linkify=s=>esc(s).replace(/https?:\/\/[^\s<]+/g,u=>`<a href="${u}" target="_blank" rel="noopener">${u}</a>`);
+const fmt=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\*([^*]+)\*/g,'<span class="quote">$1</span>');
+const ABC=i=>String.fromCharCode(65+i);
+function seeded(n){let x=n*9301+49297;return()=>{x=(x*9301+49297)%233280;return x/233280}}
+
+document.title=L.pageTitle;
+document.getElementById('barTitle').textContent=L.pageTitle;
+document.getElementById('eyebrow').textContent=L.eyebrow;
+document.getElementById('h1').textContent=L.heading;
+const V={}; L.vocab.forEach(v=>V[v.key]=v);
+const wordify=s=>esc(s).replace(/\{([^|}]+)\|([^}]+)\}/g,(_,d,k)=>`<button type="button" class="w" data-k="${k}">${d}</button>`);
+
+/* left panel: task + table | sample answer (locked until parts marked "before" are done) */
+let tab='task';
+function tableHTML(t){
+  const head=t.head.map(r=>'<tr>'+r.map(c=>`<th>${esc(c)}</th>`).join('')+'</tr>').join('');
+  const rows=t.rows.map(r=>'<tr>'+r.map(c=>`<td>${esc(c)}</td>`).join('')+'</tr>').join('');
+  return `${t.caption?`<p class="tcap">${esc(t.caption)}</p>`:''}<div class="tscroll"><table class="data"><thead>${head}</thead><tbody>${rows}</tbody></table></div>${t.note?`<p class="tnote">${esc(t.note)}</p>`:''}`;
+}
+function panelHTML(){
+  const open=unlocked();
+  let h=`<div class="tabs" role="tablist"><button type="button" class="tab${tab==='task'?' on':''}" data-tab="task">📊 Đề bài</button>`+
+    `<button type="button" class="tab${tab==='sample'?' on':''}" data-tab="sample"${open?'':' aria-disabled="true"'}>${open?'📝':'🔒'} Bài mẫu</button></div>`;
+  if(tab==='task'){
+    h+=`<div class="pane"><div class="prompt">${L.prompt.map(p=>`<p>${esc(p)}</p>`).join('')}</div>`+
+      (L.tables||[]).map(tableHTML).join('<div style="height:14px"></div>')+
+      (L.image?`<figure class="fig"><img src="${esc(L.image)}" alt="Bảng số liệu của đề" loading="lazy"></figure>`:'')+`</div>`;
+  } else if(!open){
+    h+=`<div class="lockbox"><b>🔒</b>Bài mẫu sẽ mở khi con làm xong <b>Phần 1–${beforeParts}</b> (${beforeTotal} câu).<br>Còn ${beforeTotal-beforeDone()} câu.</div>`;
+  } else {
+    h+=`<div class="pane"><h2>Bài mẫu <small style="font-size:14px;color:var(--muted);font-family:var(--f-ui);font-weight:400">(${L.words} từ)</small></h2>`+
+      L.sample.map(p=>`<p class="para"><span class="lb">${esc(p.label)}</span>${wordify(p.text)}</p>`).join('')+
+      `<details class="vocab" open><summary>Từ vựng (${L.vocab.length})</summary><ul class="vlist">${L.vocab.map(v=>`<li><div class="vw">${esc(v.word)}<small>${esc(v.ipa)} · ${esc(v.pos)}</small></div><div class="vvi">${esc(v.vi)}</div></li>`).join('')}</ul></details>`+
+      `<div class="src">${linkify(L.source)}</div></div>`;
+  }
+  return h;
+}
+function renderPanels(){
+  document.getElementById('reading').innerHTML=panelHTML();
+  if(!drawer.hidden)document.getElementById('drawerBody').innerHTML=panelHTML();
+}
+
+/* parts */
+const main=document.getElementById('main'), nav=document.getElementById('partsNav');
+const Q={}; let n=0;
+const beforeParts=L.parts.filter(p=>p.before).length;
+L.parts.forEach((part,pi)=>{
+  const sid='part'+(pi+1);
+  nav.insertAdjacentHTML('beforeend',`<a href="#${sid}" data-after="${part.before?0:1}">${esc(part.title.split('·')[0].trim())}</a>`);
+  if(!part.before&&L.parts[pi-1]&&L.parts[pi-1].before)
+    main.insertAdjacentHTML('beforeend',`<div class="gate" id="gate">🔒 <b>Phần ${pi+1}–${L.parts.length}</b> sẽ mở khi con làm xong Phần 1–${pi}.<br>Lúc đó bài mẫu cũng mở ở khung “Bài mẫu”.</div><div class="unlocked" id="unlockMsg" hidden>🎉 Bài mẫu đã mở! Xem ở thẻ “📝 Bài mẫu” (điện thoại: nút 📊 góc dưới) rồi làm tiếp Phần ${pi+1}–${L.parts.length}.</div>`);
+  let h=`<section class="part" id="${sid}" data-after="${part.before?0:1}"><h3>${esc(part.title)}</h3><p class="instr">${esc(part.instr)}</p>`;
+  if(part.type==='questions'){
+    part.questions.forEach(q=>{
+      n++; let opts, ans;
+      if(q.type==='tf'){opts=['True','False'];ans=q.answer?0:1}
+      else{const r=seeded(n*7+L.id.length);const idx=q.options.map((_,i)=>i);for(let i=idx.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[idx[i],idx[j]]=[idx[j],idx[i]]}
+        opts=idx.map(i=>q.options[i]);ans=idx.indexOf(q.answer||0)}
+      Q[n]={kind:'btn',ans,why:q.why,label:i=>ABC(i),before:!!part.before};
+      h+=`<div class="q" id="q${n}"><div class="q-top"><span class="qn">${n}.</span><div class="qt">${q.tag?`<span class="tag">${esc(q.tag)}</span>`:''}${fmt(q.q)}</div></div>
+        ${q.ctx?`<div class="ctx">${fmt(q.ctx)}</div>`:''}
+        <ul class="opts${q.long?' long':''}">${opts.map((o,oi)=>`<li><button type="button" class="opt" data-q="${n}" data-o="${oi}"><span class="k">${ABC(oi)}</span><span>${fmt(o)}</span></button></li>`).join('')}</ul>
+        <div class="why" hidden></div></div>`;
+    });
+  } else {
+    const lab=part.plain?(i=>part.options[i]):(i=>ABC(i).toLowerCase());
+    if(part.type==='gap'){
+      let t=esc(part.text).replace(/\[(\d+)\]/g,(_,k)=>`<span class="gap" id="g${n+ +k}">${n+ +k}</span>`);
+      h+=`<div class="gaptext">${part.textTitle?`<h4>${esc(part.textTitle)}</h4>`:''}${t}</div>`;
+    }
+    if(!part.plain)h+=`<div class="bank"><ol type="a">${part.options.map(o=>`<li>${esc(o)}</li>`).join('')}</ol></div>`;
+    part.items.forEach(it=>{
+      n++;
+      Q[n]={kind:'sel',ans:it.answer,why:it.why,label:lab,text:part.options[it.answer],gap:part.type==='gap',plain:!!part.plain,before:!!part.before};
+      const label=part.type==='match'?it.label:`Chỗ trống ${n}`;
+      h+=`<div class="q" id="q${n}"><div class="q-top"><span class="qn">${n}.</span><div class="qt">${it.tag?`<span class="tag">${esc(it.tag)}</span>`:''}<b>${fmt(label)}</b></div></div>
+        <select class="sel" data-q="${n}" aria-label="${esc(label)}"><option value="">— ${esc(part.pick||(part.type==='match'?'Chọn':'Chọn cụm từ'))} —</option>${part.options.map((o,oi)=>`<option value="${oi}">${part.plain?esc(o):lab(oi)+'. '+esc(o)}</option>`).join('')}</select>
+        <div class="why" hidden></div></div>`;
+    });
+  }
+  main.insertAdjacentHTML('beforeend',h+'</section>');
+});
+const total=n;
+const beforeTotal=Object.values(Q).filter(q=>q.before).length;
+function beforeDone(){let d=0;for(const i in Q)if(Q[i].before&&state[i]!==undefined)d++;return d}
+function unlocked(){return beforeDone()>=beforeTotal}
+main.insertAdjacentHTML('beforeend',`<div class="result" id="result"><div class="big" id="bigScore"></div><p id="resultMsg"></p><div class="acts"><button class="btn" id="btnWrong" type="button">Xem câu sai / chưa làm</button><button class="btn" id="btnReset" type="button">Làm lại từ đầu</button></div><div class="submit"><button class="btn primary" id="btnSubmit" type="button" disabled>📨 Nộp bài cho cô</button><div id="sendStatus"></div></div><p class="write">✍️ Con nên thử viết lại bài này (ít nhất 150 từ, tốt nhất khoảng 190 từ) bằng lời của mình, dựa vào các phân tích và từ vựng ngữ pháp vừa học, rồi gửi cô chấm qua Teams nhé.</p></div><p class="credit">${linkify(L.source)}</p>`);
+
+let wasOpen=null;
+function applyLock(){
+  const open=unlocked();
+  document.querySelectorAll('section.part[data-after="1"]').forEach(s=>s.hidden=!open);
+  document.querySelectorAll('.parts-nav a[data-after="1"]').forEach(a=>a.classList.toggle('locked',!open));
+  const g=document.getElementById('gate'), m=document.getElementById('unlockMsg');
+  if(g)g.hidden=open; if(m)m.hidden=!open;
+  if(wasOpen===false&&open){tab='sample';}
+  if(!open&&tab==='sample')tab='task';
+  wasOpen=open; renderPanels();
+}
+
+/* answering */
+function paint(i){
+  const q=Q[i], box=document.getElementById('q'+i), pick=state[i];
+  if(pick===undefined)return;
+  const right=pick===q.ans;
+  if(q.kind==='btn'){
+    box.querySelectorAll('.opt').forEach(b=>{b.disabled=true;const o=+b.dataset.o;if(o===q.ans)b.classList.add('ok');else if(o===pick)b.classList.add('no')});
+  } else {
+    const s=box.querySelector('.sel'); s.value=pick; s.disabled=true; s.classList.add(right?'ok':'no');
+    if(q.gap){const g=document.getElementById('g'+i); if(g){g.textContent=q.text; g.classList.add('filled')}}
+  }
+  const why=box.querySelector('.why');
+  why.className='why '+(right?'good':'bad');
+  why.innerHTML=`<span class="vd">${right?'Đúng rồi!':'Chưa đúng. Đáp án: '+esc(q.label(q.ans))+(q.kind==='sel'&&!q.plain?' – '+esc(q.text||''):'')}</span>${fmt(q.why)}`;
+  why.hidden=false;
+}
+function answer(i,v){
+  if(state[i]!==undefined)return;
+  state[i]=v;save();paint(i);updateScore();
+  if(Q[i].before)applyLock();
+}
+function updateScore(){
+  let done=0,ok=0; for(const i in Q){if(state[i]!==undefined){done++;if(state[i]===Q[i].ans)ok++}}
+  document.getElementById('scoreTxt').textContent=`Đúng ${ok}/${total} · Đã làm ${done}`;
+  document.getElementById('meter').style.width=(done/total*100)+'%';
+  document.getElementById('bigScore').innerHTML=`${ok}<small>/${total}</small>`;
+  let m;
+  if(done<total)m=`Con đã làm ${done}/${total} câu. Làm tiếp các câu còn lại nhé.`;
+  else if(ok>=18)m='Xuất sắc! Con đọc bảng và dùng ngôn ngữ số liệu rất tốt.';
+  else if(ok>=14)m='Tốt lắm! Xem lại các câu sai và đọc kỹ phần giải thích nhé.';
+  else if(ok>=10)m='Khá ổn. Đọc lại bài mẫu và từ vựng rồi bấm "Làm lại từ đầu".';
+  else m='Cố lên! Đọc lại bảng thật chậm, xem kỹ bài mẫu rồi làm lại.';
+  document.getElementById('resultMsg').textContent=m;
+  refreshSubmit(done,ok);
+}
+document.addEventListener('change',e=>{
+  const s=e.target.closest('.sel'); if(!s||s.value==='')return;
+  answer(+s.dataset.q,+s.value);
+});
+
+/* drawer, popover */
+const drawer=document.getElementById('drawer'), panel=document.getElementById('drawerPanel');
+function openDrawer(){
+  panel.innerHTML='<button class="btn close" type="button" id="closeDr">Đóng ✕</button><div id="drawerBody"></div>';
+  drawer.hidden=false; document.body.style.overflow='hidden'; renderPanels();
+}
+function closeDrawer(){drawer.hidden=true;document.body.style.overflow='';hidePop()}
+const pop=document.getElementById('pop'); let popFor=null;
+function showPop(w){
+  if(popFor===w){hidePop();return} hidePop();
+  const v=V[w.dataset.k]; if(!v)return; popFor=w; w.classList.add('on');
+  pop.innerHTML=`<div><b>${esc(v.word)}</b><span class="ipa">${esc(v.ipa)}</span></div><div>${esc(v.pos)} · ${esc(v.vi)}</div>`;
+  pop.hidden=false;
+  const r=w.getBoundingClientRect(), pw=pop.offsetWidth;
+  const fixed=!drawer.hidden; pop.style.position=fixed?'fixed':'absolute';
+  const sx=fixed?0:scrollX, sy=fixed?0:scrollY;
+  let x=r.left+sx; x=Math.max(16,Math.min(x,sx+document.documentElement.clientWidth-pw-16));
+  pop.style.left=x+'px'; pop.style.top=(r.bottom+sy+6)+'px';
+}
+function hidePop(){pop.hidden=true;if(popFor)popFor.classList.remove('on');popFor=null}
+document.addEventListener('click',e=>{
+  const o=e.target.closest('.opt');
+  if(o&&!o.disabled){answer(+o.dataset.q,+o.dataset.o);return}
+  const t=e.target.closest('.tab'); if(t){tab=t.dataset.tab;hidePop();renderPanels();return}
+  const w=e.target.closest('.w[data-k]'); if(w){showPop(w);return}
+  if(e.target.id==='fab'){openDrawer();return}
+  if(e.target.id==='closeDr'||e.target===drawer){closeDrawer();return}
+  if(!e.target.closest('#pop'))hidePop();
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){hidePop();if(!drawer.hidden)closeDrawer()}});
+window.addEventListener('resize',hidePop);
+document.getElementById('reading').addEventListener('scroll',hidePop);
+document.getElementById('btnReset').onclick=()=>{
+  state={};save();sent=false;saveSent();setStatus('');
+  document.querySelectorAll('.opt').forEach(b=>{b.disabled=false;b.classList.remove('ok','no')});
+  document.querySelectorAll('.sel').forEach(s=>{s.disabled=false;s.value='';s.classList.remove('ok','no')});
+  document.querySelectorAll('.gap').forEach(g=>{g.textContent=g.id.slice(1);g.classList.remove('filled')});
+  document.querySelectorAll('.why').forEach(w=>w.hidden=true);
+  wasOpen=null;tab='task';applyLock();updateScore();scrollTo({top:0});
+};
+document.getElementById('btnWrong').onclick=()=>{
+  const ids=Object.keys(Q).map(Number);
+  const t=ids.find(i=>state[i]!==undefined&&state[i]!==Q[i].ans)||ids.find(i=>state[i]===undefined);
+  if(t){let el=document.getElementById('q'+t); if(el.closest('section').hidden)el=document.getElementById('gate'); el.scrollIntoView({block:'center'})}
+};
+
+/* student info + submit to teacher's Google Form */
+const RESULTS={formUrl:"https://docs.google.com/forms/d/e/1FAIpQLSeOg0kZytzgKzyBIxFD-THAoS44sTOEvDr4VqO1LnX-6kmfYQ/",
+  fields:{name:"entry.1398331139",cls:"entry.770361974",lesson:"entry.449687323",score:"entry.426447052",details:"entry.1388890653"}};
+const SKEY='manners-student', SENTKEY=KEY+'-sent';
+const nameEl=document.getElementById('stuName'), clsEl=document.getElementById('stuClass');
+try{const s=JSON.parse(localStorage.getItem(SKEY)||'{}');if(s.name)nameEl.value=s.name;if(s.cls)clsEl.value=s.cls}catch(e){}
+let sent=false; try{sent=localStorage.getItem(SENTKEY)==='1'}catch(e){}
+const saveSent=()=>{try{sent?localStorage.setItem(SENTKEY,'1'):localStorage.removeItem(SENTKEY)}catch(e){}};
+const student=()=>({name:nameEl.value.trim().replace(/\s+/g,' '),cls:clsEl.value});
+function saveStudent(){try{localStorage.setItem(SKEY,JSON.stringify(student()))}catch(e){};updateScore()}
+nameEl.addEventListener('input',saveStudent); clsEl.addEventListener('change',e=>{e.stopPropagation();saveStudent()});
+const statusEl=document.getElementById('sendStatus'), btnSubmit=document.getElementById('btnSubmit');
+function setStatus(html,ok){statusEl.innerHTML=html;statusEl.className=ok?'sent':''}
+function refreshSubmit(done,ok){
+  const s=student();
+  if(sent){btnSubmit.disabled=true;btnSubmit.textContent='✅ Đã nộp';if(!statusEl.innerHTML)setStatus('Con đã nộp bài này. Muốn làm và nộp lại, bấm "Làm lại từ đầu".',true);return}
+  btnSubmit.textContent='📨 Nộp bài cho cô';
+  btnSubmit.disabled=done<total;
+  if(statusEl.className==='sent')return;
+  if(done<total)setStatus(`Làm đủ ${total} câu để nộp bài (còn ${total-done} câu).`);
+  else if(!s.name||!s.cls)setStatus('Nhập <b>họ tên</b> và chọn <b>lớp</b> ở đầu trang rồi bấm Nộp bài.');
+  else setStatus(`Sẵn sàng nộp: <b>${esc(s.name)}</b> · lớp ${esc(s.cls)} · ${ok}/${total} câu đúng.`);
+}
+function formParams(){
+  const f=RESULTS.fields,p=new URLSearchParams(),s=student();
+  let ok=0; const det=[];
+  for(const i in Q){const g=state[i]===Q[i].ans; if(g)ok++; det.push(i+(g?'✓':'✗'))}
+  p.append(f.name,s.name); p.append(f.cls,s.cls);
+  p.append(f.lesson,`Task 1 Table ${L.id} · ${L.topic}`);
+  p.append(f.score,`${ok}/${total} (${Math.round(ok/total*100)}%)`);
+  p.append(f.details,det.join(' '));
+  return p;
+}
+btnSubmit.onclick=()=>{
+  const s=student();
+  if(!s.name||!s.cls){document.getElementById('who').classList.add('need');scrollTo({top:0,behavior:'smooth'});(s.name?clsEl:nameEl).focus({preventScroll:true});setStatus('Con chưa nhập họ tên hoặc chưa chọn lớp ở đầu trang.');return}
+  const params=formParams(); btnSubmit.disabled=true; setStatus('⏳ Đang gửi kết quả cho cô…');
+  fetch(RESULTS.formUrl+'formResponse',{method:'POST',mode:'no-cors',body:params})
+    .then(()=>{sent=true;saveSent();setStatus('✅ Đã gửi kết quả cho cô. Con không cần làm gì thêm.',true);btnSubmit.textContent='✅ Đã nộp'})
+    .catch(()=>{btnSubmit.disabled=false;setStatus(`Chưa gửi được tự động. Bấm <a href="${RESULTS.formUrl}viewform?usp=pp_url&${params.toString().replace(/&/g,'&amp;')}" target="_blank" rel="noopener">📨 mở Google Form</a> rồi bấm <b>Gửi / Submit</b> để nộp bài.`)});
+};
+for(const i in Q)paint(+i);
+applyLock();
+updateScore();
+</script>
+</body>
+</html>
